@@ -1,0 +1,132 @@
+{
+  "fundacion": "18 de junio de 1946",
+  "estadio": "Estadio Nemesio Camacho El Campín, Bogotá",
+  "apodo": "El Embajador",
+  "colores": "Azul y blanco",
+  "resumen": "Millonarios es uno de los clubes más laureados y emblemáticos de Colombia. Nació en Bogotá en 1946 y construyó su leyenda en El Dorado, la época en que el fútbol colombiano se llenó de estrellas internacionales. De ahí salió el Ballet Azul, el equipo que marcó una era y que sigue siendo la identidad del club.",
+  "palmares": [
+    {
+      "titulo": "Primera A",
+      "cantidad": 16,
+      "anios": "1949, 1951, 1952, 1953, 1959, 1961, 1962, 1963, 1964, 1972, 1978, 1987, 1988, 2012-II, 2017-II, 2023-I",
+      "nota": "Récord compartido en el fútbol colombiano."
+    },
+    {
+      "titulo": "Copa Colombia",
+      "cantidad": 3,
+      "anios": "1952-53, 2011, 2022",
+      "nota": ""
+    },
+    {
+      "titulo": "Superliga de Colombia",
+      "cantidad": 2,
+      "anios": "2018, 2024",
+      "nota": ""
+    },
+    {
+      "titulo": "Copa Merconorte",
+      "cantidad": 1,
+      "anios": "2001",
+      "nota": "Título internacional oficial."
+    },
+    {
+      "titulo": "Copa Simón Bolívar",
+      "cantidad": 1,
+      "anios": "1972",
+      "nota": ""
+    },
+    {
+      "titulo": "Pequeña Copa del Mundo",
+      "cantidad": 1,
+      "anios": "1953",
+      "nota": "No oficial: ningún estamento continental o mundial la avala."
+    }
+  ],
+  "cronologia": [
+    {
+      "anio": "1946",
+      "texto": "Nace el club en Bogotá, el 18 de junio."
+    },
+    {
+      "anio": "1949-1953",
+      "texto": "El Dorado y el Ballet Azul: cuatro títulos de liga en cinco años y un equipo que llenaba El Campín."
+    },
+    {
+      "anio": "1953",
+      "texto": "Gana la Pequeña Copa del Mundo, torneo no oficial que el club contabiliza en su palmarés."
+    },
+    {
+      "anio": "1961-1964",
+      "texto": "Tetracampeonato de liga: la segunda gran era dorada."
+    },
+    {
+      "anio": "1972",
+      "texto": "Suma la Copa Simón Bolívar y vuelve a gritar campeón de liga."
+    },
+    {
+      "anio": "1987-1988",
+      "texto": "Bicampeonato nacional."
+    },
+    {
+      "anio": "2001",
+      "texto": "Conquista la Copa Merconorte, su último título internacional oficial."
+    },
+    {
+      "anio": "2011-2012",
+      "texto": "Copa Colombia 2011 y estrella 14 en el Finalización 2012."
+    },
+    {
+      "anio": "2017-2018",
+      "texto": "Estrella 15 (2017-II) y Superliga 2018."
+    },
+    {
+      "anio": "2022-2023",
+      "texto": "Copa Colombia 2022 y estrella 16 en el Apertura 2023."
+    },
+    {
+      "anio": "2024",
+      "texto": "Superliga de Colombia."
+    }
+  ],
+  "idolos": [
+    {
+      "nombre": "Alfredo Di Stéfano",
+      "detalle": "Pasó por Millonarios en 1952 antes de convertirse en leyenda del Real Madrid."
+    },
+    {
+      "nombre": "Willington Ortiz",
+      "detalle": "Símbolo del ataque azul en los años 70 y uno de los grandes nombres del fútbol colombiano."
+    },
+    {
+      "nombre": "Carlos Valderrama",
+      "detalle": "El Pibe jugó en el club entre 1981 y 1984, antes de su etapa en el exterior."
+    },
+    {
+      "nombre": "David Mackalister Silva",
+      "detalle": "Capitán y referente del título 16 y de la era reciente del club."
+    }
+  ],
+  "rivalidades": [
+    {
+      "nombre": "Santa Fe",
+      "detalle": "Clásico bogotano: el partido que parte la ciudad en dos."
+    },
+    {
+      "nombre": "América de Cali",
+      "detalle": "Clásico de las Estrellas: dos de los clubes más ganadores del país."
+    },
+    {
+      "nombre": "Atlético Nacional",
+      "detalle": "Superclásico del fútbol colombiano."
+    },
+    {
+      "nombre": "Deportivo Cali",
+      "detalle": "Clásico Añejo, con historia desde los años 70."
+    }
+  ],
+  "fuente": {
+    "nombre": "Wikipedia · Millonarios Fútbol Club (palmarés y cronología)",
+    "url": "https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club",
+    "licencia": "CC BY-SA 4.0"
+  }
+}

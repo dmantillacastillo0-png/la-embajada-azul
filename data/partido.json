@@ -1,0 +1,26 @@
+{
+  "id": "2481264",
+  "local": "Deportes Tolima",
+  "visitante": "Millonarios",
+  "fecha": "2026-11-08",
+  "hora_local": "18:10",
+  "zona": "America/Bogota",
+  "hora_utc": "23:10",
+  "estadio": "Manuel Murillo Toro, Ibagué",
+  "liga": "Liga BetPlay",
+  "jornada": "Fecha 18",
+  "temporada": "2026",
+  "estado": "programado",
+  "contexto": "Millonarios llega con 27 puntos y un invicto de 10 partidos en Liga. Una victoria le aseguraría la clasificación a los cuadrangulares semifinales.",
+  "fuentes": [
+    {
+      "nombre": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
+    },
+    {
+      "nombre": "TheSportsDB",
+      "url": "https://www.thesportsdb.com/event/2481264"
+    }
+  ],
+  "actualizado": "2026-11-08T19:00:00Z"
+}

@@ -1,0 +1,34 @@
+{
+  "nombre": "La Embajada Azul",
+  "tagline": "Millonarios, sin humo.",
+  "descripcion": "Noticias, convocatoria, XI probable, pronóstico honesto, historia y minijuegos de Millonarios Fútbol Club. Sitio de hinchas, no oficial.",
+  "dominio": "https://dmantillacastillo0-png.github.io/la-embajada-azul",
+  "autor": "Leo · hincha embajador",
+  "aviso": "Sitio no oficial, hecho por hinchas. No tiene relación con Millonarios Fútbol Club ni con la Dimayor.",
+  "fuentes_generales": [
+    {
+      "nombre": "Millonarios FC (sitio oficial)",
+      "url": "https://millonarios.com.co/"
+    },
+    {
+      "nombre": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/"
+    },
+    {
+      "nombre": "Marca Colombia",
+      "url": "https://www.marca.com/co/"
+    },
+    {
+      "nombre": "El Tiempo · Deportes",
+      "url": "https://www.eltiempo.com/deportes"
+    },
+    {
+      "nombre": "Wikipedia · Millonarios FC",
+      "url": "https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club"
+    },
+    {
+      "nombre": "TheSportsDB",
+      "url": "https://www.thesportsdb.com/"
+    }
+  ]
+}

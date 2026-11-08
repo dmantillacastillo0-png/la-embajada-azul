@@ -1,0 +1,162 @@
+{
+  "formacion": "4-2-3-1",
+  "xi": [
+    {
+      "num": 1,
+      "nombre": "Javier Burrai",
+      "pos": "POR"
+    },
+    {
+      "num": 43,
+      "nombre": "Cristian Uparela",
+      "pos": "LD"
+    },
+    {
+      "num": 4,
+      "nombre": "Stiven Barreiro",
+      "pos": "DFC"
+    },
+    {
+      "num": 6,
+      "nombre": "Sergio Mosquera",
+      "pos": "DFC"
+    },
+    {
+      "num": 20,
+      "nombre": "Danovis Banguero",
+      "pos": "LI"
+    },
+    {
+      "num": 28,
+      "nombre": "Stiven Vega",
+      "pos": "MC"
+    },
+    {
+      "num": 30,
+      "nombre": "Sebastián del Castillo",
+      "pos": "MC"
+    },
+    {
+      "num": 7,
+      "nombre": "Juan Guillermo Cuadrado",
+      "pos": "MD"
+    },
+    {
+      "num": 14,
+      "nombre": "David Mackalister Silva",
+      "pos": "MCO"
+    },
+    {
+      "num": 11,
+      "nombre": "Andrey Estupiñán",
+      "pos": "MI"
+    },
+    {
+      "num": "—",
+      "nombre": "Leonardo Castro",
+      "pos": "DC"
+    }
+  ],
+  "lineas": [
+    [
+      {
+        "nombre": "Javier Burrai",
+        "num": 1
+      }
+    ],
+    [
+      {
+        "nombre": "Cristian Uparela",
+        "num": 43
+      },
+      {
+        "nombre": "Stiven Barreiro",
+        "num": 4
+      },
+      {
+        "nombre": "Sergio Mosquera",
+        "num": 6
+      },
+      {
+        "nombre": "Danovis Banguero",
+        "num": 20
+      }
+    ],
+    [
+      {
+        "nombre": "Stiven Vega",
+        "num": 28
+      },
+      {
+        "nombre": "Sebastián del Castillo",
+        "num": 30
+      }
+    ],
+    [
+      {
+        "nombre": "Juan Guillermo Cuadrado",
+        "num": 7
+      },
+      {
+        "nombre": "David Mackalister Silva",
+        "num": 14
+      },
+      {
+        "nombre": "Andrey Estupiñán",
+        "num": 11
+      }
+    ],
+    [
+      {
+        "nombre": "Leonardo Castro",
+        "num": "—"
+      }
+    ]
+  ],
+  "convocados": {
+    "Arqueros": [
+      "Javier Burrai",
+      "James Aguirre"
+    ],
+    "Defensores": [
+      "Samuel Martín",
+      "Stiven Barreiro",
+      "Sergio Mosquera",
+      "Jorge Arias",
+      "Danovis Banguero",
+      "Cristian Uparela"
+    ],
+    "Mediocampistas": [
+      "Juan Guillermo Cuadrado",
+      "Daniel Ruiz",
+      "David Mackalister Silva",
+      "Mateo García",
+      "Carlos Darwin Quintero",
+      "Stiven Vega",
+      "Sebastián del Castillo",
+      "Leonai Souza"
+    ],
+    "Delanteros": [
+      "Andrey Estupiñán",
+      "Francisco Chaverra",
+      "Leonardo Castro",
+      "Rodrigo Contreras"
+    ]
+  },
+  "bajas": [
+    {
+      "nombre": "Sebastián Valencia",
+      "motivo": "Lesión muscular de primer grado en el semitendinoso de la pierna derecha"
+    },
+    {
+      "nombre": "Rodrigo Ureña",
+      "motivo": "Suspensión por acumulación de tarjetas amarillas"
+    }
+  ],
+  "nota": "XI probable: estimación editorial a partir de la convocatoria oficial y la continuidad del once. No es información confirmada por el cuerpo técnico. La alineación oficial se conoce cerca del pitazo inicial.",
+  "fuente": {
+    "nombre": "ESPN Colombia · convocatoria oficial",
+    "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
+  },
+  "actualizado": "2026-11-08T19:00:00Z"
+}

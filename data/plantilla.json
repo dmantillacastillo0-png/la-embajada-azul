@@ -1,0 +1,172 @@
+{
+  "fuente": {
+    "nombre": "Wikipedia · Millonarios Fútbol Club",
+    "url": "https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club",
+    "licencia": "CC BY-SA 4.0"
+  },
+  "nota": "Plantilla 2026-II según Wikipedia. Puede no reflejar altas/bajas de último minuto; la convocatoria oficial manda.",
+  "jugadores": [
+    {
+      "num": "1",
+      "nombre": "Javier Burrai",
+      "pos": "POR",
+      "nac": "Ecuador"
+    },
+    {
+      "num": "12",
+      "nombre": "James Aguirre",
+      "pos": "POR",
+      "nac": "Colombia"
+    },
+    {
+      "num": "2",
+      "nombre": "Carlos Sarabia",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "3",
+      "nombre": "Samuel Martín",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "4",
+      "nombre": "Stiven Barreiro",
+      "pos": "DEF",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "6",
+      "nombre": "Sergio Mosquera",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "17",
+      "nombre": "Jorge Arias",
+      "pos": "DEF",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "20",
+      "nombre": "Danovis Banguero",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "22",
+      "nombre": "Sebastián Valencia",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "26",
+      "nombre": "Andrés Llinás",
+      "pos": "DEF",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "29",
+      "nombre": "Álex Moreno",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "34",
+      "nombre": "Jhomier Guerrero",
+      "pos": "DEF",
+      "nac": "Colombia"
+    },
+    {
+      "num": "7",
+      "nombre": "Juan Guillermo Cuadrado",
+      "pos": "MED",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "10",
+      "nombre": "Daniel Ruiz",
+      "pos": "MED",
+      "nac": "Colombia"
+    },
+    {
+      "num": "14",
+      "nombre": "David Mackalister Silva",
+      "pos": "MED",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "18",
+      "nombre": "Rodrigo Ureña",
+      "pos": "MED",
+      "nac": "Chile"
+    },
+    {
+      "num": "19",
+      "nombre": "Mateo García",
+      "pos": "MED",
+      "nac": "Colombia"
+    },
+    {
+      "num": "25",
+      "nombre": "Darwin Quintero",
+      "pos": "MED",
+      "nac": "Colombia"
+    },
+    {
+      "num": "28",
+      "nombre": "Stiven Vega",
+      "pos": "MED",
+      "nac": "Colombia",
+      "cap": true
+    },
+    {
+      "num": "30",
+      "nombre": "Sebastián del Castillo",
+      "pos": "MED",
+      "nac": "Colombia"
+    },
+    {
+      "num": "55",
+      "nombre": "Leonai Souza",
+      "pos": "MED",
+      "nac": "Brasil"
+    },
+    {
+      "num": "11",
+      "nombre": "Andrey Estupiñán",
+      "pos": "DEL",
+      "nac": "Colombia"
+    },
+    {
+      "num": "13",
+      "nombre": "Francisco Chaverra",
+      "pos": "DEL",
+      "nac": "Colombia"
+    },
+    {
+      "num": "24",
+      "nombre": "Julián Angulo",
+      "pos": "DEL",
+      "nac": "Colombia"
+    },
+    {
+      "num": "27",
+      "nombre": "Rodrigo Contreras",
+      "pos": "DEL",
+      "nac": "Argentina"
+    },
+    {
+      "num": "35",
+      "nombre": "Sebastián Mosquera",
+      "pos": "DEL",
+      "nac": "Colombia"
+    }
+  ]
+}

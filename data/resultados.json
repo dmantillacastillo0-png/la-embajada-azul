@@ -1,0 +1,51 @@
+{
+  "temporada": "2026",
+  "corte": "Hasta el 5 de noviembre de 2026 (0-0 vs América de Cali)",
+  "total": {
+    "pj": 19,
+    "pg": 7,
+    "pe": 5,
+    "pp": 7,
+    "gf": 31,
+    "gc": 23,
+    "pts": 27
+  },
+  "casa": {
+    "pj": 10,
+    "pg": 6,
+    "pe": 3,
+    "pp": 1,
+    "gf": 19,
+    "gc": 7
+  },
+  "fuera": {
+    "pj": 9,
+    "pg": 1,
+    "pe": 2,
+    "pp": 6,
+    "gf": 12,
+    "gc": 16
+  },
+  "ultimos": [
+    {
+      "fecha": "2026-11-05",
+      "rival": "América de Cali",
+      "condicion": "Local",
+      "marcador": "0-0",
+      "resultado": "E"
+    },
+    {
+      "fecha": "2026-10-21",
+      "rival": "Once Caldas",
+      "condicion": "Local",
+      "marcador": "1-1",
+      "resultado": "E"
+    }
+  ],
+  "fuente": {
+    "nombre": "Wikipedia · Temporada 2026 de Millonarios",
+    "url": "https://es.wikipedia.org/wiki/Anexo:Temporada_2026_de_Millonarios_F%C3%BAtbol_Club",
+    "licencia": "CC BY-SA 4.0"
+  },
+  "nota": "Los totales de puntos y partidos pueden variar según la fuente y la fecha de corte. Se muestran para transparencia del modelo, no como tabla oficial."
+}

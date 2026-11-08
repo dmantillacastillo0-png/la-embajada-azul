@@ -1,0 +1,114 @@
+{
+  "preguntas": [
+    {
+      "p": "¿En qué año se fundó Millonarios?",
+      "opciones": [
+        "1938",
+        "1946",
+        "1950",
+        "1953"
+      ],
+      "correcta": 1,
+      "dato": "Se fundó el 18 de junio de 1946 en Bogotá."
+    },
+    {
+      "p": "¿Cómo se conoce a la época dorada de los años 50?",
+      "opciones": [
+        "La Máquina Azul",
+        "El Ballet Azul",
+        "Los Embajadores",
+        "El Dorado Azul"
+      ],
+      "correcta": 1,
+      "dato": "El Ballet Azul fue el equipo de El Dorado, con estrellas internacionales y títulos en 1949, 1951, 1952 y 1953."
+    },
+    {
+      "p": "¿En qué estadio juega de local?",
+      "opciones": [
+        "El Campín",
+        "Murillo Toro",
+        "Metropolitano",
+        "Palmaseca"
+      ],
+      "correcta": 0,
+      "dato": "Estadio Nemesio Camacho El Campín, en Bogotá."
+    },
+    {
+      "p": "¿Cuántos títulos de Primera A tiene el club (hasta 2023-I)?",
+      "opciones": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correcta": 3,
+      "dato": "16 estrellas, la última en el Apertura 2023."
+    },
+    {
+      "p": "¿Qué título internacional oficial ganó en 2001?",
+      "opciones": [
+        "Copa Libertadores",
+        "Copa Merconorte",
+        "Copa Sudamericana",
+        "Copa Simón Bolívar"
+      ],
+      "correcta": 1,
+      "dato": "La Copa Merconorte 2001 es su último título internacional oficial."
+    },
+    {
+      "p": "¿Qué jugador pasó por el club en 1952 antes de brillar en el Real Madrid?",
+      "opciones": [
+        "Alfredo Di Stéfano",
+        "Ferenc Puskás",
+        "Johan Cruyff",
+        "Eusébio"
+      ],
+      "correcta": 0,
+      "dato": "Di Stéfano jugó en Millonarios en 1952."
+    },
+    {
+      "p": "¿Cuál es el clásico rival de Millonarios?",
+      "opciones": [
+        "Atlético Nacional",
+        "América de Cali",
+        "Santa Fe",
+        "Deportivo Cali"
+      ],
+      "correcta": 2,
+      "dato": "El Clásico Bogotano se juega contra Santa Fe."
+    },
+    {
+      "p": "¿Qué copa nacional ganó en 2011 y 2022?",
+      "opciones": [
+        "Superliga",
+        "Copa Colombia",
+        "Copa Merconorte",
+        "Copa Simón Bolívar"
+      ],
+      "correcta": 1,
+      "dato": "Copa Colombia 2011 y 2022."
+    },
+    {
+      "p": "¿En qué año ganó su estrella número 16?",
+      "opciones": [
+        "2017",
+        "2018",
+        "2022",
+        "2023"
+      ],
+      "correcta": 3,
+      "dato": "Apertura 2023."
+    },
+    {
+      "p": "¿Cuántas Superligas de Colombia ha ganado?",
+      "opciones": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correcta": 1,
+      "dato": "2018 y 2024."
+    }
+  ]
+}
