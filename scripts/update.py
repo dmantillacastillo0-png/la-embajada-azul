@@ -424,7 +424,13 @@ def actualizar_calendario(evento: dict | None = None) -> dict:
 
     if not proximos:
         proximos = anterior.get("proximos", [])
-    recientes = resultados_recientes() or anterior.get("recientes", [])
+    # ESPN a veces deja de devolver un partido recién terminado; conservamos
+    # los resultados anteriores y evitamos duplicados por fecha y equipos.
+    fusion = {}
+    for item in resultados_recientes() + anterior.get("recientes", []):
+        clave = (item.get("fecha"), item.get("local"), item.get("visitante"))
+        fusion[clave] = item
+    recientes = sorted(fusion.values(), key=lambda x: x.get("fecha") or "", reverse=True)[:5]
 
     payload = {
         "actualizado": datetime.now(timezone.utc).isoformat(),

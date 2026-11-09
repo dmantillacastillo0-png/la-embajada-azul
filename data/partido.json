@@ -1,28 +1,24 @@
 {
-  "id": "2481264",
-  "local": "Deportes Tolima",
-  "visitante": "Millonarios",
-  "fecha": "2026-11-08",
-  "hora_local": "18:10",
+  "id": "2481266",
+  "local": "Millonarios",
+  "visitante": "Alianza de Valledupar",
+  "fecha": "2026-11-12",
+  "hora_local": "16:00",
   "zona": "America/Bogota",
-  "hora_utc": "23:10",
-  "estadio": "Estadio Manuel Murillo Toro",
+  "hora_utc": "21:00",
+  "estadio": "Estadio El Campín",
   "liga": "Liga BetPlay",
-  "jornada": "Fecha 18",
+  "jornada": "Fecha 19",
   "temporada": "2026",
   "estado": "programado",
-  "contexto": "Millonarios llega con 27 puntos y un invicto de 10 partidos en Liga. Una victoria le aseguraría la clasificación a los cuadrangulares semifinales.",
+  "contexto": "Próximo partido de Millonarios en la Liga BetPlay. Horario y sede según TheSportsDB; pueden cambiar.",
   "fuentes": [
     {
       "nombre": "TheSportsDB",
-      "url": "https://www.thesportsdb.com/event/2481264"
-    },
-    {
-      "nombre": "ESPN Colombia",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
+      "url": "https://www.thesportsdb.com/event/2481266"
     }
   ],
-  "espn_id": "401878070",
-  "hora_confirmada": true,
-  "actualizado": "2026-11-08T22:38:39.108433+00:00"
+  "espn_id": null,
+  "hora_confirmada": false,
+  "actualizado": "2026-11-09T01:16:47.399243+00:00"
 }

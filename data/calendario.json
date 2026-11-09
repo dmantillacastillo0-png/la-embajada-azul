@@ -1,24 +1,6 @@
 {
-  "actualizado": "2026-11-08T22:38:40.740977+00:00",
+  "actualizado": "2026-11-09T01:16:49.214919+00:00",
   "proximos": [
-    {
-      "id": "2481264",
-      "fecha": "2026-11-08T23:10:00Z",
-      "fecha_local": "2026-11-08",
-      "hora_local": "18:10",
-      "local": "Deportes Tolima",
-      "visitante": "Millonarios",
-      "estadio": "Estadio Manuel Murillo Toro",
-      "liga": "Liga BetPlay",
-      "jornada": "Fecha 18",
-      "estado": "programado",
-      "espn_id": "401878070",
-      "hora_confirmada": true,
-      "fuente": {
-        "nombre": "TheSportsDB",
-        "url": "https://www.thesportsdb.com/event/2481264"
-      }
-    },
     {
       "id": "2481266",
       "fecha": "2026-11-12T21:00:00Z",
@@ -39,6 +21,18 @@
     }
   ],
   "recientes": [
+    {
+      "fecha": "2026-11-08T23:10Z",
+      "local": "Deportes Tolima",
+      "visitante": "Millonarios",
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "estado": "Final",
+      "fuente": {
+        "nombre": "ESPN",
+        "url": "https://www.espn.com.co/futbol/colombia/"
+      }
+    },
     {
       "fecha": "2026-11-05T01:30Z",
       "local": "Millonarios",
@@ -81,18 +75,6 @@
       "visitante": "Millonarios",
       "goles_local": 1,
       "goles_visitante": 1,
-      "estado": "Final",
-      "fuente": {
-        "nombre": "ESPN",
-        "url": "https://www.espn.com.co/futbol/colombia/"
-      }
-    },
-    {
-      "fecha": "2026-09-30T01:05Z",
-      "local": "Independiente Medellín",
-      "visitante": "Millonarios",
-      "goles_local": 2,
-      "goles_visitante": 2,
       "estado": "Final",
       "fuente": {
         "nombre": "ESPN",

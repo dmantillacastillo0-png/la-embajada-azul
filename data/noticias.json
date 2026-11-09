@@ -1,21 +1,21 @@
 {
-  "actualizado": "2026-11-08T22:38:33.308606+00:00",
-  "total": 16,
+  "actualizado": "2026-11-09T01:16:44.832571+00:00",
+  "total": 17,
   "errores": [],
   "noticias": [
     {
-      "titulo": "Liga BetPlay: Millonarios va por la clasificación ante un Tolima obligado a ganar",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488920/tolima-vs-millonarios-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El Embajador, sexto con 27 puntos, sella su cupo a los cuadrangulares si gana en Ibagué, mientras que el Pijao necesita los tres puntos para seguir con vida.",
-      "fecha": "2026-11-08T21:59:35+00:00",
+      "titulo": "¡EN VIVO! Tolima vs. Millonarios por la fecha 18 de la Liga BetPlay",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488920/millonarios-perdio-tolima-clasificacion-cuadrangulares-ultima-fecha",
+      "resumen": "El golazo de tiro libre de Juan Guillermo Cuadrado no fue suficiente para el Embajador,",
+      "fecha": "2026-11-09T00:39:15+00:00",
       "fuente": "ESPN Colombia",
       "club": false
     },
     {
-      "titulo": "Millonarios pierde a dos piezas y anuncia sus 20 convocados para enfrentar a Tolima",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay",
-      "resumen": "El conjunto embajador visita al Deportes Tolima con la intención de sumar tres puntos y asegurar su clasificación a los cuadrangulares semifinales de la Liga BetPlay.",
-      "fecha": "2026-11-08T21:59:35+00:00",
+      "titulo": "Cuadrado marcó su primer gol con Millonarios",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17497081/juan-guillermo-cuadrado-primer-gol-millonarios-tiro-libre-tolima",
+      "resumen": "El tanto llegó en su sexto partido con el equipo bogotano y puso fin a un año sin marcar.",
+      "fecha": "2026-11-09T00:39:15+00:00",
       "fuente": "ESPN Colombia",
       "club": false
     },
@@ -121,6 +121,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Juan Guillermo Cuadrado sacó su calidad ante Tolima para hacer primer golazo con Millonarios",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/juan-guillermo-cuadrado-saco-su-calidad-ante-tolima-para-hacer-primer-golazo-con-millonarios-3599445",
+      "resumen": "El experimentado jugador terminó anotando una soberbia anotación en Ibagué por la fecha 18 de Liga 2026-II.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
