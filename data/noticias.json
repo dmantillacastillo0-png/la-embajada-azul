@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-09T17:50:29.175489+00:00",
-  "total": 15,
+  "actualizado": "2026-11-09T18:45:13.903702+00:00",
+  "total": 14,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -17,10 +17,26 @@
       "club": true
     },
     {
-      "titulo": "Reporte Médico Sebastián Valencia",
+      "titulo": "NUESTRA SUB-17 IRÁ POR LA REMONTADA EN CASA",
+      "url": "https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/",
+      "resumen": "Millonarios Sub-17 disputó en condición de visitante el partido de ida de las semifinales del Torneo Nacional frente a Atlético Nacional. En un encuentro exigente, los Embajadores se fueron al descanso con ventaja…",
+      "fecha": "2026-11-08T04:19:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
+    {
+      "titulo": "REPORTE MÉDICO: SEBASTIÁN VALENCIA",
       "url": "https://millonarios.com.co/reporte-medico-sebastian-valencia/",
       "resumen": "Millonarios FC informa que el jugador Sebastián Valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. El defensor ya se encuentra en proceso de rehabilitación. Tiempo estimado de…",
       "fecha": "2026-11-07T15:21:09+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
+    {
+      "titulo": "TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18",
+      "url": "https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/",
+      "resumen": "Tolima y Millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. Mira aquí la galería del juego. La entrada TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18 se publicó primero en…",
+      "fecha": "2026-11-05T15:08:21+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
@@ -73,22 +89,6 @@
       "club": true
     },
     {
-      "titulo": "MILLONARIOS SE PREPARA PARA ENFRENTAR A ONCE CALDAS EN EL CAMPÍN",
-      "url": "https://millonarios.com.co/millonarios-se-prepara-para-enfrentar-a-once-caldas-en-el-campin/",
-      "resumen": "Millonarios tendrá este martes una nueva cita con la Liga 2026. El equipo Embajador recibirá a Once Caldas en el estadio Nemesio Camacho El Campín, en el compromiso pendiente de la fecha 13, que se disputará a partir de…",
-      "fecha": "2026-10-19T22:09:35+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "¡UNA NOCHE DE GOLES EN EL CAMPÍN! MIRA AQUÍ LA GALERÍA",
-      "url": "https://millonarios.com.co/una-noche-de-goles-en-el-campin-mira-aqui-la-galeria/",
-      "resumen": "Millonarios goleó 4-1 a Jaguares en El Campín. Mira la galería de la fecha 15 aquí. La entrada ¡UNA NOCHE DE GOLES EN EL CAMPÍN! MIRA AQUÍ LA GALERÍA se publicó primero en Millonarios FC .",
-      "fecha": "2026-10-18T15:49:28+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
       "titulo": "¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo",
       "url": "https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html",
       "resumen": "Andrey Estupiñán fue homenajeado como máximo goleador de la Liga BetPlay Dimayor tras firmar 13 tantos la pasada temporada. El delantero recibió el trofeo antes del partido entre Millonarios y Deportivo Pasto, posando…",
@@ -116,14 +116,6 @@
       "titulo": "La maldición de Millonarios: así le ha ido cuando dependía de sí mismo para clasificar en los últimos dos años",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/la-maldicion-de-millonarios-asi-le-ha-ido-cuando-dependia-de-si-mismo-para-clasificar-en-los-ultimos-dos-anos-3599478",
       "resumen": "El equipo de Alberto Gamero tiene que ganarle a Alianza Valledupar en El Campín para llegar a los cuadrangulares semifinales.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
-      "club": false
-    },
-    {
-      "titulo": "Alberto Gamero intenta dar tranquilidad tras derrota de Millonarios con Tolima: 'No se me pasa por la cabeza no clasificar'",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/alberto-gamero-intenta-dar-tranquilidad-tras-derrota-de-millonarios-con-tolima-no-se-me-pasa-por-la-cabeza-no-clasificar-3599464",
-      "resumen": "El equipo azul sigue sin asegurarse, a una fecha del final de la fase todos contra todos.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
