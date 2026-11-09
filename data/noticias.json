@@ -1,32 +1,13 @@
 {
-  "actualizado": "2026-11-09T01:16:44.832571+00:00",
-  "total": 17,
-  "errores": [],
+  "actualizado": "2026-11-09T01:58:20.162846+00:00",
+  "total": 15,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "¡EN VIVO! Tolima vs. Millonarios por la fecha 18 de la Liga BetPlay",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488920/millonarios-perdio-tolima-clasificacion-cuadrangulares-ultima-fecha",
-      "resumen": "El golazo de tiro libre de Juan Guillermo Cuadrado no fue suficiente para el Embajador,",
-      "fecha": "2026-11-09T00:39:15+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Cuadrado marcó su primer gol con Millonarios",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17497081/juan-guillermo-cuadrado-primer-gol-millonarios-tiro-libre-tolima",
-      "resumen": "El tanto llegó en su sexto partido con el equipo bogotano y puso fin a un año sin marcar.",
-      "fecha": "2026-11-09T00:39:15+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Santa Fe goleó a Pasto y se clasificó a los cuadrangulares con un hat-trick de Rodallega",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17495967/santa-fe-goleo-pasto-hat-trick-hugo-rodallega-clasificacion-cuadrangulares",
-      "resumen": "El capitán cardenal volvió a celebrar por partida triple a los 41 años y lideró el contundente 5-0 en El Campín.",
-      "fecha": "2026-11-08T21:53:39+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "Reporte Médico Sebastián Valencia",
       "url": "https://millonarios.com.co/reporte-medico-sebastian-valencia/",
@@ -121,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios quedó pendiendo de un hilo: perdió contra el Tolima y está obligado a ganar para pelear por la clasificación",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-quedo-pendiendo-de-un-hilo-perdio-contra-tolima-y-esta-obligado-a-ganar-para-pelear-por-la-clasificacion-3599456",
+      "resumen": "Otro mal partido del equipo de Alberto Gamero complicó el panorama azul.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
