@@ -35,6 +35,10 @@
     const visitante = localEsHome ? away : home;
     const marcador = (c) => (c && c.score != null ? String(c.score) : "–");
     const cuando = panel.dataset.cuando || "Programado";
+    const chipPartido = document.querySelector("[data-partido-chip]");
+    if (chipPartido) {
+      chipPartido.textContent = state === "in" ? "En vivo" : state === "post" ? "Final" : "Próximo partido";
+    }
 
     panel.classList.toggle("is-vivo", state === "in");
     panel.classList.toggle("is-final", state === "post");

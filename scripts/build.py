@@ -377,7 +377,7 @@ def heroe() -> str:
         </div>
         <aside class="partido" aria-labelledby="titulo-partido">
           <div class="partido__cabecera">
-            <span class="chip chip--vivo">Próximo partido</span>
+            <span class="chip chip--vivo" data-partido-chip>Próximo partido</span>
             <span class="partido__jornada">{e(PARTIDO['liga'])} · {e(PARTIDO['jornada'])}</span>
           </div>
           <h2 class="sr-only" id="titulo-partido">Próximo partido de Millonarios</h2>
