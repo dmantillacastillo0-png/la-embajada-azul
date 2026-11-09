@@ -37,7 +37,7 @@ Abrí `http://localhost:8177`.
 1. Creá un repositorio y subí esta carpeta a la rama `main`.
 2. En **Settings → Pages**, elegí *Source: GitHub Actions*.
 3. En **Settings → Secrets and variables → Actions**, agregá `THE_SPORTSDB_KEY` (ver abajo).
-4. El workflow `Actualizar datos y publicar` corre cada 30 minutos, rebuilds y publica (requiere que el workflow esté activo en el repositorio).
+4. El workflow `Actualizar datos y publicar` ya está activo y corre cada 30 minutos (`:00` y `:30` UTC): actualiza datos, rebuilds y publica en `gh-pages`.
 
 ### Opción B — Cloudflare Pages
 
