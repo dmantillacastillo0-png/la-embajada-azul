@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from datetime import date, datetime, timedelta, timezone
@@ -28,6 +29,11 @@ MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 COLOMBIA = timezone(timedelta(hours=-5))
+
+
+def version_asset(nombre: str) -> str:
+    """Hash corto para romper la caché cuando cambia un asset estático."""
+    return hashlib.sha1((STATIC / nombre).read_bytes()).hexdigest()[:8]
 
 NAV = [
     ("index.html", "Inicio", "inicio"),
@@ -269,7 +275,7 @@ def layout(pagina: str, titulo: str, descripcion: str, cuerpo: str, extra_head: 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="static/styles.css">
+<link rel="stylesheet" href="static/styles.css?v={version_asset('styles.css')}">
 {extra_head}
 </head>
 <body class="{e(body_class)}">
@@ -309,8 +315,8 @@ def layout(pagina: str, titulo: str, descripcion: str, cuerpo: str, extra_head: 
     <p class="pie__nota-escudos">Escudos homenaje ilustrados para este sitio · no son emblemas oficiales.</p>
   </div>
 </footer>
-<script src="static/app.js" defer></script>
-<script src="static/envivo.js" defer></script>
+<script src="static/app.js?v={version_asset('app.js')}" defer></script>
+<script src="static/envivo.js?v={version_asset('envivo.js')}" defer></script>
 </body>
 </html>"""
 
