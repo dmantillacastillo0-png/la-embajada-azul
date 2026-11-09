@@ -353,6 +353,7 @@ def seccion(titulo: str, eyebrow: str, contenido: str, clase: str = "") -> str:
 
 def heroe() -> str:
     fecha = fecha_larga(PARTIDO["fecha"])
+    hora = PARTIDO["hora_local"] if PARTIDO.get("hora_confirmada") else "hora por confirmar"
     return f"""
     <section class="heroe">
       <div class="heroe__lineas" aria-hidden="true"></div>
@@ -386,7 +387,7 @@ def heroe() -> str:
             <span class="partido__vs">vs</span>
             <div class="partido__equipo partido__equipo--millos"><span class="partido__inicial">M</span><span>{e(PARTIDO['visitante'])}</span></div>
           </div>
-          <p class="partido__fecha">{e(fecha)} · {e(PARTIDO['hora_local'])} (Colombia)</p>
+          <p class="partido__fecha">{e(fecha)} · {e(hora)} (Colombia)</p>
           <p class="partido__estadio">{e(PARTIDO['estadio'])}</p>
           <div class="cuenta" data-cuenta="{e(iso_colombia(PARTIDO))}" aria-live="polite">
             <div><strong data-cuenta-dias>--</strong><span>días</span></div>
