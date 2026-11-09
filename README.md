@@ -65,7 +65,7 @@ Solo se publican titulares y un resumen corto del feed, **siempre enlazando al a
 ### Marcador en vivo
 La página de partidos consulta la API pública de ESPN desde el navegador:
 
-`https://site.api.espn.com/apis/site/v2/sports/soccer/col.1/summary?event={id}`
+`https://site.web.api.espn.com/apis/site/v2/sports/soccer/col.1/summary?event={id}`
 
 - Estado programado, en vivo y final.
 - Goles y minuto cada 30 segundos mientras el partido está en juego.

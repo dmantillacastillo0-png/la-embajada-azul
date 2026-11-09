@@ -5,7 +5,7 @@
   const paneles = Array.from(document.querySelectorAll("[data-en-vivo]"));
   if (!paneles.length) return;
 
-  const API = "https://site.api.espn.com/apis/site/v2/sports/soccer/col.1/summary?event=";
+  const API = "https://site.web.api.espn.com/apis/site/v2/sports/soccer/col.1/summary?event=";
   const porEvento = new Map();
   paneles.forEach((panel) => {
     const id = panel.dataset.evento;
