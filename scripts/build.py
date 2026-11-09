@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import json
 import shutil
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 
@@ -16,6 +16,7 @@ DIST = ROOT / "dist"
 
 SITIO = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
 PARTIDO = json.loads((DATA / "partido.json").read_text(encoding="utf-8"))
+CALENDARIO = json.loads((DATA / "calendario.json").read_text(encoding="utf-8"))
 ALINEACION = json.loads((DATA / "alineacion.json").read_text(encoding="utf-8"))
 HISTORIA = json.loads((DATA / "historia.json").read_text(encoding="utf-8"))
 TRIVIA = json.loads((DATA / "trivia.json").read_text(encoding="utf-8"))
@@ -26,10 +27,12 @@ NOTICIAS = json.loads((DATA / "noticias.json").read_text(encoding="utf-8"))
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 DIAS = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+COLOMBIA = timezone(timedelta(hours=-5))
 
 NAV = [
     ("index.html", "Inicio", "inicio"),
     ("noticias.html", "Noticias", "noticias"),
+    ("partidos.html", "Partidos", "partidos"),
     ("alineacion.html", "Alineación", "alineacion"),
     ("pronostico.html", "Pronóstico", "pronostico"),
     ("historia.html", "Historia", "historia"),
@@ -66,6 +69,7 @@ ESCUDOS = [
 MAPA_ESCUDO = {
     "inicio": "ballet.svg",
     "noticias": "actual.svg",
+    "partidos": "actual.svg",
     "alineacion": "1946.svg",
     "pronostico": "embajador.svg",
     "historia": "1946.svg",
@@ -99,6 +103,123 @@ def fecha_corta(iso: str | None) -> str:
         return f"{d.day} {MESES[d.month - 1][:3]} · {d:%H:%M} UTC"
     except ValueError:
         return iso
+
+
+def fecha_dia_mes(iso: str | None) -> tuple[str, str]:
+    if not iso:
+        return ("--", "---")
+    try:
+        d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        return (f"{d.day:02d}", MESES[d.month - 1][:3].upper())
+    except ValueError:
+        return ("--", "---")
+
+
+def fecha_calendario(iso: str | None) -> str:
+    if not iso:
+        return "sin fecha"
+    try:
+        d = datetime.strptime(iso, "%Y-%m-%d").date()
+        return f"{DIAS[d.weekday()]} {d.day} de {MESES[d.month - 1]}"
+    except ValueError:
+        return iso
+
+
+def nombre_corto(nombre: str) -> str:
+    for prefijo in ("Deportes ", "Atlético ", "Club ", "Independiente "):
+        if nombre.startswith(prefijo):
+            return nombre[len(prefijo):]
+    if nombre.startswith("Alianza de "):
+        return "Alianza"
+    return nombre
+
+
+def iso_colombia(partido: dict) -> str:
+    fecha = partido.get("fecha") or date.today().isoformat()
+    hora = partido.get("hora_local") or "00:00"
+    return f"{fecha}T{hora}:00-05:00"
+
+
+def panel_envivo(partido: dict, modo: str = "completo") -> str:
+    """Panel de marcador. El JS lo actualiza contra ESPN; sin evento, no se pinta."""
+    if not partido.get("espn_id"):
+        return ""
+    cuando = f"{fecha_calendario(partido.get('fecha'))} · {partido.get('hora_local') or 'hora por confirmar'} (Colombia)"
+    hero = modo == "hero"
+    clase = "envivo envivo--hero" if hero else "envivo envivo--completo"
+    hidden = " hidden" if hero else ""
+    solo_vivo = ' data-solo-vivo="true"' if hero else ""
+    return f"""
+        <div class="{clase}" data-en-vivo data-evento="{e(partido['espn_id'])}"
+             data-local="{e(partido['local'])}" data-visitante="{e(partido['visitante'])}"
+             data-local-es-home="true" data-cuando="{e(cuando)}"{solo_vivo}{hidden}>
+          <div class="envivo__top">
+            <span class="envivo__chip" data-envivo-chip>Programado</span>
+            <span class="envivo__reloj" data-envivo-reloj></span>
+          </div>
+          <div class="envivo__marcador">
+            <span class="envivo__equipo">{e(nombre_corto(partido['local']))}</span>
+            <strong class="envivo__goles" data-envivo-local>–</strong>
+            <span class="envivo__sep">:</span>
+            <strong class="envivo__goles" data-envivo-visitante>–</strong>
+            <span class="envivo__equipo">{e(nombre_corto(partido['visitante']))}</span>
+          </div>
+          <p class="envivo__estado" data-envivo-estado>{e(cuando)}</p>
+          <p class="envivo__nota">Marcador: ESPN · se actualiza cada 30 s</p>
+        </div>"""
+
+
+def tarjeta_partido(partido: dict, indice: int) -> str:
+    dia, mes = fecha_dia_mes(partido.get("fecha_local") or partido.get("fecha"))
+    hoy = date.today().isoformat()
+    if partido.get("fecha_local") == hoy:
+        etiqueta = "Hoy"
+    elif indice == 0:
+        etiqueta = "Siguiente"
+    else:
+        etiqueta = "Programado"
+    hora = partido.get("hora_local") if partido.get("hora_confirmada") else "hora por confirmar"
+    clase = "partido-card partido-card--siguiente" if indice == 0 else "partido-card"
+    fuente = partido.get("fuente") or {}
+    return f"""
+      <article class="{clase}">
+        <div class="partido-card__fecha"><span>{e(dia)}</span><small>{e(mes)}</small></div>
+        <div class="partido-card__cuerpo">
+          <p class="partido-card__meta">{e(partido.get('jornada') or 'Liga BetPlay')} · {e(partido.get('liga') or 'Liga BetPlay')}</p>
+          <h3 class="partido-card__equipos">{e(partido['local'])} <span>vs</span> {e(partido['visitante'])}</h3>
+          <p class="partido-card__detalle">{e(fecha_calendario(partido.get('fecha_local')))} · {e(hora)} · {e(partido.get('estadio') or 'sede por confirmar')}</p>
+          <div class="partido-card__pie">
+            <span class="chip chip--club">{e(etiqueta)}</span>
+            <a href="{e(fuente.get('url') or '#')}" target="_blank" rel="noopener">Fuente: {e(fuente.get('nombre') or 'TheSportsDB')} ↗</a>
+          </div>
+        </div>
+      </article>"""
+
+
+def seccion_proximos(limite: int = 3) -> str:
+    proximos = CALENDARIO.get("proximos", [])[:limite]
+    if proximos:
+        contenido = f'<div class="calendario-grid">{"".join(tarjeta_partido(p, i) for i, p in enumerate(proximos))}</div>'
+    else:
+        contenido = '<p class="sin-resultados">No hay fechas publicadas todavía. Cuando la Dimayor las confirme, aparecen acá. 🗓️</p>'
+    contenido += '<p class="seccion__pie"><a class="boton boton--fantasma" href="partidos.html">Ver calendario y resultados</a></p>'
+    return seccion("Los próximos partidos", "Calendario verificable", contenido, "seccion--partidos")
+
+
+def resultado_fila(resultado: dict) -> str:
+    fecha = resultado.get("fecha") or ""
+    try:
+        dt = datetime.fromisoformat(fecha.replace("Z", "+00:00")).astimezone(COLOMBIA)
+        fecha_texto = f"{dt.day} {MESES[dt.month - 1][:3]}"
+    except ValueError:
+        fecha_texto = "sin fecha"
+    return f"""
+      <li class="resultado">
+        <time class="resultado__fecha" datetime="{e(fecha)}">{e(fecha_texto)}</time>
+        <span class="resultado__equipo">{e(resultado.get('local') or '')}</span>
+        <strong class="resultado__marcador">{e(resultado.get('goles_local'))} <span>·</span> {e(resultado.get('goles_visitante'))}</strong>
+        <span class="resultado__equipo">{e(resultado.get('visitante') or '')}</span>
+      </li>"""
 
 
 def marca() -> str:
@@ -189,6 +310,7 @@ def layout(pagina: str, titulo: str, descripcion: str, cuerpo: str, extra_head: 
   </div>
 </footer>
 <script src="static/app.js" defer></script>
+<script src="static/envivo.js" defer></script>
 </body>
 </html>"""
 
@@ -245,7 +367,7 @@ def heroe() -> str:
             <a class="boton boton--primario" href="alineacion.html">Ver XI probable</a>
             <a class="boton boton--fantasma" href="pronostico.html">Pronóstico del partido</a>
           </div>
-          <p class="heroe__nota">Actualizado automáticamente cada hora · datos con enlace a la fuente</p>
+          <p class="heroe__nota">Actualizado cada hora · marcador en vivo desde ESPN · datos con enlace a la fuente</p>
         </div>
         <aside class="partido" aria-labelledby="titulo-partido">
           <div class="partido__cabecera">
@@ -260,14 +382,16 @@ def heroe() -> str:
           </div>
           <p class="partido__fecha">{e(fecha)} · {e(PARTIDO['hora_local'])} (Colombia)</p>
           <p class="partido__estadio">{e(PARTIDO['estadio'])}</p>
-          <div class="cuenta" data-cuenta="2026-11-08T18:10:00-05:00" aria-live="polite">
+          <div class="cuenta" data-cuenta="{e(iso_colombia(PARTIDO))}" aria-live="polite">
             <div><strong data-cuenta-dias>--</strong><span>días</span></div>
             <div><strong data-cuenta-horas>--</strong><span>horas</span></div>
             <div><strong data-cuenta-min>--</strong><span>min</span></div>
             <div><strong data-cuenta-seg>--</strong><span>seg</span></div>
           </div>
+          {panel_envivo(PARTIDO, "hero")}
           <p class="partido__contexto">{e(PARTIDO['contexto'])}</p>
           <a class="partido__fuente" href="{e(PARTIDO['fuentes'][0]['url'])}" target="_blank" rel="noopener">Fuente: {e(PARTIDO['fuentes'][0]['nombre'])} ↗</a>
+          <p class="partido__fuente"><a href="partidos.html">Ver calendario completo →</a></p>
         </aside>
       </div>
     </section>"""
@@ -307,7 +431,7 @@ def pagina_inicio() -> str:
     cuerpo = heroe() + seccion(
         "Lo último del Embajador", "Noticias con fuente",
         f'<div class="noticias-grid">{destacadas}</div><p class="seccion__pie"><a class="boton boton--fantasma" href="noticias.html">Ver todas las noticias</a></p>'
-    ) + seccion(
+    ) + seccion_proximos(3) + seccion(
         "Cómo llega el azul", "Datos, no sensaciones", forma
     ) + seccion(
         "La alineación, sin inventar", "Convocatoria real + criterio",
@@ -383,6 +507,74 @@ def pagina_noticias() -> str:
       </div>
     </section>"""
     return layout("noticias", f"Noticias · {SITIO['nombre']}", "Últimas noticias de Millonarios con enlace a la fuente original.", cuerpo)
+
+
+def pagina_partidos() -> str:
+    proximos = CALENDARIO.get("proximos", [])
+    recientes = CALENDARIO.get("recientes", [])
+    tarjetas = "".join(tarjeta_partido(p, i) for i, p in enumerate(proximos))
+    if not tarjetas:
+        tarjetas = '<p class="sin-resultados">No hay fechas publicadas todavía. Cuando la Dimayor las confirme, aparecen acá. 🗓️</p>'
+    filas = "".join(resultado_fila(r) for r in recientes)
+    if not filas:
+        filas = '<li class="resultado resultado--vacio">Todavía no hay resultados cerrados para mostrar.</li>'
+    vivo = panel_envivo(PARTIDO, "completo")
+    if not vivo:
+        vivo = '<div class="aviso aviso--info">El marcador en vivo aparecerá cuando ESPN publique el evento. Mientras tanto, el calendario y la hora oficial están abajo.</div>'
+    actualizado = fecha_corta(CALENDARIO.get("actualizado"))
+
+    return layout("partidos", f"Partidos · {SITIO['nombre']}", "Próximos partidos, calendario y marcador en vivo de Millonarios.", f"""
+    <section class="cabecera-pagina cabecera-pagina--partidos">
+      <div class="contenedor">
+        <p class="eyebrow">Calendario + marcador</p>
+        <h1>Los próximos partidos</h1>
+        <p class="cabecera-pagina__bajada">Fechas, sedes y horas del Embajador. Si la Dimayor no confirma una hora, se dice. Si el partido ya arrancó, el marcador se actualiza solo desde ESPN.</p>
+        <p class="cabecera-pagina__meta">Calendario actualizado: {e(actualizado)} · {len(proximos)} fecha{'s' if len(proximos) != 1 else ''} por jugar</p>
+      </div>
+    </section>
+    <section class="seccion seccion--ajustada">
+      <div class="contenedor">
+        <div class="seccion__cabecera"><p class="eyebrow">Ahora</p><h2 class="seccion__titulo">En vivo</h2></div>
+        <div class="envivo-grid">
+          {vivo}
+          <aside class="panel envivo-info">
+            <h3>Qué estás viendo</h3>
+            <ul class="envivo-info__lista">
+              <li><strong>Programado:</strong> todavía no rueda la pelota. Se muestra la hora y el marcador queda en guiones.</li>
+              <li><strong>En vivo:</strong> el chip se pone verde y aparecen goles y minuto. Se consulta cada 30 segundos.</li>
+              <li><strong>Final:</strong> queda el marcador definitivo, sin desaparecer la página.</li>
+            </ul>
+            <p class="fuente-inline">Marcador: <a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia ↗</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion__cabecera"><p class="eyebrow">Próximas fechas</p><h2 class="seccion__titulo">El calendario</h2></div>
+        <div class="calendario-grid calendario-grid--pagina">{tarjetas}</div>
+        <p class="nota-legal">Las fechas y horas pueden cambiar por decisión de la Dimayor o por copas. La columna “hora por confirmar” no es un error: es una fecha que todavía no está cerrada en las fuentes públicas.</p>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion__cabecera"><p class="eyebrow">Lo último jugado</p><h2 class="seccion__titulo">Últimos resultados</h2></div>
+        <ol class="resultados">{filas}</ol>
+        <p class="fuente-inline">Resultados: <a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia</a> · calendario: <a href="https://www.thesportsdb.com/team/137617" target="_blank" rel="noopener">TheSportsDB</a></p>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion__cabecera"><p class="eyebrow">Sin humo</p><h2 class="seccion__titulo">Cómo se actualiza</h2></div>
+        <div class="transparencia">
+          <div><h3>🗓️ Calendario</h3><p>TheSportsDB alimenta las próximas fechas. El actualizador corre cada hora y conserva el último calendario bueno si la fuente falla.</p></div>
+          <div><h3>📡 Marcador</h3><p>El navegador consulta ESPN cada 30 segundos cuando hay partido. No hay servidor propio ni base de datos: si ESPN cae, se avisa.</p></div>
+          <div><h3>🕒 Hora</h3><p>Todo se muestra en hora de Colombia (UTC-5). Las horas futuras se marcan como “por confirmar” hasta que haya una fuente que las cierre.</p></div>
+          <div><h3>🔗 Fuente</h3><p>Cada partido enlaza a su ficha. Si un dato no se puede verificar, no se inventa: se deja pendiente.</p></div>
+        </div>
+      </div>
+    </section>""")
+
 
 
 def pagina_alineacion() -> str:
@@ -682,6 +874,7 @@ def main() -> None:
     paginas = {
         "index.html": pagina_inicio(),
         "noticias.html": pagina_noticias(),
+        "partidos.html": pagina_partidos(),
         "alineacion.html": pagina_alineacion(),
         "pronostico.html": pagina_pronostico(),
         "historia.html": pagina_historia(),

@@ -1,15 +1,18 @@
 # La Embajada Azul 🟦⬜
 
-Sitio de hinchas de **Millonarios Fútbol Club**: noticias con fuente, convocatoria y XI probable, pronóstico probabilístico, historia y minijuegos.
+Sitio de hinchas de **Millonarios Fútbol Club**: noticias con fuente, convocatoria y XI probable, pronóstico probabilístico, próximos partidos, marcador en vivo, historia y minijuegos.
 
 > ⚠️ **Sitio no oficial.** No tiene relación con Millonarios FC, la Dimayor ni los medios citados. Es un proyecto de hinchas.
+
+**En vivo:** <https://dmantillacastillo0-png.github.io/la-embajada-azul/>
 
 ## Qué incluye
 
 | Sección | Qué hace | Cómo se actualiza |
 |---|---|---|
-| `index.html` | Portada: próximo partido, cuenta regresiva, últimas noticias y datos de forma | Automático + build |
+| `index.html` | Portada: próximo partido, cuenta regresiva, últimas noticias, calendario y datos de forma | Automático + build |
 | `noticias.html` | Agregador con búsqueda y filtros por medio | RSS cada hora |
+| `partidos.html` | Próximos partidos, calendario, marcador en vivo y últimos resultados | TheSportsDB + ESPN |
 | `alineacion.html` | Pizarra con XI probable, convocados y bajas | Editorial (JSON) |
 | `pronostico.html` | Modelo Poisson con supuestos a la vista y registro vacío | Automático |
 | `historia.html` | Palmarés, cronología, ídolos y rivalidades | Estático, con fuente |
@@ -56,10 +59,18 @@ Solo se publican titulares y un resumen corto del feed, **siempre enlazando al a
 
 > **Google News RSS no se usa** a propósito: sus términos limitan el feed a uso personal y no comercial. Si el sitio es público, esa fuente queda afuera.
 
-### Próximo partido
-`update.py` usa [TheSportsDB](https://www.thesportsdb.com/). La clave de prueba `123` no sirve para producción: hay que registrarse/Patreon y guardar la clave como secreto `THE_SPORTSDB_KEY`.
+### Próximo partido y calendario
+`update.py` usa [TheSportsDB](https://www.thesportsdb.com/) para el próximo partido y las rondas. Si existe `THE_SPORTSDB_KEY`, la usa; si no, cae en la clave pública de prueba `123` (puede tener límite de peticiones). Sin respuesta, el script **no borra** el último `data/partido.json` ni el `data/calendario.json` bueno.
 
-Sin clave, el script **no rompe**: conserva el `data/partido.json` existente.
+### Marcador en vivo
+La página de partidos consulta la API pública de ESPN desde el navegador:
+
+`https://site.api.espn.com/apis/site/v2/sports/soccer/col.1/summary?event={id}`
+
+- Estado programado, en vivo y final.
+- Goles y minuto cada 30 segundos mientras el partido está en juego.
+- Si ESPN falla o no hay evento, se muestra un aviso y se mantiene el calendario.
+- No hay backend ni base de datos: es `fetch` del lado del cliente.
 
 ### Alineación
 No existe API gratuita de "XI probable" para la Liga BetPlay. El once es una **estimación editorial** basada en la convocatoria oficial; se edita a mano en `data/alineacion.json` y se marca como no confirmada en la página.
@@ -74,6 +85,7 @@ Modelo Poisson simple:
 ## Editar contenido a mano
 
 - **Partido**: `data/partido.json`
+- **Calendario y resultados**: `data/calendario.json`
 - **XI, convocados y bajas**: `data/alineacion.json`
 - **Palmarés, cronología, ídolos**: `data/historia.json`
 - **Preguntas de trivia**: `data/trivia.json`
@@ -90,7 +102,7 @@ Después de editar: `python3 scripts/build.py`.
 ├── scripts/
 │   ├── update.py          # RSS + TheSportsDB
 │   └── build.py           # generador estático (sin dependencias)
-├── static/                # CSS, JS y favicon
+├── static/                # CSS, JS (incluye envivo.js) y favicon
 ├── dist/                  # salida generada (no editar)
 └── .github/workflows/     # actualización + deploy
 ```

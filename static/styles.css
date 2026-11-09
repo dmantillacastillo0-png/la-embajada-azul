@@ -460,3 +460,92 @@ main > :not(.fondo-escudo){position:relative;z-index:1}
   .galeria-escudos{grid-template-columns:1fr}
   .pie__franja{flex-direction:column;align-items:flex-start}
 }
+
+/* ============================================================
+   Partidos, calendario y marcador en vivo
+   ============================================================ */
+.cabecera-pagina--partidos{background:radial-gradient(760px 340px at 18% 0%,rgba(7,67,191,.34),transparent 70%)}
+.seccion--partidos{background:radial-gradient(700px 300px at 90% 10%,rgba(47,107,255,.1),transparent 65%)}
+
+.calendario-grid{display:grid;gap:.8rem}
+.calendario-grid--pagina{grid-template-columns:1fr 1fr}
+.partido-card{display:flex;gap:1rem;align-items:stretch;background:linear-gradient(150deg,rgba(13,39,87,.72),rgba(7,26,61,.82));border:1px solid var(--borde);border-radius:var(--radio);padding:1rem;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.partido-card:hover{border-color:rgba(138,180,255,.42);transform:translateY(-2px);box-shadow:0 18px 44px rgba(7,67,191,.24)}
+.partido-card--siguiente{border-color:rgba(138,180,255,.45);box-shadow:0 0 0 1px rgba(138,180,255,.12),0 18px 44px rgba(7,67,191,.2)}
+.partido-card__fecha{flex:none;width:64px;display:grid;place-items:center;align-content:center;border-radius:12px;background:linear-gradient(160deg,rgba(47,107,255,.28),rgba(7,67,191,.12));border:1px solid rgba(138,180,255,.25)}
+.partido-card__fecha span{font-family:var(--display);font-size:2rem;font-weight:800;line-height:1;color:#fff}
+.partido-card__fecha small{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#8ab4ff;font-weight:800}
+.partido-card__cuerpo{min-width:0;display:flex;flex-direction:column;gap:.22rem;flex:1}
+.partido-card__meta{margin:0;font-size:.64rem;letter-spacing:.11em;text-transform:uppercase;color:var(--texto-3);font-weight:700}
+.partido-card__equipos{margin:0;font-size:clamp(1.1rem,2.1vw,1.35rem);text-transform:uppercase;letter-spacing:.01em;line-height:1.12}
+.partido-card__equipos span{color:var(--texto-3);font-size:.72em;padding:0 .18rem}
+.partido-card__detalle{margin:0;font-size:.76rem;color:var(--texto-2)}
+.partido-card__pie{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;margin-top:auto;padding-top:.45rem}
+.partido-card__pie a{font-size:.68rem;color:var(--texto-3)}
+.partido-card__pie a:hover{color:#fff}
+
+.envivo{position:relative;overflow:hidden;background:linear-gradient(150deg,rgba(7,67,191,.28),rgba(7,26,61,.94));border:1px solid var(--borde);border-radius:20px;padding:1.15rem 1.25rem;box-shadow:var(--sombra)}
+.envivo::after{content:"";position:absolute;inset:auto -30% -70% -30%;height:150px;background:radial-gradient(closest-side,rgba(47,107,255,.28),transparent);pointer-events:none}
+.envivo__top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.7rem}
+.envivo__chip{display:inline-flex;align-items:center;gap:.35rem;font-size:.62rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;padding:.3rem .58rem;border-radius:999px;border:1px solid var(--borde);background:rgba(255,255,255,.04);color:var(--texto-2)}
+.envivo.is-vivo .envivo__chip{background:rgba(61,214,140,.16);border-color:rgba(61,214,140,.45);color:#7df0b6}
+.envivo.is-vivo .envivo__chip::before{content:"";width:6px;height:6px;border-radius:50%;background:#3dd68c;animation:pulso-azul 2s ease-out infinite}
+.envivo.is-final .envivo__chip{background:rgba(138,180,255,.13);border-color:rgba(138,180,255,.32);color:#c8d9ff}
+.envivo__reloj{font-family:var(--display);font-size:1.25rem;font-weight:800;color:#8ab4ff;letter-spacing:.04em}
+.envivo__marcador{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto auto auto minmax(0,1fr);align-items:center;gap:.5rem;text-align:center}
+.envivo__equipo{min-width:0;font-size:.8rem;font-weight:700;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.envivo__equipo:first-child{text-align:right}
+.envivo__equipo:last-child{text-align:left}
+.envivo__goles{font-family:var(--display);font-size:2.7rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.envivo__sep{font-family:var(--display);font-size:1.4rem;color:var(--texto-3)}
+.envivo__estado{position:relative;z-index:1;margin:.55rem 0 0;text-align:center;font-size:.74rem;color:var(--texto-2)}
+.envivo__nota{position:relative;z-index:1;margin:.35rem 0 0;text-align:center;font-size:.6rem;letter-spacing:.05em;color:var(--texto-3)}
+.envivo--hero{padding:.85rem 1rem;margin-bottom:1rem;border-radius:16px;box-shadow:none}
+.envivo--hero .envivo__goles{font-size:2rem}
+.envivo--hero .envivo__equipo{font-size:.7rem}
+.envivo--hero .envivo__reloj{font-size:1rem}
+.envivo--hero .envivo__estado{font-size:.68rem}
+.envivo--hero .envivo__nota{display:none}
+.envivo--completo{min-height:100%}
+.envivo-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:1rem;align-items:stretch}
+.envivo-info{display:flex;flex-direction:column}
+.envivo-info h3{font-size:1.35rem;text-transform:uppercase;margin-bottom:.6rem}
+.envivo-info__lista{display:grid;gap:.6rem;font-size:.8rem;color:var(--texto-2)}
+.envivo-info__lista li{border-left:3px solid rgba(47,107,255,.55);padding-left:.7rem}
+.envivo-info__lista strong{color:var(--texto)}
+
+.resultados{display:grid;gap:.45rem}
+.resultado{display:grid;grid-template-columns:70px minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:.8rem;background:rgba(13,39,87,.55);border:1px solid var(--borde);border-radius:12px;padding:.65rem 1rem;font-size:.84rem}
+.resultado__fecha{font-size:.68rem;color:var(--texto-3);text-transform:uppercase;letter-spacing:.08em}
+.resultado__equipo{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.resultado__equipo:first-of-type{text-align:right}
+.resultado__equipo:last-of-type{text-align:left}
+.resultado__marcador{font-family:var(--display);font-size:1.3rem;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+.resultado__marcador span{color:var(--texto-3)}
+.resultado--vacio{display:block;text-align:center;color:var(--texto-2);font-size:.8rem}
+
+@media (max-width:980px){
+  .calendario-grid--pagina{grid-template-columns:1fr}
+  .envivo-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .partido-card{gap:.7rem;padding:.85rem}
+  .partido-card__fecha{width:52px}
+  .partido-card__fecha span{font-size:1.65rem}
+  .partido-card__equipos{font-size:1.05rem}
+  .partido-card__detalle{font-size:.72rem}
+  .envivo{padding:1rem}
+  .envivo__marcador{gap:.3rem}
+  .envivo__goles{font-size:2.1rem}
+  .envivo__equipo{font-size:.7rem}
+  .resultado{grid-template-columns:54px minmax(0,1fr) auto minmax(0,1fr);gap:.4rem;padding:.6rem .7rem;font-size:.74rem}
+  .resultado__marcador{font-size:1.1rem}
+}
+
+/* El menú de 7 enlaces necesita un poco más de aire antes de volverse hamburguesa. */
+@media (max-width:780px){
+  .nav{position:absolute;top:100%;left:0;right:0;display:none;flex-direction:column;align-items:stretch;background:rgba(4,18,46,.98);border-bottom:1px solid var(--borde);padding:.6rem 4vw 1rem;gap:.2rem}
+  .nav.is-open{display:flex}
+  .nav__boton{display:block}
+  .nav__link{padding:.7rem .8rem}
+}

@@ -6,7 +6,7 @@
   "hora_local": "18:10",
   "zona": "America/Bogota",
   "hora_utc": "23:10",
-  "estadio": "Manuel Murillo Toro, Ibagué",
+  "estadio": "Estadio Manuel Murillo Toro",
   "liga": "Liga BetPlay",
   "jornada": "Fecha 18",
   "temporada": "2026",
@@ -14,13 +14,15 @@
   "contexto": "Millonarios llega con 27 puntos y un invicto de 10 partidos en Liga. Una victoria le aseguraría la clasificación a los cuadrangulares semifinales.",
   "fuentes": [
     {
-      "nombre": "ESPN Colombia",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
-    },
-    {
       "nombre": "TheSportsDB",
       "url": "https://www.thesportsdb.com/event/2481264"
+    },
+    {
+      "nombre": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
     }
   ],
-  "actualizado": "2026-11-08T19:00:00Z"
+  "espn_id": "401878070",
+  "hora_confirmada": true,
+  "actualizado": "2026-11-08T22:38:39.108433+00:00"
 }

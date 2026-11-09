@@ -1,13 +1,29 @@
 {
-  "actualizado": "2026-11-08T20:08:03.977377+00:00",
-  "total": 14,
+  "actualizado": "2026-11-08T22:38:33.308606+00:00",
+  "total": 16,
   "errores": [],
   "noticias": [
+    {
+      "titulo": "Liga BetPlay: Millonarios va por la clasificación ante un Tolima obligado a ganar",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488920/tolima-vs-millonarios-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "El Embajador, sexto con 27 puntos, sella su cupo a los cuadrangulares si gana en Ibagué, mientras que el Pijao necesita los tres puntos para seguir con vida.",
+      "fecha": "2026-11-08T21:59:35+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
     {
       "titulo": "Millonarios pierde a dos piezas y anuncia sus 20 convocados para enfrentar a Tolima",
       "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay",
       "resumen": "El conjunto embajador visita al Deportes Tolima con la intención de sumar tres puntos y asegurar su clasificación a los cuadrangulares semifinales de la Liga BetPlay.",
-      "fecha": "2026-11-07T17:40:31+00:00",
+      "fecha": "2026-11-08T21:59:35+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Santa Fe goleó a Pasto y se clasificó a los cuadrangulares con un hat-trick de Rodallega",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17495967/santa-fe-goleo-pasto-hat-trick-hugo-rodallega-clasificacion-cuadrangulares",
+      "resumen": "El capitán cardenal volvió a celebrar por partida triple a los 41 años y lideró el contundente 5-0 en El Campín.",
+      "fecha": "2026-11-08T21:53:39+00:00",
       "fuente": "ESPN Colombia",
       "club": false
     },
@@ -108,9 +124,9 @@
       "club": false
     },
     {
-      "titulo": "Deportes Tolima vs. Millonarios HOY en vivo: hora y dónde ver el partido de la fecha 18 de la Liga BetPlay Dimayor",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/deportes-tolima-vs-millonarios-hoy-en-vivo-hora-y-donde-ver-el-partido-de-la-fecha-18-de-la-liga-betplay-dimayor-3599371",
-      "resumen": "Descubre el horario, el canal de televisión y los detalles clave para ver en vivo el crucial duelo entre Tolima y Millonarios por Liga BetPlay.",
+      "titulo": "Deportes Tolima vs. Millonarios, en vivo: siga el minuto a minuto de un partido trascendental para ambos",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/deportes-tolima-vs-millonarios-en-vivo-siga-el-minuto-a-minuto-de-un-partido-trascendental-para-ambos-3599433",
+      "resumen": "Se enfrentan en el estadio Manuel Murillo Toro de Ibagué.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
