@@ -11,7 +11,7 @@ Sitio de hinchas de **Millonarios Fútbol Club**: noticias con fuente, convocato
 | Sección | Qué hace | Cómo se actualiza |
 |---|---|---|
 | `index.html` | Portada: próximo partido, cuenta regresiva, últimas noticias, calendario y datos de forma | Automático + build |
-| `noticias.html` | Agregador con búsqueda y filtros por medio | RSS cada hora |
+| `noticias.html` | Agregador con búsqueda y filtros por medio | RSS al ejecutar el actualizador |
 | `partidos.html` | Próximos partidos, calendario, marcador en vivo y últimos resultados | TheSportsDB + ESPN |
 | `alineacion.html` | Pizarra con XI probable, convocados y bajas | Editorial (JSON) |
 | `pronostico.html` | Modelo Poisson con supuestos a la vista y registro vacío | Automático |
@@ -37,7 +37,7 @@ Abrí `http://localhost:8177`.
 1. Creá un repositorio y subí esta carpeta a la rama `main`.
 2. En **Settings → Pages**, elegí *Source: GitHub Actions*.
 3. En **Settings → Secrets and variables → Actions**, agregá `THE_SPORTSDB_KEY` (ver abajo).
-4. El workflow `Actualizar datos y publicar` corre cada hora, rebuilds y publica.
+4. El workflow `Actualizar datos y publicar` corre cada hora, rebuilds y publica (requiere que el workflow esté activo en el repositorio).
 
 ### Opción B — Cloudflare Pages
 

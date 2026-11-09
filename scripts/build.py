@@ -367,7 +367,7 @@ def heroe() -> str:
             <a class="boton boton--primario" href="alineacion.html">Ver XI probable</a>
             <a class="boton boton--fantasma" href="pronostico.html">Pronóstico del partido</a>
           </div>
-          <p class="heroe__nota">Actualizado cada hora · marcador en vivo desde ESPN · datos con enlace a la fuente</p>
+          <p class="heroe__nota">Última actualización con fuente · marcador en vivo desde ESPN</p>
         </div>
         <aside class="partido" aria-labelledby="titulo-partido">
           <div class="partido__cabecera">
@@ -459,7 +459,7 @@ def pagina_inicio() -> str:
     ) + seccion(
         "Qué es automático y qué es criterio", "Transparencia",
         """<div class="transparencia">
-          <div><h3>🤖 Automático</h3><p>Noticias por RSS, próximo partido y hora de actualización. Corre cada hora en GitHub Actions.</p></div>
+          <div><h3>🤖 Automático</h3><p>Noticias por RSS, próximo partido y calendario. El actualizador corre cuando se ejecuta (manual o programado) y el marcador en vivo se consulta desde tu navegador.</p></div>
           <div><h3>✍️ Editorial</h3><p>El XI probable y la lectura del partido. Se basan en la convocatoria oficial y se marcan como estimación.</p></div>
           <div><h3>📊 Modelo</h3><p>El pronóstico es una probabilidad, no una promesa. Muestra sus supuestos y su muestra.</p></div>
           <div><h3>🔗 Verificable</h3><p>Cada dato relevante enlaza a su fuente. Si no hay fuente, no se publica.</p></div>
@@ -567,7 +567,7 @@ def pagina_partidos() -> str:
       <div class="contenedor">
         <div class="seccion__cabecera"><p class="eyebrow">Sin humo</p><h2 class="seccion__titulo">Cómo se actualiza</h2></div>
         <div class="transparencia">
-          <div><h3>🗓️ Calendario</h3><p>TheSportsDB alimenta las próximas fechas. El actualizador corre cada hora y conserva el último calendario bueno si la fuente falla.</p></div>
+          <div><h3>🗓️ Calendario</h3><p>TheSportsDB alimenta las próximas fechas. El actualizador conserva el último calendario bueno si la fuente falla.</p></div>
           <div><h3>📡 Marcador</h3><p>El navegador consulta ESPN cada 30 segundos cuando hay partido. No hay servidor propio ni base de datos: si ESPN cae, se avisa.</p></div>
           <div><h3>🕒 Hora</h3><p>Todo se muestra en hora de Colombia (UTC-5). Las horas futuras se marcan como “por confirmar” hasta que haya una fuente que las cierre.</p></div>
           <div><h3>🔗 Fuente</h3><p>Cada partido enlaza a su ficha. Si un dato no se puede verificar, no se inventa: se deja pendiente.</p></div>
