@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-09T01:58:20.162846+00:00",
-  "total": 15,
+  "actualizado": "2026-11-09T02:50:42.867039+00:00",
+  "total": 16,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Alberto Gamero intenta dar tranquilidad tras derrota de Millonarios con Tolima: 'No se me pasa por la cabeza no clasificar'",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/alberto-gamero-intenta-dar-tranquilidad-tras-derrota-de-millonarios-con-tolima-no-se-me-pasa-por-la-cabeza-no-clasificar-3599464",
+      "resumen": "El equipo azul sigue sin asegurarse, a una fecha del final de la fase todos contra todos.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
