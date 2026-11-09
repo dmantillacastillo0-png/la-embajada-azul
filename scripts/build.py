@@ -466,7 +466,7 @@ def pagina_inicio() -> str:
     ) + seccion(
         "Qué es automático y qué es criterio", "Transparencia",
         """<div class="transparencia">
-          <div><h3>🤖 Automático</h3><p>Noticias por RSS, próximo partido y calendario. El actualizador corre cuando se ejecuta (manual o programado) y el marcador en vivo se consulta desde tu navegador.</p></div>
+          <div><h3>🤖 Automático</h3><p>Noticias por RSS, próximo partido y calendario. El actualizador corre cada 30 minutos en GitHub Actions y el marcador en vivo se consulta desde tu navegador.</p></div>
           <div><h3>✍️ Editorial</h3><p>El XI probable y la lectura del partido. Se basan en la convocatoria oficial y se marcan como estimación.</p></div>
           <div><h3>📊 Modelo</h3><p>El pronóstico es una probabilidad, no una promesa. Muestra sus supuestos y su muestra.</p></div>
           <div><h3>🔗 Verificable</h3><p>Cada dato relevante enlaza a su fuente. Si no hay fuente, no se publica.</p></div>

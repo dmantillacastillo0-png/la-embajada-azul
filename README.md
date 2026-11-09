@@ -37,13 +37,13 @@ Abrí `http://localhost:8177`.
 1. Creá un repositorio y subí esta carpeta a la rama `main`.
 2. En **Settings → Pages**, elegí *Source: GitHub Actions*.
 3. En **Settings → Secrets and variables → Actions**, agregá `THE_SPORTSDB_KEY` (ver abajo).
-4. El workflow `Actualizar datos y publicar` corre cada hora, rebuilds y publica (requiere que el workflow esté activo en el repositorio).
+4. El workflow `Actualizar datos y publicar` corre cada 30 minutos, rebuilds y publica (requiere que el workflow esté activo en el repositorio).
 
 ### Opción B — Cloudflare Pages
 
 - Build command: `python3 scripts/update.py && python3 scripts/build.py`
 - Output directory: `dist`
-- Programá un cron externo (Cloudflare Cron Trigger o un GitHub Action que dispare un deploy hook) para la actualización horaria.
+- Programá un cron externo (Cloudflare Cron Trigger o un GitHub Action que dispare un deploy hook) para la actualización cada 30 minutos.
 
 ## Claves y fuentes
 
