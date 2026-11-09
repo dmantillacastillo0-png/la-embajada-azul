@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-09T22:38:57.491207+00:00",
-  "total": 13,
+  "actualizado": "2026-11-09T23:31:45.568599+00:00",
+  "total": 12,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,14 +102,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Tolima vs. Millonarios: la última vez que los Embajadores ganaron en Ibagué fue hace 13 años, cuando Mayer Candelo aún era jugador azul",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/tolima-vs-millonarios-la-ultima-vez-que-los-embajadores-ganaron-en-ibague-fue-hace-13-anos-cuando-mayer-candelo-aun-era-jugador-azul-3599592",
-      "resumen": "El elenco de Ibagué lo derrotó 2-1 y lo dejó mal parado.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
