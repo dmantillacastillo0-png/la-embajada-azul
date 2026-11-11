@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-11T14:47:18.706487+00:00",
-  "total": 13,
+  "actualizado": "2026-11-11T15:41:15.888797+00:00",
+  "total": 12,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,14 +102,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios, con malas noticias: dos bajas clave para el partido en el que se juega el semestre y su futuro en la Liga BetPlay",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-con-malas-noticias-dos-bajas-clave-para-el-partido-en-el-que-se-juega-el-semestre-y-su-futuro-en-la-liga-betplay-3600074",
-      "resumen": "El Comité Disciplinario de la Dimayor anunció este martes las sanciones correspondientes a la fecha 18.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
