@@ -2,10 +2,10 @@
   "id": "2481266",
   "local": "Millonarios",
   "visitante": "Alianza de Valledupar",
-  "fecha": "2026-11-12",
-  "hora_local": "16:00",
+  "fecha": "2026-11-14",
+  "hora_local": "15:30",
   "zona": "America/Bogota",
-  "hora_utc": "21:00",
+  "hora_utc": "20:30",
   "estadio": "Estadio El Campín",
   "liga": "Liga BetPlay",
   "jornada": "Fecha 19",
@@ -20,5 +20,5 @@
   ],
   "espn_id": null,
   "hora_confirmada": false,
-  "actualizado": "2026-11-11T11:25:06.718061+00:00"
+  "actualizado": "2026-11-11T12:23:14.745027+00:00"
 }
