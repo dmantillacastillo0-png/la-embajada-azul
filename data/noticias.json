@@ -1,12 +1,7 @@
 {
-  "actualizado": "2026-11-12T16:29:04.125051+00:00",
-  "total": 12,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-12T17:25:31.229169+00:00",
+  "total": 18,
+  "errores": [],
   "noticias": [
     {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
@@ -17,12 +12,60 @@
       "club": true
     },
     {
+      "titulo": "Qué necesita Millonarios para clasificar a los cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17498130/liga-betplay-2026-que-necesita-millonarios-para-clasificar-a-los-cuadrangulares-del-torneo-finalizacion",
+      "resumen": "El equipo embajador tiene 27 puntos y será local en la última fecha del FPC.",
+      "fecha": "2026-11-10T17:46:04+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Santa Fe goleó a Pasto y se clasificó a los cuadrangulares con un hat-trick de Rodallega",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17495967/santa-fe-goleo-pasto-hat-trick-hugo-rodallega-clasificacion-cuadrangulares",
+      "resumen": "El capitán cardenal volvió a celebrar por partida triple a los 41 años y lideró el contundente 5-0 en El Campín.",
+      "fecha": "2026-11-09T19:48:50+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Mosquera Marmolejo pide por un mejor estado de la cancha de El Campín",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17498964/mosquera-marmolejo-pide-mejor-estado-cancha-el-campin-santa-fe",
+      "resumen": "El portero volvió a la titularidad en los cardenales, clasificados a los cuadrangulares.",
+      "fecha": "2026-11-09T19:48:44+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
       "titulo": "MILLONARIOS CAYÓ EN SU VISITA A TOLIMA",
       "url": "https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/",
       "resumen": "Millonarios visitó a Deportes Tolima en el estadio Manuel Murillo Toro, por la fecha 18 de la Liga. Los Embajadores comenzaron arriba en el marcador con una anotación de Juan Guillermo Cuadrado al minuto 8, pero el…",
       "fecha": "2026-11-09T11:09:00+00:00",
       "fuente": "Millonarios FC",
       "club": true
+    },
+    {
+      "titulo": "Millonarios perdió con Tolima y se jugará la clasificación en la última jornada",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488920/tolima-vs-millonarios-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "El golazo de tiro libre de Juan Guillermo Cuadrado no fue suficiente para el Embajador, que llega a la última fecha con posibilidades de clasificar a los cuadrangulares, al igual que el pijao.",
+      "fecha": "2026-11-09T02:21:21+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Cuadrado marcó su primer gol con Millonarios",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17497081/juan-guillermo-cuadrado-primer-gol-millonarios-tiro-libre-tolima",
+      "resumen": "El tanto llegó en su sexto partido con el equipo bogotano y puso fin a un año sin marcar.",
+      "fecha": "2026-11-09T02:21:21+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Gamero confía en la clasificación de Millonarios a los cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17497396/alberto-gamero-confia-clasificacion-millonarios-cuadrangulares",
+      "resumen": "El entrenador reconoció los problemas que dejó la derrota frente a Tolima.",
+      "fecha": "2026-11-09T02:21:21+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
     },
     {
       "titulo": "NUESTRA SUB-17 IRÁ POR LA REMONTADA EN CASA",
