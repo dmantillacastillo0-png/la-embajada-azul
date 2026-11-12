@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T12:54:51.171093+00:00",
+  "actualizado": "2026-11-12T14:10:44.245588+00:00",
   "total": 12,
   "errores": [
     {
@@ -8,6 +8,14 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
+      "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
+      "resumen": "Millonarios FC informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador Daniel Ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. El jugador ya se encuentra en…",
+      "fecha": "2026-11-12T13:00:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "MILLONARIOS CAYÓ EN SU VISITA A TOLIMA",
       "url": "https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/",
@@ -77,14 +85,6 @@
       "url": "https://millonarios.com.co/galeria-millonarios-vs-once-caldas/",
       "resumen": "Millonarios igualó 1-1 frente a Once Caldas, en El Campin. Revisa aquí la galería: La entrada 📸⚽ GALERÍA: MILLONARIOS VS. ONCE CALDAS se publicó primero en Millonarios FC .",
       "fecha": "2026-10-21T17:10:05+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "VS. ONCE CALDAS: MILLONARIOS IGUALÓ 1-1 EN EL CAMPÍN",
-      "url": "https://millonarios.com.co/vs-once-caldas-millonarios-igualo-1-1-en-el-campin/",
-      "resumen": "Millonarios igualó 1-1 frente a Once Caldas en el compromiso pendiente de la fecha 13 de la Liga 2026. Daniel Ruiz abrió el marcador para los Embajadores al minuto 68, pero Dayro Moreno convirtió desde el punto penal al…",
-      "fecha": "2026-10-21T17:07:19+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
