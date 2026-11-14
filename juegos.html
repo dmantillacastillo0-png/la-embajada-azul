@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juegos · La Embajada Azul</title>
+<meta name="description" content="Trivia, adivina el jugador y pronóstico rápido de Millonarios.">
+<meta name="theme-color" content="#04122e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Embajada Azul">
+<meta property="og:title" content="Juegos · La Embajada Azul">
+<meta property="og:description" content="Trivia, adivina el jugador y pronóstico rápido de Millonarios.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/styles.css?v=502d5ace">
+
+</head>
+<body class="">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    
+    <a class="marca" href="index.html" aria-label="La Embajada Azul, inicio">
+      <span class="marca__escudo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M24 2 44 9v15c0 11-8.4 19.2-20 23C12.4 43.2 4 35 4 24V9Z" fill="#0743bf"/>
+          <path d="M24 7 39 12v12c0 8.6-6.4 15-15 18.4C15.4 39 9 32.6 9 24V12Z" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="24" y="31" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#fff">M</text>
+        </svg>
+      </span>
+      <span class="marca__texto"><strong>La Embajada</strong><small>Azul · Millonarios</small></span>
+    </a>
+    <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="nav" id="menu-principal" aria-label="Principal"><a class="nav__link" href="index.html">Inicio</a><a class="nav__link" href="noticias.html">Noticias</a><a class="nav__link" href="partidos.html">Partidos</a><a class="nav__link" href="alineacion.html">Alineación</a><a class="nav__link" href="pronostico.html">Pronóstico</a><a class="nav__link" href="historia.html">Historia</a><a class="nav__link is-active" href="juegos.html" aria-current="page">Juegos</a></nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="fondo-escudo" aria-hidden="true"><img src="static/escudos/ballet.svg" alt="" loading="lazy"></div>
+  <div class="fondo-escudo fondo-escudo--dos" aria-hidden="true"><img src="static/escudos/1946.svg" alt="" loading="lazy"></div>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="eyebrow">Para el entretiempo</p>
+        <h1>Minijuegos embajadores</h1>
+        <p class="cabecera-pagina__bajada">Tres juegos, cero plata, cero humo. Todo corre en tu navegador.</p>
+      </div>
+    </section>
+    <section class="seccion seccion--ajustada">
+      <div class="contenedor juegos">
+        <article class="panel juego" id="trivia">
+          <div class="juego__cabecera"><span class="juego__icono">🧠</span><div><p class="eyebrow">Juego 1</p><h2>Trivia embajadora</h2></div></div>
+          <p class="juego__intro">10 preguntas de historia y datos. Sin trampa: la respuesta se explica al final de cada una.</p>
+          <div class="trivia" id="trivia-app">
+            <div class="trivia__barra"><span id="trivia-progreso">Pregunta 1 de 10</span><span id="trivia-puntaje">0 aciertos</span></div>
+            <h3 class="trivia__pregunta" id="trivia-pregunta">Cargando…</h3>
+            <div class="trivia__opciones" id="trivia-opciones"></div>
+            <p class="trivia__dato" id="trivia-dato" hidden></p>
+            <div class="trivia__acciones">
+              <button class="boton boton--primario" type="button" id="trivia-siguiente" disabled>Siguiente</button>
+              <button class="boton boton--fantasma" type="button" id="trivia-reiniciar" hidden>Reiniciar</button>
+            </div>
+          </div>
+        </article>
+        <article class="panel juego" id="adivina">
+          <div class="juego__cabecera"><span class="juego__icono">🕵️</span><div><p class="eyebrow">Juego 2</p><h2>Adivina el jugador</h2></div></div>
+          <p class="juego__intro">Un convocado, tres pistas y cuatro opciones. Una sola oportunidad por ronda.</p>
+          <div class="adivina" id="adivina-app">
+            <p class="adivina__pista" id="adivina-pista">Cargando…</p>
+            <div class="adivina__opciones" id="adivina-opciones"></div>
+            <p class="adivina__estado" id="adivina-estado" aria-live="polite"></p>
+            <button class="boton boton--fantasma" type="button" id="adivina-otra" hidden>Otra ronda</button>
+          </div>
+        </article>
+        <article class="panel juego" id="pick">
+          <div class="juego__cabecera"><span class="juego__icono">🎯</span><div><p class="eyebrow">Juego 3</p><h2>Pronóstico rápido</h2></div></div>
+          <p class="juego__intro">Elegí quién gana el próximo partido. Se guarda en tu navegador, sin registro ni promesas.</p>
+          <div class="pick" id="pick-juego" data-local="Millonarios" data-visitante="Alianza de Valledupar">
+            <p class="pick__partido" id="pick-partido">Cargando…</p>
+            <div class="pick__botones" role="group" aria-label="Elegir resultado">
+              <button type="button" class="pick__opcion" data-pick="local" id="pick-local">Local</button>
+              <button type="button" class="pick__opcion" data-pick="empate">Empate</button>
+              <button type="button" class="pick__opcion" data-pick="visitante" id="pick-visitante">Visitante</button>
+            </div>
+            <p class="pick__estado" id="pick-estado-juego" aria-live="polite"></p>
+            <button type="button" class="boton boton--fantasma boton--chico" id="pick-limpiar-juego">Borrar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script type="application/json" id="datos-juegos">{"trivia": [{"p": "¿En qué año se fundó Millonarios?", "opciones": ["1938", "1946", "1950", "1953"], "correcta": 1, "dato": "Se fundó el 18 de junio de 1946 en Bogotá."}, {"p": "¿Cómo se conoce a la época dorada de los años 50?", "opciones": ["La Máquina Azul", "El Ballet Azul", "Los Embajadores", "El Dorado Azul"], "correcta": 1, "dato": "El Ballet Azul fue el equipo de El Dorado, con estrellas internacionales y títulos en 1949, 1951, 1952 y 1953."}, {"p": "¿En qué estadio juega de local?", "opciones": ["El Campín", "Murillo Toro", "Metropolitano", "Palmaseca"], "correcta": 0, "dato": "Estadio Nemesio Camacho El Campín, en Bogotá."}, {"p": "¿Cuántos títulos de Primera A tiene el club (hasta 2023-I)?", "opciones": ["13", "14", "15", "16"], "correcta": 3, "dato": "16 estrellas, la última en el Apertura 2023."}, {"p": "¿Qué título internacional oficial ganó en 2001?", "opciones": ["Copa Libertadores", "Copa Merconorte", "Copa Sudamericana", "Copa Simón Bolívar"], "correcta": 1, "dato": "La Copa Merconorte 2001 es su último título internacional oficial."}, {"p": "¿Qué jugador pasó por el club en 1952 antes de brillar en el Real Madrid?", "opciones": ["Alfredo Di Stéfano", "Ferenc Puskás", "Johan Cruyff", "Eusébio"], "correcta": 0, "dato": "Di Stéfano jugó en Millonarios en 1952."}, {"p": "¿Cuál es el clásico rival de Millonarios?", "opciones": ["Atlético Nacional", "América de Cali", "Santa Fe", "Deportivo Cali"], "correcta": 2, "dato": "El Clásico Bogotano se juega contra Santa Fe."}, {"p": "¿Qué copa nacional ganó en 2011 y 2022?", "opciones": ["Superliga", "Copa Colombia", "Copa Merconorte", "Copa Simón Bolívar"], "correcta": 1, "dato": "Copa Colombia 2011 y 2022."}, {"p": "¿En qué año ganó su estrella número 16?", "opciones": ["2017", "2018", "2022", "2023"], "correcta": 3, "dato": "Apertura 2023."}, {"p": "¿Cuántas Superligas de Colombia ha ganado?", "opciones": ["1", "2", "3", "4"], "correcta": 1, "dato": "2018 y 2024."}], "convocados": {"Arqueros": ["Javier Burrai", "James Aguirre"], "Defensores": ["Samuel Martín", "Stiven Barreiro", "Sergio Mosquera", "Jorge Arias", "Danovis Banguero", "Cristian Uparela"], "Mediocampistas": ["Juan Guillermo Cuadrado", "Daniel Ruiz", "David Mackalister Silva", "Mateo García", "Carlos Darwin Quintero", "Stiven Vega", "Sebastián del Castillo", "Leonai Souza"], "Delanteros": ["Andrey Estupiñán", "Francisco Chaverra", "Leonardo Castro", "Rodrigo Contreras"]}, "plantilla": [{"num": "1", "nombre": "Javier Burrai", "pos": "POR", "nac": "Ecuador"}, {"num": "12", "nombre": "James Aguirre", "pos": "POR", "nac": "Colombia"}, {"num": "2", "nombre": "Carlos Sarabia", "pos": "DEF", "nac": "Colombia"}, {"num": "3", "nombre": "Samuel Martín", "pos": "DEF", "nac": "Colombia"}, {"num": "4", "nombre": "Stiven Barreiro", "pos": "DEF", "nac": "Colombia", "cap": true}, {"num": "6", "nombre": "Sergio Mosquera", "pos": "DEF", "nac": "Colombia"}, {"num": "17", "nombre": "Jorge Arias", "pos": "DEF", "nac": "Colombia", "cap": true}, {"num": "20", "nombre": "Danovis Banguero", "pos": "DEF", "nac": "Colombia"}, {"num": "22", "nombre": "Sebastián Valencia", "pos": "DEF", "nac": "Colombia"}, {"num": "26", "nombre": "Andrés Llinás", "pos": "DEF", "nac": "Colombia", "cap": true}, {"num": "29", "nombre": "Álex Moreno", "pos": "DEF", "nac": "Colombia"}, {"num": "34", "nombre": "Jhomier Guerrero", "pos": "DEF", "nac": "Colombia"}, {"num": "7", "nombre": "Juan Guillermo Cuadrado", "pos": "MED", "nac": "Colombia", "cap": true}, {"num": "10", "nombre": "Daniel Ruiz", "pos": "MED", "nac": "Colombia"}, {"num": "14", "nombre": "David Mackalister Silva", "pos": "MED", "nac": "Colombia", "cap": true}, {"num": "18", "nombre": "Rodrigo Ureña", "pos": "MED", "nac": "Chile"}, {"num": "19", "nombre": "Mateo García", "pos": "MED", "nac": "Colombia"}, {"num": "25", "nombre": "Darwin Quintero", "pos": "MED", "nac": "Colombia"}, {"num": "28", "nombre": "Stiven Vega", "pos": "MED", "nac": "Colombia", "cap": true}, {"num": "30", "nombre": "Sebastián del Castillo", "pos": "MED", "nac": "Colombia"}, {"num": "55", "nombre": "Leonai Souza", "pos": "MED", "nac": "Brasil"}, {"num": "11", "nombre": "Andrey Estupiñán", "pos": "DEL", "nac": "Colombia"}, {"num": "13", "nombre": "Francisco Chaverra", "pos": "DEL", "nac": "Colombia"}, {"num": "24", "nombre": "Julián Angulo", "pos": "DEL", "nac": "Colombia"}, {"num": "27", "nombre": "Rodrigo Contreras", "pos": "DEL", "nac": "Argentina"}, {"num": "35", "nombre": "Sebastián Mosquera", "pos": "DEL", "nac": "Colombia"}], "partido": {"local": "Millonarios", "visitante": "Alianza de Valledupar"}}</script>
+</main>
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div>
+      <p class="pie__marca">La Embajada Azul</p>
+      <p class="pie__aviso">Sitio no oficial, hecho por hinchas. No tiene relación con Millonarios Fútbol Club ni con la Dimayor.</p>
+    </div>
+    <div>
+      <p class="pie__titulo">Fuentes</p>
+      <ul class="pie__lista"><li><a href="https://millonarios.com.co/" target="_blank" rel="noopener">Millonarios FC (sitio oficial)</a></li><li><a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia</a></li><li><a href="https://www.marca.com/co/" target="_blank" rel="noopener">Marca Colombia</a></li><li><a href="https://www.eltiempo.com/deportes" target="_blank" rel="noopener">El Tiempo · Deportes</a></li><li><a href="https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club" target="_blank" rel="noopener">Wikipedia · Millonarios FC</a></li><li><a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a></li></ul>
+    </div>
+    <div>
+      <p class="pie__titulo">Transparencia</p>
+      <p class="pie__texto">Noticias: agregadas por RSS y enlazadas al medio original. Alineación: estimación editorial, no información oficial. Pronóstico: modelo estadístico, no certeza ni consejo de apuestas.</p>
+      <p class="pie__texto">© 2026 · Hecho por hinchas, para hinchas.</p>
+    </div>
+  </div>
+  <div class="contenedor pie__franja">
+    <div class="pie__escudos" aria-label="Escudos homenaje del club"><span class="pie__escudo"><img src="static/escudos/1946.svg" alt="" loading="lazy"><b>1946</b></span><span class="pie__escudo"><img src="static/escudos/ballet.svg" alt="" loading="lazy"><b>1950s</b></span><span class="pie__escudo"><img src="static/escudos/embajador.svg" alt="" loading="lazy"><b>1970s–2000s</b></span><span class="pie__escudo"><img src="static/escudos/actual.svg" alt="" loading="lazy"><b>Hoy</b></span></div>
+    <p class="pie__nota-escudos">Escudos homenaje ilustrados para este sitio · no son emblemas oficiales.</p>
+  </div>
+</footer>
+<script src="static/app.js?v=8f730b6c" defer></script>
+<script src="static/envivo.js?v=9899f751" defer></script>
+</body>
+</html>

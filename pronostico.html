@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pronóstico · La Embajada Azul</title>
+<meta name="description" content="Pronóstico probabilístico y transparente del próximo partido de Millonarios.">
+<meta name="theme-color" content="#04122e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Embajada Azul">
+<meta property="og:title" content="Pronóstico · La Embajada Azul">
+<meta property="og:description" content="Pronóstico probabilístico y transparente del próximo partido de Millonarios.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/styles.css?v=502d5ace">
+
+</head>
+<body class="">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    
+    <a class="marca" href="index.html" aria-label="La Embajada Azul, inicio">
+      <span class="marca__escudo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M24 2 44 9v15c0 11-8.4 19.2-20 23C12.4 43.2 4 35 4 24V9Z" fill="#0743bf"/>
+          <path d="M24 7 39 12v12c0 8.6-6.4 15-15 18.4C15.4 39 9 32.6 9 24V12Z" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="24" y="31" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#fff">M</text>
+        </svg>
+      </span>
+      <span class="marca__texto"><strong>La Embajada</strong><small>Azul · Millonarios</small></span>
+    </a>
+    <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="nav" id="menu-principal" aria-label="Principal"><a class="nav__link" href="index.html">Inicio</a><a class="nav__link" href="noticias.html">Noticias</a><a class="nav__link" href="partidos.html">Partidos</a><a class="nav__link" href="alineacion.html">Alineación</a><a class="nav__link is-active" href="pronostico.html" aria-current="page">Pronóstico</a><a class="nav__link" href="historia.html">Historia</a><a class="nav__link" href="juegos.html">Juegos</a></nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="fondo-escudo" aria-hidden="true"><img src="static/escudos/embajador.svg" alt="" loading="lazy"></div>
+  <div class="fondo-escudo fondo-escudo--dos" aria-hidden="true"><img src="static/escudos/1946.svg" alt="" loading="lazy"></div>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="eyebrow">Modelo Poisson · transparencia total</p>
+        <h1>Pronóstico del partido</h1>
+        <p class="cabecera-pagina__bajada">Una probabilidad, no una promesa. Acá están los supuestos, la muestra y el cálculo. Si el modelo se equivoca, también se va a ver.</p>
+        <div class="aviso aviso--info"><strong>Esto no es consejo de apuestas.</strong> Es un ejercicio estadístico con datos incompletos. No hay "fijo", no hay link de casa de apuestas, no hay milagro.</div>
+      </div>
+    </section>
+    <section class="seccion seccion--ajustada">
+      <div class="contenedor pronostico-grid">
+        <div class="panel panel--grande">
+          <div class="partido-mini"><span>Millonarios</span><strong>vs</strong><span>Alianza de Valledupar</span></div>
+          <p class="panel__sub">sábado 14 de noviembre de 2026 · 15:30 · Estadio El Campín</p>
+          <div class="prob">
+          <div class="prob__fila"><span>Millonarios gana</span><strong>40.0%</strong></div>
+          <div class="prob__barra"><span class="barra--roja" style="width:40.0%"></span></div>
+        </div>
+          <div class="prob">
+          <div class="prob__fila"><span>Empate</span><strong>25.3%</strong></div>
+          <div class="prob__barra"><span class="barra--gris" style="width:25.3%"></span></div>
+        </div>
+          <div class="prob">
+          <div class="prob__fila"><span>Alianza de Valledupar gana</span><strong>34.7%</strong></div>
+          <div class="prob__barra"><span class="barra--azul" style="width:34.7%"></span></div>
+        </div>
+          <div class="prob-dobles">
+            <div><span>Más de 2.5 goles</span><strong>53%</strong></div>
+            <div><span>Ambos marcan</span><strong>56%</strong></div>
+            <div><span>Goles esperados Millos</span><strong>1.33</strong></div>
+            <div><span>Goles esperados Tolima</span><strong>1.45</strong></div>
+          </div>
+        </div>
+        <aside class="panel">
+          <h2>Cómo se calcula</h2>
+          <ol class="pasos">
+            <li>Se toma la producción ofensiva y defensiva de Millonarios como visitante en 2026: <strong>12 goles a favor y 16 en contra en 9 partidos</strong>.</li>
+            <li>Se estima al Tolima como local con un prior de liga de <strong>1.45 goles por partido</strong>. Es un supuesto, no un dato verificado del rival.</li>
+            <li>Con esos dos promedios se calcula una distribución de Poisson para cada marcador posible (0-8 goles) y se suman las probabilidades de victoria, empate y derrota.</li>
+            <li>El resultado es una foto del rendimiento reciente, no una predicción del futuro. No ajusta por lesiones, clima, árbitro ni motivación.</li>
+          </ol>
+          <p class="fuente-inline">Datos: <a href="https://es.wikipedia.org/wiki/Anexo:Temporada_2026_de_Millonarios_F%C3%BAtbol_Club" target="_blank" rel="noopener">Wikipedia · Temporada 2026 de Millonarios</a> · corte Hasta el 5 de noviembre de 2026 (0-0 vs América de Cali)</p>
+        </aside>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="seccion__cabecera"><p class="eyebrow">Tu pick</p><h2 class="seccion__titulo">Jugátela, pero sin plata</h2></div>
+        <div class="pick" id="pick" data-local="Millonarios" data-visitante="Alianza de Valledupar">
+          <p>Elegí tu resultado para Tolima vs Millonarios. Se guarda en tu navegador y nada más.</p>
+          <div class="pick__botones" role="group" aria-label="Elegir resultado">
+            <button type="button" class="pick__opcion" data-pick="local">Millonarios</button>
+            <button type="button" class="pick__opcion" data-pick="empate">Empate</button>
+            <button type="button" class="pick__opcion" data-pick="visitante">Alianza de Valledupar</button>
+          </div>
+          <p class="pick__estado" id="pick-estado" aria-live="polite"></p>
+          <button type="button" class="boton boton--fantasma boton--chico" id="pick-limpiar">Borrar mi pick</button>
+        </div>
+        <div class="panel panel--registro">
+          <h2>Registro del modelo</h2>
+          <p>Este espacio queda vacío a propósito hasta que haya partidos cerrados con pronóstico previo. Un registro honesto empieza cuando se puede verificar, no cuando conviene.</p>
+          <p class="registro-vacio">0 partidos registrados · 0 aciertos · 0% de efectividad</p>
+        </div>
+      </div>
+    </section>
+</main>
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div>
+      <p class="pie__marca">La Embajada Azul</p>
+      <p class="pie__aviso">Sitio no oficial, hecho por hinchas. No tiene relación con Millonarios Fútbol Club ni con la Dimayor.</p>
+    </div>
+    <div>
+      <p class="pie__titulo">Fuentes</p>
+      <ul class="pie__lista"><li><a href="https://millonarios.com.co/" target="_blank" rel="noopener">Millonarios FC (sitio oficial)</a></li><li><a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia</a></li><li><a href="https://www.marca.com/co/" target="_blank" rel="noopener">Marca Colombia</a></li><li><a href="https://www.eltiempo.com/deportes" target="_blank" rel="noopener">El Tiempo · Deportes</a></li><li><a href="https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club" target="_blank" rel="noopener">Wikipedia · Millonarios FC</a></li><li><a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a></li></ul>
+    </div>
+    <div>
+      <p class="pie__titulo">Transparencia</p>
+      <p class="pie__texto">Noticias: agregadas por RSS y enlazadas al medio original. Alineación: estimación editorial, no información oficial. Pronóstico: modelo estadístico, no certeza ni consejo de apuestas.</p>
+      <p class="pie__texto">© 2026 · Hecho por hinchas, para hinchas.</p>
+    </div>
+  </div>
+  <div class="contenedor pie__franja">
+    <div class="pie__escudos" aria-label="Escudos homenaje del club"><span class="pie__escudo"><img src="static/escudos/1946.svg" alt="" loading="lazy"><b>1946</b></span><span class="pie__escudo"><img src="static/escudos/ballet.svg" alt="" loading="lazy"><b>1950s</b></span><span class="pie__escudo"><img src="static/escudos/embajador.svg" alt="" loading="lazy"><b>1970s–2000s</b></span><span class="pie__escudo"><img src="static/escudos/actual.svg" alt="" loading="lazy"><b>Hoy</b></span></div>
+    <p class="pie__nota-escudos">Escudos homenaje ilustrados para este sitio · no son emblemas oficiales.</p>
+  </div>
+</footer>
+<script src="static/app.js?v=8f730b6c" defer></script>
+<script src="static/envivo.js?v=9899f751" defer></script>
+</body>
+</html>

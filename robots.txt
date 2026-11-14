@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dmantillacastillo0-png.github.io/la-embajada-azul/sitemap.xml

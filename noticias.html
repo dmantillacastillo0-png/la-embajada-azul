@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noticias · La Embajada Azul</title>
+<meta name="description" content="Últimas noticias de Millonarios con enlace a la fuente original.">
+<meta name="theme-color" content="#04122e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Embajada Azul">
+<meta property="og:title" content="Noticias · La Embajada Azul">
+<meta property="og:description" content="Últimas noticias de Millonarios con enlace a la fuente original.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/styles.css?v=502d5ace">
+
+</head>
+<body class="">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    
+    <a class="marca" href="index.html" aria-label="La Embajada Azul, inicio">
+      <span class="marca__escudo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M24 2 44 9v15c0 11-8.4 19.2-20 23C12.4 43.2 4 35 4 24V9Z" fill="#0743bf"/>
+          <path d="M24 7 39 12v12c0 8.6-6.4 15-15 18.4C15.4 39 9 32.6 9 24V12Z" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="24" y="31" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#fff">M</text>
+        </svg>
+      </span>
+      <span class="marca__texto"><strong>La Embajada</strong><small>Azul · Millonarios</small></span>
+    </a>
+    <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="nav" id="menu-principal" aria-label="Principal"><a class="nav__link" href="index.html">Inicio</a><a class="nav__link is-active" href="noticias.html" aria-current="page">Noticias</a><a class="nav__link" href="partidos.html">Partidos</a><a class="nav__link" href="alineacion.html">Alineación</a><a class="nav__link" href="pronostico.html">Pronóstico</a><a class="nav__link" href="historia.html">Historia</a><a class="nav__link" href="juegos.html">Juegos</a></nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="fondo-escudo" aria-hidden="true"><img src="static/escudos/actual.svg" alt="" loading="lazy"></div>
+  <div class="fondo-escudo fondo-escudo--dos" aria-hidden="true"><img src="static/escudos/1946.svg" alt="" loading="lazy"></div>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="eyebrow">Agregador de noticias</p>
+        <h1>Noticias del Embajador</h1>
+        <p class="cabecera-pagina__bajada">Titulares de medios y del club, con enlace al original. Sin copiar el artículo completo, sin inventar fuentes.</p>
+        <p class="cabecera-pagina__meta">Última actualización: 14 nov · 20:41 UTC · 13 noticias</p>
+      </div>
+    </section>
+    <section class="seccion seccion--ajustada">
+      <div class="contenedor">
+        <p class="aviso aviso--error">Algunas fuentes no respondieron en la última actualización: ESPN Colombia.</p>
+        <div class="controles">
+          <label class="buscador">
+            <span class="sr-only">Buscar noticias</span>
+            <input type="search" id="buscador-noticias" placeholder="Buscar: Tolima, convocatoria, Campín…" autocomplete="off">
+          </label>
+          <div class="filtros" role="group" aria-label="Filtrar por fuente">
+            <button class="filtro is-active" type="button" data-filtro="todas">Todas</button>
+            <button class="filtro" type="button" data-filtro="Club">Club</button>
+            <button class="filtro" type="button" data-filtro="Prensa">Prensa</button>
+            <button class="filtro" type="button" data-filtro="El Tiempo · Deportes">El Tiempo · Deportes</button><button class="filtro" type="button" data-filtro="Marca Colombia">Marca Colombia</button><button class="filtro" type="button" data-filtro="Millonarios FC">Millonarios FC</button>
+          </div>
+        </div>
+        <p class="resultado-conteo" id="conteo-noticias" aria-live="polite"></p>
+        <div class="noticias-lista" id="lista-noticias">
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="reporte médico: daniel ruiz millonarios fc informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador daniel ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. el jugador ya se encuentra en…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-12T13:00:00+00:00">12 nov · 13:00 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/reporte-medico-daniel-ruiz/" target="_blank" rel="noopener">REPORTE MÉDICO: DANIEL RUIZ</a></h3>
+      <p class="noticia__resumen">Millonarios FC informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador Daniel Ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. El jugador ya se encuentra en…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/reporte-medico-daniel-ruiz/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="millonarios cayó en su visita a tolima millonarios visitó a deportes tolima en el estadio manuel murillo toro, por la fecha 18 de la liga. los embajadores comenzaron arriba en el marcador con una anotación de juan guillermo cuadrado al minuto 8, pero el…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-09T11:09:00+00:00">9 nov · 11:09 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/" target="_blank" rel="noopener">MILLONARIOS CAYÓ EN SU VISITA A TOLIMA</a></h3>
+      <p class="noticia__resumen">Millonarios visitó a Deportes Tolima en el estadio Manuel Murillo Toro, por la fecha 18 de la Liga. Los Embajadores comenzaron arriba en el marcador con una anotación de Juan Guillermo Cuadrado al minuto 8, pero el…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="nuestra sub-17 irá por la remontada en casa millonarios sub-17 disputó en condición de visitante el partido de ida de las semifinales del torneo nacional frente a atlético nacional. en un encuentro exigente, los embajadores se fueron al descanso con ventaja…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-08T04:19:00+00:00">8 nov · 04:19 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/" target="_blank" rel="noopener">NUESTRA SUB-17 IRÁ POR LA REMONTADA EN CASA</a></h3>
+      <p class="noticia__resumen">Millonarios Sub-17 disputó en condición de visitante el partido de ida de las semifinales del Torneo Nacional frente a Atlético Nacional. En un encuentro exigente, los Embajadores se fueron al descanso con ventaja…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="reporte médico: sebastián valencia millonarios fc informa que el jugador sebastián valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. el defensor ya se encuentra en proceso de rehabilitación. tiempo estimado de…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-07T15:21:09+00:00">7 nov · 15:21 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/reporte-medico-sebastian-valencia/" target="_blank" rel="noopener">REPORTE MÉDICO: SEBASTIÁN VALENCIA</a></h3>
+      <p class="noticia__resumen">Millonarios FC informa que el jugador Sebastián Valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. El defensor ya se encuentra en proceso de rehabilitación. Tiempo estimado de…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/reporte-medico-sebastian-valencia/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="tolima vs. millonarios: galería fecha 18 tolima y millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. mira aquí la galería del juego. la entrada tolima vs. millonarios: galería fecha 18 se publicó primero en…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-05T15:08:21+00:00">5 nov · 15:08 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/" target="_blank" rel="noopener">TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18</a></h3>
+      <p class="noticia__resumen">Tolima y Millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. Mira aquí la galería del juego. La entrada TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18 se publicó primero en…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="un punto en el campín: millonarios vs. américa millonarios y américa se enfrentaron una vez más en el campín, en esta ocasión por la fecha 17 de la liga. el encuentre terminó en un empate 0-0, en donde el equipo del profesor alberto gamero tuvo la mayor parte de…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-05T11:41:00+00:00">5 nov · 11:41 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/un-punto-en-el-campin-millonarios-vs-america/" target="_blank" rel="noopener">UN PUNTO EN EL CAMPÍN: MILLONARIOS VS. AMÉRICA</a></h3>
+      <p class="noticia__resumen">Millonarios y América se enfrentaron una vez más en El Campín, en esta ocasión por la fecha 17 de la Liga. El encuentre terminó en un empate 0-0, en donde el equipo del profesor Alberto Gamero tuvo la mayor parte de…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/un-punto-en-el-campin-millonarios-vs-america/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="adidas y millonarios fc extienden su alianza hasta 2032 y lo celebran premiando a la hinchada azul bogotá, 04 de noviembre de 2026 adidas y millonarios fc anuncian la renovación de su alianza hasta 2032, extendiendo una relación que comenzó en 2009 y que se ha consolidado como una de las colaboraciones más…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-04T23:40:53+00:00">4 nov · 23:40 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/adidas-y-millonarios-fc-extienden-su-alianza-hasta-2032-y-lo-celebran-premiando-a-la-hinchada-azul-2/" target="_blank" rel="noopener">ADIDAS Y MILLONARIOS FC EXTIENDEN SU ALIANZA HASTA 2032 Y LO CELEBRAN PREMIANDO A LA HINCHADA AZUL</a></h3>
+      <p class="noticia__resumen">Bogotá, 04 de noviembre de 2026 adidas y Millonarios FC anuncian la renovación de su alianza hasta 2032, extendiendo una relación que comenzó en 2009 y que se ha consolidado como una de las colaboraciones más…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/adidas-y-millonarios-fc-extienden-su-alianza-hasta-2032-y-lo-celebran-premiando-a-la-hinchada-azul-2/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="actualidad médica: millonarios fc millonarios fc informa sobre la actualidad médica de sus jugadores y los avances en sus respectivos procesos jorge arias ya se encuentra entrenando con el grupo despues de su proceso de rehabilitación. por su parte,…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-10-30T15:23:22+00:00">30 oct · 15:23 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/actualidad-medica-millonarios-fc-4/" target="_blank" rel="noopener">ACTUALIDAD MÉDICA: MILLONARIOS FC</a></h3>
+      <p class="noticia__resumen">Millonarios FC informa sobre la actualidad médica de sus jugadores y los avances en sus respectivos procesos Jorge Arias ya se encuentra entrenando con el grupo despues de su proceso de rehabilitación. Por su parte,…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/actualidad-medica-millonarios-fc-4/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="comunicado oficial millonarios fc informa que en cumplimiento de la sentencia t-324 de 2026 de la corte constitucional, azul &amp; blanco millonarios f.c. s.a. reconoce que la restricción impuesta por el pmu a las pancartas objeto de dicha…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-10-30T11:00:00+00:00">30 oct · 11:00 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/comunicado-oficial-3/" target="_blank" rel="noopener">COMUNICADO OFICIAL</a></h3>
+      <p class="noticia__resumen">Millonarios FC informa que en cumplimiento de la Sentencia T-324 de 2026 de la Corte Constitucional, Azul &amp; Blanco Millonarios F.C. S.A. reconoce que la restricción impuesta por el PMU a las pancartas objeto de dicha…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/comunicado-oficial-3/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="📸⚽ galería: millonarios vs. once caldas millonarios igualó 1-1 frente a once caldas, en el campin. revisa aquí la galería: la entrada 📸⚽ galería: millonarios vs. once caldas se publicó primero en millonarios fc .">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-10-21T17:10:05+00:00">21 oct · 17:10 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/galeria-millonarios-vs-once-caldas/" target="_blank" rel="noopener">📸⚽ GALERÍA: MILLONARIOS VS. ONCE CALDAS</a></h3>
+      <p class="noticia__resumen">Millonarios igualó 1-1 frente a Once Caldas, en El Campin. Revisa aquí la galería: La entrada 📸⚽ GALERÍA: MILLONARIOS VS. ONCE CALDAS se publicó primero en Millonarios FC .</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/galeria-millonarios-vs-once-caldas/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="Marca Colombia" data-texto="¡curioso homenaje! estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo andrey estupiñán fue homenajeado como máximo goleador de la liga betplay dimayor tras firmar 13 tantos la pasada temporada. el delantero recibió el trofeo antes del partido entre millonarios y deportivo pasto, posando…">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">Marca Colombia</span>
+        <time datetime="2026-08-06T06:49:28+00:00">6 ago · 06:49 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html" target="_blank" rel="noopener">¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo</a></h3>
+      <p class="noticia__resumen">Andrey Estupiñán fue homenajeado como máximo goleador de la Liga BetPlay Dimayor tras firmar 13 tantos la pasada temporada. El delantero recibió el trofeo antes del partido entre Millonarios y Deportivo Pasto, posando…</p>
+      <a class="noticia__enlace" href="https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html" target="_blank" rel="noopener">Leer en Marca Colombia <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="Marca Colombia" data-texto="colombia (cuartos-ida): resumen y goles del bucaramanga 2-2 millonarios un penalti anotado por del valle para los visitantes deja la elimatoria abierta.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">Marca Colombia</span>
+        <time datetime="2017-06-01T10:48:00+00:00">1 jun · 10:48 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.marca.com/futbol/colombia/2017/06/01/colombia-cuartos-ida-resumen-y-goles-del-bucaramanga-2-2-millonarios-video.html" target="_blank" rel="noopener">Colombia (cuartos-ida): Resumen y goles del Bucaramanga 2-2 Millonarios</a></h3>
+      <p class="noticia__resumen">Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.</p>
+      <a class="noticia__enlace" href="https://www.marca.com/futbol/colombia/2017/06/01/colombia-cuartos-ida-resumen-y-goles-del-bucaramanga-2-2-millonarios-video.html" target="_blank" rel="noopener">Leer en Marca Colombia <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="El Tiempo · Deportes" data-texto="millonarios no tiene margen de error: se juega la clasificación contra alianza; siga acá el minuto a minuto partido de la última fecha de la fase todos contra todos.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">El Tiempo · Deportes</span>
+        <time datetime="">sin fecha</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-no-tiene-margen-de-error-se-juega-la-clasificacion-contra-alianza-siga-aca-el-minuto-a-minuto-3601124" target="_blank" rel="noopener">Millonarios no tiene margen de error: se juega la clasificación contra Alianza; siga acá el minuto a minuto</a></h3>
+      <p class="noticia__resumen">Partido de la última fecha de la fase todos contra todos.</p>
+      <a class="noticia__enlace" href="https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-no-tiene-margen-de-error-se-juega-la-clasificacion-contra-alianza-siga-aca-el-minuto-a-minuto-3601124" target="_blank" rel="noopener">Leer en El Tiempo · Deportes <span aria-hidden="true">↗</span></a>
+    </article></div>
+        <p class="sin-resultados" id="sin-resultados" hidden>No hay noticias que coincidan. Probá con otra palabra. 🤷</p>
+        <p class="nota-legal">Los resúmenes provienen del feed RSS de cada medio y se muestran solo como adelanto. El contenido completo pertenece a sus autores: hacé clic y leelo en la fuente.</p>
+      </div>
+    </section>
+</main>
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div>
+      <p class="pie__marca">La Embajada Azul</p>
+      <p class="pie__aviso">Sitio no oficial, hecho por hinchas. No tiene relación con Millonarios Fútbol Club ni con la Dimayor.</p>
+    </div>
+    <div>
+      <p class="pie__titulo">Fuentes</p>
+      <ul class="pie__lista"><li><a href="https://millonarios.com.co/" target="_blank" rel="noopener">Millonarios FC (sitio oficial)</a></li><li><a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia</a></li><li><a href="https://www.marca.com/co/" target="_blank" rel="noopener">Marca Colombia</a></li><li><a href="https://www.eltiempo.com/deportes" target="_blank" rel="noopener">El Tiempo · Deportes</a></li><li><a href="https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club" target="_blank" rel="noopener">Wikipedia · Millonarios FC</a></li><li><a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a></li></ul>
+    </div>
+    <div>
+      <p class="pie__titulo">Transparencia</p>
+      <p class="pie__texto">Noticias: agregadas por RSS y enlazadas al medio original. Alineación: estimación editorial, no información oficial. Pronóstico: modelo estadístico, no certeza ni consejo de apuestas.</p>
+      <p class="pie__texto">© 2026 · Hecho por hinchas, para hinchas.</p>
+    </div>
+  </div>
+  <div class="contenedor pie__franja">
+    <div class="pie__escudos" aria-label="Escudos homenaje del club"><span class="pie__escudo"><img src="static/escudos/1946.svg" alt="" loading="lazy"><b>1946</b></span><span class="pie__escudo"><img src="static/escudos/ballet.svg" alt="" loading="lazy"><b>1950s</b></span><span class="pie__escudo"><img src="static/escudos/embajador.svg" alt="" loading="lazy"><b>1970s–2000s</b></span><span class="pie__escudo"><img src="static/escudos/actual.svg" alt="" loading="lazy"><b>Hoy</b></span></div>
+    <p class="pie__nota-escudos">Escudos homenaje ilustrados para este sitio · no son emblemas oficiales.</p>
+  </div>
+</footer>
+<script src="static/app.js?v=8f730b6c" defer></script>
+<script src="static/envivo.js?v=9899f751" defer></script>
+</body>
+</html>

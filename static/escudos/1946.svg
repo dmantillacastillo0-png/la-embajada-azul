@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo homenaje 1946">
+  <defs>
+    <linearGradient id="azul1946" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6bff"/>
+      <stop offset="1" stop-color="#0743bf"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 4 112 20v52c0 32-22 54-52 64C30 126 8 104 8 72V20Z" fill="#0a2460" stroke="#8ab4ff" stroke-width="3"/>
+  <path d="M60 12 104 25v46c0 27-18 46-44 55C34 117 16 98 16 71V25Z" fill="#f4f7ff"/>
+  <path d="M60 20 96 31v40c0 22-15 38-36 46-21-8-36-24-36-46V31Z" fill="url(#azul1946)"/>
+  <path d="M32 48h56v5H32zM32 58h56v3H32z" fill="#f4f7ff" opacity=".85"/>
+  <text x="60" y="88" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fff" letter-spacing="2">MFC</text>
+  <path d="M22 100h76l-8 18H30Z" fill="#f4f7ff"/>
+  <text x="60" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#0743bf" letter-spacing="1.5">1946</text>
+</svg>

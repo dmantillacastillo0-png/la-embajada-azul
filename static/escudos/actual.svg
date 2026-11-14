@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Escudo homenaje actual">
+  <defs>
+    <linearGradient id="azulHoy" x1="0" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#4b80ff"/>
+      <stop offset=".55" stop-color="#0a4fd8"/>
+      <stop offset="1" stop-color="#04122e"/>
+    </linearGradient>
+    <linearGradient id="brilloHoy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 4 112 20v52c0 32-22 54-52 64C30 126 8 104 8 72V20Z" fill="url(#azulHoy)" stroke="#8ab4ff" stroke-width="3"/>
+  <path d="M60 12 104 25v46c0 27-18 46-44 55C34 117 16 98 16 71V25Z" fill="none" stroke="#f4f7ff" stroke-width="2"/>
+  <path d="M20 20 100 15v18L20 40Z" fill="url(#brilloHoy)" opacity=".22"/>
+  <path d="M60 30 64.4 41 76 41.3 66.7 48.8 69.9 60 60 53.6 50.1 60 53.3 48.8 44 41.3 55.6 41Z" fill="#ffd166"/>
+  <text x="60" y="104" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="44" font-weight="900" fill="#fff">M</text>
+  <text x="60" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#c8d9ff" letter-spacing="2.2">BOGOTÁ · 1946</text>
+</svg>
