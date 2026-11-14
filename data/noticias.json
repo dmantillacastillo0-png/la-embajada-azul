@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-14T04:55:19.085530+00:00",
-  "total": 12,
+  "actualizado": "2026-11-14T05:52:44.995885+00:00",
+  "total": 13,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios se juega el semestre y la clasificación contra Alianza Valledupar: 90 minutos de tensión",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-se-juega-el-semestre-y-la-clasificacion-contra-alianza-valledupar-90-minutos-de-tension-3601044",
+      "resumen": "El equipo de Alberto Gamero depende de sí mismo: tiene que ganar para no esperar resultados ajenos.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
