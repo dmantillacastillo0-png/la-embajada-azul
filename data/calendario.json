@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T23:33:41.197680+00:00",
+  "actualizado": "2026-11-14T00:00:33.363775+00:00",
   "proximos": [
     {
       "id": "2481266",
@@ -12,8 +12,8 @@
       "liga": "Liga BetPlay",
       "jornada": "Fecha 19",
       "estado": "programado",
-      "espn_id": null,
-      "hora_confirmada": false,
+      "espn_id": "401878024",
+      "hora_confirmada": true,
       "fuente": {
         "nombre": "TheSportsDB",
         "url": "https://www.thesportsdb.com/event/2481266"

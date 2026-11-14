@@ -200,6 +200,28 @@ def proximo_evento() -> dict | None:
 
 _CACHE_ESPN: dict[str, str | None] = {}
 
+ALIAS_EQUIPOS = {
+    "alianza de valledupar": {"alianza fc", "alianza valledupar", "alianza"},
+    "millonarios": {"millonarios fc"},
+}
+
+
+def nombres_equivalentes(a: str, b: str) -> bool:
+    """Compara nombres de equipos entre fuentes (ESPN vs TheSportsDB)."""
+    a, b = normalizar(a), normalizar(b)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if b in ALIAS_EQUIPOS.get(a, set()) or a in ALIAS_EQUIPOS.get(b, set()):
+        return True
+    ignorar = {"de", "del", "la", "el", "fc", "club", "cd", "atletico", "deportivo", "independiente"}
+    ta = {t for t in re.split(r"\W+", a) if t and t not in ignorar}
+    tb = {t for t in re.split(r"\W+", b) if t and t not in ignorar}
+    if not ta or not tb:
+        return False
+    return ta <= tb or tb <= ta
+
 
 def buscar_espn_id(evento: dict) -> str | None:
     """Busca el id de ESPN del mismo partido para el marcador en vivo."""
@@ -229,9 +251,9 @@ def buscar_espn_id(evento: dict) -> str | None:
         for ev in data.get("events") or []:
             comp = (ev.get("competitions") or [{}])[0]
             nombres = [normalizar(c.get("team", {}).get("displayName") or "") for c in comp.get("competitors", [])]
-            if "millonarios" not in nombres:
+            if not any(nombres_equivalentes("millonarios", n) for n in nombres):
                 continue
-            if home in nombres and away in nombres:
+            if any(nombres_equivalentes(home, n) for n in nombres) and any(nombres_equivalentes(away, n) for n in nombres):
                 _CACHE_ESPN[clave_cache] = str(ev.get("id"))
                 return _CACHE_ESPN[clave_cache]
     _CACHE_ESPN[clave_cache] = None
