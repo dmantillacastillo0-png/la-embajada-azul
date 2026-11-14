@@ -1,24 +1,13 @@
 {
-  "actualizado": "2026-11-14T13:54:07.699096+00:00",
-  "total": 17,
-  "errores": [],
+  "actualizado": "2026-11-14T14:45:13.996504+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Millonarios sufre la baja de uno de sus jugadores para su clasificación a cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17508337/baja-en-ataque-de-millonarios-para-su-clasificacion-a-cuadrangulares",
-      "resumen": "Tendrá la ausencia de unos de atacantes para la última fecha del Todos contra Todos.",
-      "fecha": "2026-11-12T17:49:44+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Qué necesita Millonarios para clasificar a los cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17498130/liga-betplay-2026-que-necesita-millonarios-para-clasificar-a-los-cuadrangulares-del-torneo-finalizacion",
-      "resumen": "El equipo embajador tiene 27 puntos y será local en la última fecha del FPC.",
-      "fecha": "2026-11-12T17:49:44+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
       "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
@@ -26,22 +15,6 @@
       "fecha": "2026-11-12T13:00:00+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "Santa Fe goleó a Pasto y se clasificó a los cuadrangulares con un hat-trick de Rodallega",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17495967/santa-fe-goleo-pasto-hat-trick-hugo-rodallega-clasificacion-cuadrangulares",
-      "resumen": "El capitán cardenal volvió a celebrar por partida triple a los 41 años y lideró el contundente 5-0 en El Campín.",
-      "fecha": "2026-11-09T19:48:50+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Mosquera Marmolejo pide por un mejor estado de la cancha de El Campín",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17498964/mosquera-marmolejo-pide-mejor-estado-cancha-el-campin-santa-fe",
-      "resumen": "El portero volvió a la titularidad en los cardenales, clasificados a los cuadrangulares.",
-      "fecha": "2026-11-09T19:48:44+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "MILLONARIOS CAYÓ EN SU VISITA A TOLIMA",
