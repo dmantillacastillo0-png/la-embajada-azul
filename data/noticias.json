@@ -1,13 +1,32 @@
 {
-  "actualizado": "2026-11-15T12:54:28.446783+00:00",
-  "total": 15,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-15T13:55:37.350145+00:00",
+  "total": 16,
+  "errores": [],
   "noticias": [
+    {
+      "titulo": "Millonarios derrotó a Alianza y clasificó a cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Los Embajadores llegaron a 30 puntos en el 'Todos contra todos'.",
+      "fecha": "2026-11-14T22:46:34+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios sufre la baja de uno de sus jugadores para su clasificación a cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17508337/baja-en-ataque-de-millonarios-para-su-clasificacion-a-cuadrangulares",
+      "resumen": "Tendrá la ausencia de unos de atacantes para la última fecha del Todos contra Todos.",
+      "fecha": "2026-11-12T17:49:44+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Qué necesita Millonarios para clasificar a los cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17498130/liga-betplay-2026-que-necesita-millonarios-para-clasificar-a-los-cuadrangulares-del-torneo-finalizacion",
+      "resumen": "El equipo embajador tiene 27 puntos y será local en la última fecha del FPC.",
+      "fecha": "2026-11-12T17:49:44+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
     {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
       "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
@@ -108,22 +127,6 @@
       "titulo": "Alberto Gamero analizó el grupo que le tocó a Millonarios en los cuadrangulares: 'El que más resto físico tenga va a llegar a la final'",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/alberto-gamero-analizo-el-grupo-que-le-toco-a-millonarios-en-los-cuadrangulares-el-que-mas-resto-fisico-tenga-va-a-llegar-a-la-final-3601180",
       "resumen": "El técnico samario destacó la actitud del equipo para quitarse la presión de las eliminaciones recientes.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
-      "club": false
-    },
-    {
-      "titulo": "Liga BetPlay: así quedaron los cuadrangulares semifinales del segundo semestre",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/liga-betplay-asi-quedaron-los-cuadrangulares-semifinales-del-segundo-semestre-3601175",
-      "resumen": "Nacional y América, cabezas de grupo: Santa Fe va con los verdes y Millonarios, con los rojos de Cali.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios hizo la tarea, le ganó a Alianza y clasificó a los cuadrangulares",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-hizo-la-tarea-le-gano-a-alianza-y-clasifico-a-los-cuadrangulares-3601165",
-      "resumen": "El elenco bogotano obtuvo la victoria con goles de Mateo García y Carlos Quintero.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
