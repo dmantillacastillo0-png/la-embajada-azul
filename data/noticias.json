@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-15T13:55:37.350145+00:00",
-  "total": 16,
+  "actualizado": "2026-11-15T14:47:40.758885+00:00",
+  "total": 15,
   "errores": [],
   "noticias": [
     {
@@ -121,14 +121,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Alberto Gamero analizó el grupo que le tocó a Millonarios en los cuadrangulares: 'El que más resto físico tenga va a llegar a la final'",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/alberto-gamero-analizo-el-grupo-que-le-toco-a-millonarios-en-los-cuadrangulares-el-que-mas-resto-fisico-tenga-va-a-llegar-a-la-final-3601180",
-      "resumen": "El técnico samario destacó la actitud del equipo para quitarse la presión de las eliminaciones recientes.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
