@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-15T23:49:24.906165+00:00",
-  "total": 12,
+  "actualizado": "2026-11-16T01:25:17.777839+00:00",
+  "total": 13,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Abonos de Millonarios para los cuadrangulares semifinales de la Liga BetPlay 2026-II: precios, fechas y cómo renovar",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/abonos-de-millonarios-para-los-cuadrangulares-semifinales-de-la-liga-betplay-2026-ii-precios-fechas-y-como-renovar-3601327",
+      "resumen": "El club habilitó la venta para los tres partidos de local en el estadio El Campín.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
