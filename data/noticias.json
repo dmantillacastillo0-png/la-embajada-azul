@@ -1,96 +1,17 @@
 {
-  "actualizado": "2026-11-16T15:39:19.581857+00:00",
-  "total": 14,
-  "errores": [],
-  "noticias": [
+  "actualizado": "2026-11-16T17:16:44.654118+00:00",
+  "total": 2,
+  "errores": [
     {
-      "titulo": "¡MILLONARIOS SUB-17 ES FINALISTA DEL TORNEO SUB-17!",
-      "url": "https://millonarios.com.co/millonarios-sub-17-es-finalista-del-torneo-sub-17/",
-      "resumen": "Millonarios Sub-17 consiguió su clasificación a la gran final del Torneo Nacional tras vencer 3-1 a Atlético Nacional en el partido de vuelta de las semifinales. Los Embajadores salieron a buscar el resultado desde el…",
-      "fecha": "2026-11-15T15:56:49+00:00",
       "fuente": "Millonarios FC",
-      "club": true
+      "error": "TimeoutError: The read operation timed out"
     },
     {
-      "titulo": "GALERÍA: MILLONARIOS VS. ALIANZA – FECHA 19",
-      "url": "https://millonarios.com.co/galeria-millonarios-vs-alianza-fecha-19/",
-      "resumen": "Millonarios se clasificó a los cuadrangulares semifinales venciendo 2-0 a Alianza FC. Mira aquí la galería del encuentro. La entrada GALERÍA: MILLONARIOS VS. ALIANZA – FECHA 19 se publicó primero en Millonarios FC .",
-      "fecha": "2026-11-15T15:39:24+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "MILLONARIOS ASEGURÓ SU CLASIFICACIÓN A CUADRANGULARES CON VICTORIA",
-      "url": "https://millonarios.com.co/millonarios-aseguro-su-clasificacion-a-cuadrangulares-con-victoria/",
-      "resumen": "Millonarios cerró su participación en la fase de grupos de la Liga 2026-II con una victoria 2-0 frente a Alianza. En El Campín, los Embajadores se impusieron gracias a las anotaciones de Mateo García, al minuto 40, y…",
-      "fecha": "2026-11-15T15:16:03+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "Millonarios derrotó a Alianza y clasificó a cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Los Embajadores llegaron a 30 puntos en el 'Todos contra todos'.",
-      "fecha": "2026-11-14T22:46:34+00:00",
       "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
-      "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
-      "resumen": "Millonarios FC informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador Daniel Ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. El jugador ya se encuentra en…",
-      "fecha": "2026-11-12T13:00:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "MILLONARIOS CAYÓ EN SU VISITA A TOLIMA",
-      "url": "https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/",
-      "resumen": "Millonarios visitó a Deportes Tolima en el estadio Manuel Murillo Toro, por la fecha 18 de la Liga. Los Embajadores comenzaron arriba en el marcador con una anotación de Juan Guillermo Cuadrado al minuto 8, pero el…",
-      "fecha": "2026-11-09T11:09:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "NUESTRA SUB-17 IRÁ POR LA REMONTADA EN CASA",
-      "url": "https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/",
-      "resumen": "Millonarios Sub-17 disputó en condición de visitante el partido de ida de las semifinales del Torneo Nacional frente a Atlético Nacional. En un encuentro exigente, los Embajadores se fueron al descanso con ventaja…",
-      "fecha": "2026-11-08T04:19:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "REPORTE MÉDICO: SEBASTIÁN VALENCIA",
-      "url": "https://millonarios.com.co/reporte-medico-sebastian-valencia/",
-      "resumen": "Millonarios FC informa que el jugador Sebastián Valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. El defensor ya se encuentra en proceso de rehabilitación. Tiempo estimado de…",
-      "fecha": "2026-11-07T15:21:09+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18",
-      "url": "https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/",
-      "resumen": "Tolima y Millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. Mira aquí la galería del juego. La entrada TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18 se publicó primero en…",
-      "fecha": "2026-11-05T15:08:21+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "UN PUNTO EN EL CAMPÍN: MILLONARIOS VS. AMÉRICA",
-      "url": "https://millonarios.com.co/un-punto-en-el-campin-millonarios-vs-america/",
-      "resumen": "Millonarios y América se enfrentaron una vez más en El Campín, en esta ocasión por la fecha 17 de la Liga. El encuentre terminó en un empate 0-0, en donde el equipo del profesor Alberto Gamero tuvo la mayor parte de…",
-      "fecha": "2026-11-05T11:41:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "ADIDAS Y MILLONARIOS FC EXTIENDEN SU ALIANZA HASTA 2032 Y LO CELEBRAN PREMIANDO A LA HINCHADA AZUL",
-      "url": "https://millonarios.com.co/adidas-y-millonarios-fc-extienden-su-alianza-hasta-2032-y-lo-celebran-premiando-a-la-hinchada-azul-2/",
-      "resumen": "Bogotá, 04 de noviembre de 2026 adidas y Millonarios FC anuncian la renovación de su alianza hasta 2032, extendiendo una relación que comenzó en 2009 y que se ha consolidado como una de las colaboraciones más…",
-      "fecha": "2026-11-04T23:40:53+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
+  "noticias": [
     {
       "titulo": "¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo",
       "url": "https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html",
@@ -105,14 +26,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Abonos de Millonarios para los cuadrangulares semifinales de la Liga BetPlay 2026-II: precios, fechas y cómo renovar",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/abonos-de-millonarios-para-los-cuadrangulares-semifinales-de-la-liga-betplay-2026-ii-precios-fechas-y-como-renovar-3601327",
-      "resumen": "El club habilitó la venta para los tres partidos de local en el estadio El Campín.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
