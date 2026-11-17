@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T14:57:21.600568+00:00",
+  "actualizado": "2026-11-17T15:58:39.286414+00:00",
   "proximos": [
     {
       "id": "2481266",
@@ -21,6 +21,18 @@
     }
   ],
   "recientes": [
+    {
+      "fecha": "2026-11-14T20:30Z",
+      "local": "Millonarios",
+      "visitante": "Alianza FC",
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "estado": "Final",
+      "fuente": {
+        "nombre": "ESPN",
+        "url": "https://www.espn.com.co/futbol/colombia/"
+      }
+    },
     {
       "fecha": "2026-11-08T23:10Z",
       "local": "Deportes Tolima",
@@ -62,18 +74,6 @@
       "local": "Millonarios",
       "visitante": "Jaguares de Córdoba",
       "goles_local": 4,
-      "goles_visitante": 1,
-      "estado": "Final",
-      "fuente": {
-        "nombre": "ESPN",
-        "url": "https://www.espn.com.co/futbol/colombia/"
-      }
-    },
-    {
-      "fecha": "2026-10-09T01:10Z",
-      "local": "Fortaleza CEIF",
-      "visitante": "Millonarios",
-      "goles_local": 1,
       "goles_visitante": 1,
       "estado": "Final",
       "fuente": {
