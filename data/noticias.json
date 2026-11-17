@@ -1,13 +1,24 @@
 {
-  "actualizado": "2026-11-17T15:58:38.833796+00:00",
-  "total": 12,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-17T17:06:35.974879+00:00",
+  "total": 13,
+  "errores": [],
   "noticias": [
+    {
+      "titulo": "RECONOCIMIENTO POR LA MEDICIÓN DE LA HUELLA DE CARBONO 2025",
+      "url": "https://millonarios.com.co/reconocimiento-por-la-medicion-de-la-huella-de-carbono-2025/",
+      "resumen": "En Millonarios FC seguimos avanzando en la medición y gestión de nuestra huella de carbono. Durante 2025, con el acompañamiento de la Fundación Cataruben y a través de la plataforma PL4N3T, realizamos la cuantificación…",
+      "fecha": "2026-11-17T15:57:32+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
+    {
+      "titulo": "MFC SOSTENIBLE FORTALECE SU COMPROMISO SOCIAL EN LA FUNDACIÓN CRESIENDO",
+      "url": "https://millonarios.com.co/mfc-sostenible-fortalece-su-compromiso-social-en-la-fundacion-cresiendo/",
+      "resumen": "MFC Sostenible realizó la entrega de donaciones de Tiendas MFC y prendas del Equipo Profesional Femenino de temporadas anteriores a la Fundación CreSiendo, en una jornada especial junto a niños, niñas y adolescentes de…",
+      "fecha": "2026-11-17T15:06:44+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "¡MILLONARIOS SUB-17 ES FINALISTA DEL TORNEO SUB-17!",
       "url": "https://millonarios.com.co/millonarios-sub-17-es-finalista-del-torneo-sub-17/",
@@ -31,6 +42,14 @@
       "fecha": "2026-11-15T15:16:03+00:00",
       "fuente": "Millonarios FC",
       "club": true
+    },
+    {
+      "titulo": "Millonarios derrotó a Alianza y clasificó a cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Los Embajadores llegaron a 30 puntos en el 'Todos contra todos'.",
+      "fecha": "2026-11-14T22:46:34+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
     },
     {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
@@ -69,22 +88,6 @@
       "url": "https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/",
       "resumen": "Tolima y Millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. Mira aquí la galería del juego. La entrada TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18 se publicó primero en…",
       "fecha": "2026-11-05T15:08:21+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "UN PUNTO EN EL CAMPÍN: MILLONARIOS VS. AMÉRICA",
-      "url": "https://millonarios.com.co/un-punto-en-el-campin-millonarios-vs-america/",
-      "resumen": "Millonarios y América se enfrentaron una vez más en El Campín, en esta ocasión por la fecha 17 de la Liga. El encuentre terminó en un empate 0-0, en donde el equipo del profesor Alberto Gamero tuvo la mayor parte de…",
-      "fecha": "2026-11-05T11:41:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "ADIDAS Y MILLONARIOS FC EXTIENDEN SU ALIANZA HASTA 2032 Y LO CELEBRAN PREMIANDO A LA HINCHADA AZUL",
-      "url": "https://millonarios.com.co/adidas-y-millonarios-fc-extienden-su-alianza-hasta-2032-y-lo-celebran-premiando-a-la-hinchada-azul-2/",
-      "resumen": "Bogotá, 04 de noviembre de 2026 adidas y Millonarios FC anuncian la renovación de su alianza hasta 2032, extendiendo una relación que comenzó en 2009 y que se ha consolidado como una de las colaboraciones más…",
-      "fecha": "2026-11-04T23:40:53+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
