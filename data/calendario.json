@@ -1,22 +1,40 @@
 {
-  "actualizado": "2026-11-18T00:27:09.242028+00:00",
+  "actualizado": "2026-11-18T01:55:29.059790+00:00",
   "proximos": [
     {
-      "id": "2481266",
-      "fecha": "2026-11-14T20:30:00Z",
-      "fecha_local": "2026-11-14",
-      "hora_local": "15:30",
-      "local": "Millonarios",
-      "visitante": "Alianza de Valledupar",
-      "estadio": "Estadio El Campín",
+      "id": "2630136",
+      "fecha": "2026-11-21T01:40:00Z",
+      "fecha_local": "2026-11-20",
+      "hora_local": "20:40",
+      "local": "Deportivo Cali",
+      "visitante": "Millonarios",
+      "estadio": "Estadio Deportivo Cali",
       "liga": "Liga BetPlay",
-      "jornada": "Fecha 19",
+      "jornada": "Fecha 1",
       "estado": "programado",
-      "espn_id": "401878024",
+      "espn_id": "401934707",
       "hora_confirmada": true,
       "fuente": {
         "nombre": "TheSportsDB",
-        "url": "https://www.thesportsdb.com/event/2481266"
+        "url": "https://www.thesportsdb.com/event/2630136"
+      }
+    },
+    {
+      "id": "2630138",
+      "fecha": "2026-11-24T23:20:00Z",
+      "fecha_local": "2026-11-24",
+      "hora_local": "18:20",
+      "local": "Millonarios",
+      "visitante": "Atlético Bucaramanga",
+      "estadio": "Estadio El Campín",
+      "liga": "Liga BetPlay",
+      "jornada": "Fecha 2",
+      "estado": "programado",
+      "espn_id": null,
+      "hora_confirmada": false,
+      "fuente": {
+        "nombre": "TheSportsDB",
+        "url": "https://www.thesportsdb.com/event/2630138"
       }
     }
   ],

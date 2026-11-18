@@ -1,24 +1,24 @@
 {
-  "id": "2481266",
-  "local": "Millonarios",
-  "visitante": "Alianza de Valledupar",
-  "fecha": "2026-11-14",
-  "hora_local": "15:30",
+  "id": "2630136",
+  "local": "Deportivo Cali",
+  "visitante": "Millonarios",
+  "fecha": "2026-11-20",
+  "hora_local": "20:40",
   "zona": "America/Bogota",
-  "hora_utc": "20:30",
-  "estadio": "Estadio El Campín",
+  "hora_utc": "01:40",
+  "estadio": "Estadio Deportivo Cali",
   "liga": "Liga BetPlay",
-  "jornada": "Fecha 19",
-  "temporada": "2026",
+  "jornada": "Fecha 1",
+  "temporada": "2026-2027",
   "estado": "programado",
   "contexto": "Próximo partido de Millonarios en la Liga BetPlay. Horario y sede según TheSportsDB; pueden cambiar.",
   "fuentes": [
     {
       "nombre": "TheSportsDB",
-      "url": "https://www.thesportsdb.com/event/2481266"
+      "url": "https://www.thesportsdb.com/event/2630136"
     }
   ],
-  "espn_id": "401878024",
+  "espn_id": "401934707",
   "hora_confirmada": true,
-  "actualizado": "2026-11-14T23:38:40.998410+00:00"
+  "actualizado": "2026-11-18T01:55:28.285814+00:00"
 }
