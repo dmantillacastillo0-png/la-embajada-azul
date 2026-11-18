@@ -1,13 +1,16 @@
 {
-  "actualizado": "2026-11-17T23:27:54.604456+00:00",
-  "total": 12,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-18T00:27:09.063288+00:00",
+  "total": 13,
+  "errores": [],
   "noticias": [
+    {
+      "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
+      "url": "https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/",
+      "resumen": "MFC Sostenible en articulación con el GAULA del Ejército y el GAULA de la Policía, brindó un espacio de capacitación a nuestro Equipo Profesional Masculino para fortalecer la prevención de la extorsión y el secuestro.…",
+      "fecha": "2026-11-17T22:27:57+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "RECONOCIMIENTO POR LA MEDICIÓN DE LA HUELLA DE CARBONO 2025",
       "url": "https://millonarios.com.co/reconocimiento-por-la-medicion-de-la-huella-de-carbono-2025/",
@@ -49,6 +52,14 @@
       "club": true
     },
     {
+      "titulo": "Millonarios derrotó a Alianza y clasificó a cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Los Embajadores llegaron a 30 puntos en el 'Todos contra todos'.",
+      "fecha": "2026-11-14T22:46:34+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
       "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
       "resumen": "Millonarios FC informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador Daniel Ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. El jugador ya se encuentra en…",
@@ -77,14 +88,6 @@
       "url": "https://millonarios.com.co/reporte-medico-sebastian-valencia/",
       "resumen": "Millonarios FC informa que el jugador Sebastián Valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. El defensor ya se encuentra en proceso de rehabilitación. Tiempo estimado de…",
       "fecha": "2026-11-07T15:21:09+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18",
-      "url": "https://millonarios.com.co/tolima-vs-millonarios-galeria-fecha-18/",
-      "resumen": "Tolima y Millonarios se enfrentaron en un duelo directo por la clásificación a cuadrangulares semifinales. Mira aquí la galería del juego. La entrada TOLIMA VS. MILLONARIOS: GALERÍA FECHA 18 se publicó primero en…",
-      "fecha": "2026-11-05T15:08:21+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
