@@ -1,7 +1,12 @@
 {
-  "actualizado": "2026-11-18T03:58:25.235532+00:00",
-  "total": 13,
-  "errores": [],
+  "actualizado": "2026-11-18T05:03:49.834647+00:00",
+  "total": 12,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
@@ -50,14 +55,6 @@
       "fecha": "2026-11-15T15:16:03+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "Millonarios derrotó a Alianza y clasificó a cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17511509/millonarios-vs-alianza-fecha-19-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Los Embajadores llegaron a 30 puntos en el 'Todos contra todos'.",
-      "fecha": "2026-11-14T22:46:34+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
