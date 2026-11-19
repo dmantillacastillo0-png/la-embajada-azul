@@ -1,12 +1,7 @@
 {
-  "actualizado": "2026-11-19T04:38:11.574486+00:00",
+  "actualizado": "2026-11-19T06:06:27.189585+00:00",
   "total": 12,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "errores": [],
   "noticias": [
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
