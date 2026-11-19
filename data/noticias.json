@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-19T18:30:45.719121+00:00",
-  "total": 12,
+  "actualizado": "2026-11-19T19:39:39.524553+00:00",
+  "total": 13,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Bismarks Santiago y Jhon Ospina dirigirán Deportivo Cali vs. Millonarios y Once Caldas vs. Atlético Nacional",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/bismarks-santiago-y-jhon-ospina-dirigiran-deportivo-cali-vs-millonarios-y-once-caldas-vs-atletico-nacional-3602453",
+      "resumen": "Equipos arbitrales y encargados del VAR para los cuatro encuentros que abrirán los cuadrangulares de Liga BetPlay II este viernes 20 de noviembre.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
