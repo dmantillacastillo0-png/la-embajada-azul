@@ -1,16 +1,13 @@
 {
-  "actualizado": "2026-11-20T11:09:05.625951+00:00",
-  "total": 14,
-  "errores": [],
-  "noticias": [
+  "actualizado": "2026-11-20T12:34:20.978781+00:00",
+  "total": 13,
+  "errores": [
     {
-      "titulo": "Cali arranca su regreso a cuadrangulares del FPC ante Millonarios en Palmaseca",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17534792/cali-vs-millonarios-fecha-1-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El clásico añejo del fútbol colombiano será el viernes 20 de noviembre en el estadio vallecaucano.",
-      "fecha": "2026-11-19T18:25:28+00:00",
       "fuente": "ESPN Colombia",
-      "club": false
-    },
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
+  "noticias": [
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
       "url": "https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/",
