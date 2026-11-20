@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-20T17:00:06.300569+00:00",
-  "total": 12,
+  "actualizado": "2026-11-20T17:59:11.787798+00:00",
+  "total": 13,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios evalúa fichajes para 2027 mientras disputa los cuadrangulares: jugador de Junior aparece en el radar",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-evalua-fichajes-para-2027-mientras-disputa-los-cuadrangulares-jugador-de-junior-aparece-en-el-radar-3602782",
+      "resumen": "El club bogotano inicia la planificación de su plantilla y se fija en un defensor, pero hay obstáculos contractuales y deportivos.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
