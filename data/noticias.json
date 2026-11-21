@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T15:49:17.950302+00:00",
+  "actualizado": "2026-11-21T16:49:33.032277+00:00",
   "total": 13,
   "errores": [
     {
@@ -8,6 +8,14 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI",
+      "url": "https://millonarios.com.co/mira-aqui-las-postales-del-primer-juego-de-cuadrangulares/",
+      "resumen": "La entrada ⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI se publicó primero en Millonarios FC .",
+      "fecha": "2026-11-21T14:39:22+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "MILLONARIOS INICIÓ LOS CUADRANGULARES VISITANTE A CALI:",
       "url": "https://millonarios.com.co/millonarios-inicio-los-cuadrangulares-visitante-a-cali/",
@@ -77,14 +85,6 @@
       "url": "https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/",
       "resumen": "Millonarios visitó a Deportes Tolima en el estadio Manuel Murillo Toro, por la fecha 18 de la Liga. Los Embajadores comenzaron arriba en el marcador con una anotación de Juan Guillermo Cuadrado al minuto 8, pero el…",
       "fecha": "2026-11-09T11:09:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "NUESTRA SUB-17 IRÁ POR LA REMONTADA EN CASA",
-      "url": "https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/",
-      "resumen": "Millonarios Sub-17 disputó en condición de visitante el partido de ida de las semifinales del Torneo Nacional frente a Atlético Nacional. En un encuentro exigente, los Embajadores se fueron al descanso con ventaja…",
-      "fecha": "2026-11-08T04:19:00+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
