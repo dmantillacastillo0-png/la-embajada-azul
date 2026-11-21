@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T11:48:43.906296+00:00",
+  "actualizado": "2026-11-21T12:57:32.052532+00:00",
   "proximos": [
     {
       "id": "2630136",
@@ -35,6 +35,24 @@
       "fuente": {
         "nombre": "TheSportsDB",
         "url": "https://www.thesportsdb.com/event/2630138"
+      }
+    },
+    {
+      "id": "2630935",
+      "fecha": "2026-11-28T01:40:00Z",
+      "fecha_local": "2026-11-27",
+      "hora_local": "20:40",
+      "local": "Millonarios",
+      "visitante": "América de Cali",
+      "estadio": "Estadio El Campín",
+      "liga": "Liga BetPlay",
+      "jornada": "Fecha 3",
+      "estado": "programado",
+      "espn_id": null,
+      "hora_confirmada": false,
+      "fuente": {
+        "nombre": "TheSportsDB",
+        "url": "https://www.thesportsdb.com/event/2630935"
       }
     }
   ],
