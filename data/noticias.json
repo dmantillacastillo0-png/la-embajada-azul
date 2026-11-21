@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T14:02:03.972026+00:00",
+  "actualizado": "2026-11-21T14:54:15.402809+00:00",
   "total": 14,
   "errores": [
     {
@@ -8,6 +8,14 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "MILLONARIOS INICIÓ LOS CUADRANGULARES VISITANTE A CALI:",
+      "url": "https://millonarios.com.co/millonarios-inicio-los-cuadrangulares-visitante-a-cali/",
+      "resumen": "Millonarios inició la fecha 1 visitando a Deportivo Cali por los cuadrangulares semifinales de la Liga 2026-II. En esta oportunidad el ‘Clásico Añejo’ finalizó con un igualdad 0-0, sumando entonces nuestro primer punto…",
+      "fecha": "2026-11-21T11:14:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
       "url": "https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/",
@@ -77,14 +85,6 @@
       "url": "https://millonarios.com.co/nuestra-sub-17-ira-por-la-remontada-en-casa/",
       "resumen": "Millonarios Sub-17 disputó en condición de visitante el partido de ida de las semifinales del Torneo Nacional frente a Atlético Nacional. En un encuentro exigente, los Embajadores se fueron al descanso con ventaja…",
       "fecha": "2026-11-08T04:19:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "REPORTE MÉDICO: SEBASTIÁN VALENCIA",
-      "url": "https://millonarios.com.co/reporte-medico-sebastian-valencia/",
-      "resumen": "Millonarios FC informa que el jugador Sebastián Valencia presenta una lesión muscular de primer grado del semitendinoso de la pierna derecha. El defensor ya se encuentra en proceso de rehabilitación. Tiempo estimado de…",
-      "fecha": "2026-11-07T15:21:09+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
