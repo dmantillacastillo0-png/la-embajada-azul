@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-21T19:50:31.025685+00:00",
-  "total": 13,
+  "actualizado": "2026-11-21T20:44:58.565878+00:00",
+  "total": 12,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,14 +102,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios se quitó la presión y le sacó un gran punto al Deportivo Cali en la primera fecha de los cuadrangulares de la Liga BetPlay",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-se-quito-la-presion-y-le-saco-un-gran-punto-al-deportivo-cali-en-la-primera-fecha-de-los-cuadrangulares-de-la-liga-betplay-3602949",
-      "resumen": "El equipo de Alberto Gamero igualó 0-0 en Palmaseca.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
