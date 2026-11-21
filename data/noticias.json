@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-21T03:26:12.498861+00:00",
-  "total": 13,
+  "actualizado": "2026-11-21T04:33:15.114554+00:00",
+  "total": 14,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -105,7 +105,15 @@
       "club": false
     },
     {
-      "titulo": "Deportivo Cali vs. Millonarios EN VIVO: 0-0, minuto a minuto del partido de cuadrangulares de la Liga",
+      "titulo": "Millonarios se quitó la presión y le sacó un gran punto al Deportivo Cali en la primera fecha de los cuadrangulares de la Liga BetPlay",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-se-quito-la-presion-y-le-saco-un-gran-punto-al-deportivo-cali-en-la-primera-fecha-de-los-cuadrangulares-de-la-liga-betplay-3602949",
+      "resumen": "El equipo de Alberto Gamero igualó 0-0 en Palmaseca.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
+      "club": false
+    },
+    {
+      "titulo": "Deportivo Cali y Millonarios firman gris empate: reviva 0-0 del partido de cuadrangulares de la Liga",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/rumor-de-partidazo-en-cuadrangulares-vea-deportivo-cali-vs-millonarios-en-vivo-minuto-a-minuto-3602911",
       "resumen": "'Azucareros' y 'embajadores' llegan en distintas circunstancias, uno solvente y otro clasificado con angustias a la semifinal de Liga.",
       "fecha": null,

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T03:26:14.146232+00:00",
+  "actualizado": "2026-11-21T04:33:16.471468+00:00",
   "proximos": [
     {
       "id": "2630136",
@@ -39,6 +39,18 @@
     }
   ],
   "recientes": [
+    {
+      "fecha": "2026-11-21T01:40Z",
+      "local": "Deportivo Cali",
+      "visitante": "Millonarios",
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "estado": "Final",
+      "fuente": {
+        "nombre": "ESPN",
+        "url": "https://www.espn.com.co/futbol/colombia/"
+      }
+    },
     {
       "fecha": "2026-11-14T20:30Z",
       "local": "Millonarios",
@@ -80,18 +92,6 @@
       "local": "Millonarios",
       "visitante": "Once Caldas",
       "goles_local": 1,
-      "goles_visitante": 1,
-      "estado": "Final",
-      "fuente": {
-        "nombre": "ESPN",
-        "url": "https://www.espn.com.co/futbol/colombia/"
-      }
-    },
-    {
-      "fecha": "2026-10-17T23:00Z",
-      "local": "Millonarios",
-      "visitante": "Jaguares de Córdoba",
-      "goles_local": 4,
       "goles_visitante": 1,
       "estado": "Final",
       "fuente": {
