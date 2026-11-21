@@ -1,13 +1,16 @@
 {
-  "actualizado": "2026-11-21T10:51:11.417144+00:00",
-  "total": 14,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-21T11:48:43.190678+00:00",
+  "total": 15,
+  "errores": [],
   "noticias": [
+    {
+      "titulo": "¡EN VIVO! Cali y Millonarios se enfrentan en el clásico de la fecha 1 de cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17534792/cali-vs-millonarios-fecha-1-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Cali y Millonarios no se sacaron ventajas en Palmaseca.",
+      "fecha": "2026-11-21T03:15:09+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
       "url": "https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/",
