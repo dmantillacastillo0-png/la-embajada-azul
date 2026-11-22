@@ -1,13 +1,16 @@
 {
-  "actualizado": "2026-11-22T13:37:40.045220+00:00",
-  "total": 12,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-22T14:53:16.970043+00:00",
+  "total": 14,
+  "errores": [],
   "noticias": [
+    {
+      "titulo": "La tabla de posiciones del Grupo B",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
+      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
+      "fecha": "2026-11-22T03:16:25+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
     {
       "titulo": "⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI",
       "url": "https://millonarios.com.co/mira-aqui-las-postales-del-primer-juego-de-cuadrangulares/",
@@ -23,6 +26,14 @@
       "fecha": "2026-11-21T11:14:00+00:00",
       "fuente": "Millonarios FC",
       "club": true
+    },
+    {
+      "titulo": "¡EN VIVO! Cali y Millonarios se enfrentan en el clásico de la fecha 1 de cuadrangulares",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17534792/cali-vs-millonarios-fecha-1-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Cali y Millonarios no se sacaron ventajas en Palmaseca.",
+      "fecha": "2026-11-21T03:15:09+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
     },
     {
       "titulo": "MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO",
