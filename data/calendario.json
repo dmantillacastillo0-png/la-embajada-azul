@@ -1,24 +1,6 @@
 {
-  "actualizado": "2026-11-21T23:42:34.691450+00:00",
+  "actualizado": "2026-11-22T01:07:20.334018+00:00",
   "proximos": [
-    {
-      "id": "2630136",
-      "fecha": "2026-11-21T01:40:00Z",
-      "fecha_local": "2026-11-20",
-      "hora_local": "20:40",
-      "local": "Deportivo Cali",
-      "visitante": "Millonarios",
-      "estadio": "Estadio Deportivo Cali",
-      "liga": "Liga BetPlay",
-      "jornada": "Fecha 1",
-      "estado": "programado",
-      "espn_id": "401934707",
-      "hora_confirmada": true,
-      "fuente": {
-        "nombre": "TheSportsDB",
-        "url": "https://www.thesportsdb.com/event/2630136"
-      }
-    },
     {
       "id": "2630138",
       "fecha": "2026-11-24T23:20:00Z",
@@ -53,6 +35,24 @@
       "fuente": {
         "nombre": "TheSportsDB",
         "url": "https://www.thesportsdb.com/event/2630935"
+      }
+    },
+    {
+      "id": "2630939",
+      "fecha": "2026-12-02T01:30:00Z",
+      "fecha_local": "2026-12-01",
+      "hora_local": "20:30",
+      "local": "América de Cali",
+      "visitante": "Millonarios",
+      "estadio": "Estadio Olímpico Pascual Guerrero",
+      "liga": "Liga BetPlay",
+      "jornada": "Fecha 4",
+      "estado": "programado",
+      "espn_id": null,
+      "hora_confirmada": false,
+      "fuente": {
+        "nombre": "TheSportsDB",
+        "url": "https://www.thesportsdb.com/event/2630939"
       }
     }
   ],
