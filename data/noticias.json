@@ -1,7 +1,12 @@
 {
-  "actualizado": "2026-11-23T21:55:36.385087+00:00",
-  "total": 15,
-  "errores": [],
+  "actualizado": "2026-11-23T22:57:03.326061+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
@@ -10,22 +15,6 @@
       "fecha": "2026-11-23T20:04:06+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-23T17:52:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios regresa a casa en cuadrangulares ante un rival que ya lo complicó en Bogotá",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Recibirá a Bucaramanga por la segunda fecha del Grupo B de la liga colombiana.",
-      "fecha": "2026-11-23T15:35:16+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "¡LA SUB-17 DIO EL PRIMER PASO EN LA FINAL DEL TORNEO NACIONAL!",
