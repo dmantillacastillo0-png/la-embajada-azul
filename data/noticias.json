@@ -1,12 +1,7 @@
 {
-  "actualizado": "2026-11-23T20:55:45.849045+00:00",
-  "total": 13,
-  "errores": [
-    {
-      "fuente": "ESPN Colombia",
-      "error": "ParseError: no element found: line 1, column 0"
-    }
-  ],
+  "actualizado": "2026-11-23T21:55:36.385087+00:00",
+  "total": 15,
+  "errores": [],
   "noticias": [
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
@@ -15,6 +10,22 @@
       "fecha": "2026-11-23T20:04:06+00:00",
       "fuente": "Millonarios FC",
       "club": true
+    },
+    {
+      "titulo": "La tabla de posiciones del Grupo B",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
+      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
+      "fecha": "2026-11-23T17:52:30+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios regresa a casa en cuadrangulares ante un rival que ya lo complicó en Bogotá",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+      "resumen": "Recibirá a Bucaramanga por la segunda fecha del Grupo B de la liga colombiana.",
+      "fecha": "2026-11-23T15:35:16+00:00",
+      "fuente": "ESPN Colombia",
+      "club": false
     },
     {
       "titulo": "¡LA SUB-17 DIO EL PRIMER PASO EN LA FINAL DEL TORNEO NACIONAL!",
@@ -105,9 +116,9 @@
       "club": false
     },
     {
-      "titulo": "Álvaro Montero compartió emotivo mensaje para los hinchas de Millonarios tras ganar la Copa Sudamericana: 'Solo Millos'",
-      "url": "https://www.eltiempo.com/deportes/futbol-internacional/alvaro-montero-compartio-emotivo-mensaje-para-los-hinchas-de-millonarios-tras-ganar-la-copa-sudamericana-solo-millos-3603420",
-      "resumen": "El guardameta recordó al club de Bogotá en medio de los festejos por el título con Boca Juniors.",
+      "titulo": "Millonarios, con malas noticias: diagnóstico oficial de las lesiones de Cuadrado y Mackalister, antes de enfrentar a Bucaramanga",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-con-malas-noticias-diagnostico-oficial-de-las-lesiones-de-cuadrado-y-mackalister-antes-de-enfrentar-a-bucaramanga-3603521",
+      "resumen": "El equipo azul tiene la enfermería llena en plenos cuadrangulares.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
