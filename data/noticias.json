@@ -1,23 +1,20 @@
 {
-  "actualizado": "2026-11-23T19:39:54.064729+00:00",
-  "total": 15,
-  "errores": [],
+  "actualizado": "2026-11-23T20:55:45.849045+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
     {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-23T17:52:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios regresa a casa en cuadrangulares ante un rival que ya lo complicó en Bogotá",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Recibirá a Bucaramanga por la segunda fecha del Grupo B de la liga colombiana.",
-      "fecha": "2026-11-23T15:35:16+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
+      "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
+      "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
+      "resumen": "Millonarios FC informa sobre la actualidad médica de sus jugadores y los avances en sus respectivos procesos de recuperación. El jugador Juan Guillermo Cuadrado presenta una sobrecarga de los isquiotibiales de su pierna…",
+      "fecha": "2026-11-23T20:04:06+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
     },
     {
       "titulo": "¡LA SUB-17 DIO EL PRIMER PASO EN LA FINAL DEL TORNEO NACIONAL!",
@@ -88,14 +85,6 @@
       "url": "https://millonarios.com.co/millonarios-aseguro-su-clasificacion-a-cuadrangulares-con-victoria/",
       "resumen": "Millonarios cerró su participación en la fase de grupos de la Liga 2026-II con una victoria 2-0 frente a Alianza. En El Campín, los Embajadores se impusieron gracias a las anotaciones de Mateo García, al minuto 40, y…",
       "fecha": "2026-11-15T15:16:03+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "REPORTE MÉDICO: DANIEL RUIZ",
-      "url": "https://millonarios.com.co/reporte-medico-daniel-ruiz/",
-      "resumen": "Millonarios FC informa que, luego de realizarse los exámenes de diagnóstico pertinentes, el jugador Daniel Ruiz presenta una lesión muscular del bíceps femoral de su pierna izquierda. El jugador ya se encuentra en…",
-      "fecha": "2026-11-12T13:00:00+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
