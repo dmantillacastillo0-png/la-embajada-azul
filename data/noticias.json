@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-23T16:10:23.867902+00:00",
-  "total": 13,
+  "actualizado": "2026-11-23T17:32:45.633371+00:00",
+  "total": 14,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -8,6 +8,14 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "¡LA SUB-17 DIO EL PRIMER PASO EN LA FINAL DEL TORNEO NACIONAL!",
+      "url": "https://millonarios.com.co/la-sub-17-dio-el-primer-paso-en-la-final-del-torneo-nacional/",
+      "resumen": "Millonarios Sub-17 comenzó con pie derecho la gran final del Torneo Nacional frente a CD Estudiantil de Medellín. En casa y ante el respaldo de la Familia Azul, los Embajadores consiguieron una importante victoria 2-0,…",
+      "fecha": "2026-11-23T03:57:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI",
       "url": "https://millonarios.com.co/mira-aqui-las-postales-del-primer-juego-de-cuadrangulares/",
@@ -81,14 +89,6 @@
       "club": true
     },
     {
-      "titulo": "MILLONARIOS CAYÓ EN SU VISITA A TOLIMA",
-      "url": "https://millonarios.com.co/millonarios-cayo-en-su-visita-a-tolima/",
-      "resumen": "Millonarios visitó a Deportes Tolima en el estadio Manuel Murillo Toro, por la fecha 18 de la Liga. Los Embajadores comenzaron arriba en el marcador con una anotación de Juan Guillermo Cuadrado al minuto 8, pero el…",
-      "fecha": "2026-11-09T11:09:00+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
       "titulo": "¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo",
       "url": "https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html",
       "resumen": "Andrey Estupiñán fue homenajeado como máximo goleador de la Liga BetPlay Dimayor tras firmar 13 tantos la pasada temporada. El delantero recibió el trofeo antes del partido entre Millonarios y Deportivo Pasto, posando…",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Álvaro Montero compartió emotivo mensaje para los hinchas de Millonarios tras ganar la Copa Sudamericana: 'Solo Millos'",
+      "url": "https://www.eltiempo.com/deportes/futbol-internacional/alvaro-montero-compartio-emotivo-mensaje-para-los-hinchas-de-millonarios-tras-ganar-la-copa-sudamericana-solo-millos-3603420",
+      "resumen": "El guardameta recordó al club de Bogotá en medio de los festejos por el título con Boca Juniors.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
