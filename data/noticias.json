@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-23T13:21:55.907827+00:00",
-  "total": 12,
+  "actualizado": "2026-11-23T14:42:20.398573+00:00",
+  "total": 13,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios y Atlético Bucaramanga miden fuerzas en El Campín: fecha, hora y dónde ver",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-y-atletico-bucaramanga-miden-fuerzas-en-el-campin-fecha-hora-y-donde-ver-3603300",
+      "resumen": "El encuentro de la segunda jornada del cuadrangular B se jugará este martes 24 de noviembre a las 6:20 p. m. Así lo puede ver en vivo.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
