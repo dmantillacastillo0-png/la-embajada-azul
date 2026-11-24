@@ -1,32 +1,13 @@
 {
-  "actualizado": "2026-11-24T22:59:48.416671+00:00",
-  "total": 16,
-  "errores": [],
+  "actualizado": "2026-11-24T23:20:00.707517+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Los convocados en Millonarios vs. Bucaramanga",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
-      "resumen": "El equipo embajador afrontará la segunda fecha de los cuadrangulares en El Campín.",
-      "fecha": "2026-11-24T19:32:49+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-24T19:32:49+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios regresa a casa en cuadrangulares ante un rival que ya lo complicó en Bogotá",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Recibirá a Bucaramanga por la segunda fecha del Grupo B de la liga colombiana.",
-      "fecha": "2026-11-24T14:25:50+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
       "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
@@ -124,9 +105,9 @@
       "club": false
     },
     {
-      "titulo": "De participar en '¿Quién quiere ser millonarios?' a enfrentarse contra el Barcelona en Champions League: la particular historia del DT de Sabah",
-      "url": "https://www.eltiempo.com/deportes/futbol-internacional/de-participar-en-quien-quiere-ser-millonarios-a-enfrentarse-contra-el-barcelona-en-champions-league-la-particular-historia-del-dt-de-sabah-3603828",
-      "resumen": "El técnico Valdas Dambrauskas impulsó su formación en Inglaterra tras participar en el concurso de TV.",
+      "titulo": "Millonarios vs. Bucaramanga, minuto a minuto: los azules vuelven a casa en la segunda fecha de los cuadrangulares semifinales",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-vs-bucaramanga-minuto-a-minuto-los-azules-vuelven-a-casa-en-la-segunda-fecha-de-los-cuadrangulares-semifinales-3603959",
+      "resumen": "El equipo de Alberto Gamero no contará con sus creativos para su debut en casa en esta fase del torneo.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
