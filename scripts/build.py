@@ -24,6 +24,10 @@ TRIVIA = json.loads((DATA / "trivia.json").read_text(encoding="utf-8"))
 RESULTADOS = json.loads((DATA / "resultados.json").read_text(encoding="utf-8"))
 PLANTILLA = json.loads((DATA / "plantilla.json").read_text(encoding="utf-8"))
 NOTICIAS = json.loads((DATA / "noticias.json").read_text(encoding="utf-8"))
+try:
+    SENALES = json.loads((DATA / "alineacion_noticias.json").read_text(encoding="utf-8"))
+except FileNotFoundError:
+    SENALES = {"actualizado": None, "revisadas": 0, "senales": [], "titulares": []}
 
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
          "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
@@ -585,29 +589,92 @@ def pagina_partidos() -> str:
 
 
 def pagina_alineacion() -> str:
+    senales = SENALES.get("senales", [])
+    titulares = SENALES.get("titulares", [])
+    por_jugador: dict[str, list[str]] = {}
+    for s in senales:
+        por_jugador.setdefault(s.get("nombre", ""), []).append(s.get("tipo", ""))
+
+    def marca(nombre: str) -> str:
+        tipos = por_jugador.get(nombre, [])
+        for tipo in ("Baja", "Duda", "Alta"):
+            if tipo in tipos:
+                return tipo.lower()
+        return ""
+
     filas = []
     for i, linea in enumerate(ALINEACION["lineas"]):
         clase = "pitch__fila pitch__fila--arco" if i == 0 else "pitch__fila"
-        fichas = "".join(
-            f'<div class="ficha"><span class="ficha__num">{e(j["num"])}</span><span class="ficha__nombre">{e(j["nombre"].split()[-1])}</span></div>'
-            for j in linea
-        )
-        filas.append(f'<div class="{clase}">{fichas}</div>')
+        fichas = []
+        for j in linea:
+            senal = marca(j["nombre"])
+            extra = f" ficha--{senal}" if senal else ""
+            aviso = f'<span class="ficha__aviso">{senal.upper()}</span>' if senal else ""
+            fichas.append(
+                f'<div class="ficha{extra}"><span class="ficha__num">{e(j["num"])}</span>'
+                f'<span class="ficha__nombre">{e(j["nombre"].split()[-1])}</span>{aviso}</div>'
+            )
+        filas.append(f'<div class="{clase}">{"".join(fichas)}</div>')
     pizarra = "".join(filas)
 
-    bajas = "".join(f'<li><strong>{e(b["nombre"])}</strong><span>{e(b["motivo"])}</span></li>' for b in ALINEACION["bajas"])
+    bajas_auto = [s for s in senales if s.get("tipo") == "Baja"]
+    if bajas_auto:
+        bajas_titulo = "Bajas · señaladas en noticias"
+        bajas = "".join(
+            f'<li><strong>{e(s["nombre"])}</strong><span>{e(s["detalle"])}</span>'
+            f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["fuente"])} ↗</a></li>'
+            for s in bajas_auto
+        )
+    else:
+        bajas_titulo = "Bajas"
+        bajas = "".join(
+            f'<li><strong>{e(b["nombre"])}</strong><span>{e(b["motivo"])}</span></li>'
+            for b in ALINEACION["bajas"]
+        )
+
     grupos = "".join(
         f'<div class="grupo"><h3>{e(grupo)}</h3><ul>' + "".join(f"<li>{e(jugador)}</li>" for jugador in nombres) + "</ul></div>"
         for grupo, nombres in ALINEACION["convocados"].items()
     )
-    once = "".join(f'<li><span class="once__num">{e(j["num"])}</span><span class="once__nombre">{e(j["nombre"])}</span><span class="once__pos">{e(j["pos"])}</span></li>' for j in ALINEACION["xi"])
+    once = []
+    for j in ALINEACION["xi"]:
+        senal = marca(j["nombre"])
+        extra = f' once__item--{senal}' if senal else ""
+        etiqueta = f'<span class="once__senal">{senal.upper()}</span>' if senal else ""
+        once.append(
+            f'<li class="{extra}"><span class="once__num">{e(j["num"])}</span>'
+            f'<span class="once__nombre">{e(j["nombre"])}</span>'
+            f'<span class="once__pos">{e(j["pos"])}</span>{etiqueta}</li>'
+        )
+    once_html = "".join(once)
+
+    def clase_tipo(tipo: str) -> str:
+        return {"Baja": "baja", "Duda": "duda", "Alta": "alta"}.get(tipo, "neutro")
+
+    if senales:
+        senales_html = "".join(
+            f'<li><span class="senal__tipo senal__tipo--{clase_tipo(s["tipo"])}">{e(s["tipo"])}</span>'
+            f'<div><strong>{e(s["nombre"])}</strong><span>{e(s["detalle"])}</span>'
+            f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["fuente"])} ↗ · {e(fecha_corta(s["fecha"]))}</a>'
+            f'</div></li>' for s in senales
+        )
+    else:
+        senales_html = '<li class="senales__vacio">Sin señales nuevas en el último barrido de noticias.</li>'
+
+    titulares_html = "".join(
+        f'<li><a href="{e(t["url"])}" target="_blank" rel="noopener">{e(t["titulo"])} ↗</a>'
+        f'<span>{e(t["fuente"])} · {e(fecha_corta(t["fecha"]))}</span></li>'
+        for t in titulares
+    ) or '<li class="senales__vacio">Ningún titular recolectado todavía.</li>'
+
+    actualizado = e(fecha_corta(SENALES.get("actualizado")))
 
     cuerpo = f"""
     <section class="cabecera-pagina">
       <div class="contenedor">
-        <p class="eyebrow">Convocatoria oficial + criterio</p>
+        <p class="eyebrow">Convocatoria oficial + noticias + criterio</p>
         <h1>Alineación probable</h1>
-        <p class="cabecera-pagina__bajada">20 convocados confirmados, dos bajas explicadas y un once que es estimación, no filtraciones inventadas.</p>
+        <p class="cabecera-pagina__bajada">Bajas y dudas que dejan las noticias, con link a la fuente. El once sigue siendo una estimación, no una filtración inventada.</p>
         <div class="aviso aviso--info"><strong>Ojo:</strong> {e(ALINEACION['nota'])}</div>
       </div>
     </section>
@@ -616,18 +683,25 @@ def pagina_alineacion() -> str:
         <div class="pizarra-card">
           <div class="pizarra-card__cabecera"><span class="chip chip--vivo">XI probable</span><span>{e(ALINEACION['formacion'])}</span></div>
           <div class="pitch" role="img" aria-label="Pizarra con el once probable de Millonarios en formación {e(ALINEACION['formacion'])}">{pizarra}</div>
-          <p class="pizarra-card__pie">Estimación editorial · no confirmada por el club</p>
+          <p class="pizarra-card__pie">Estimación editorial · marcada con señales de noticias cuando aplica</p>
         </div>
         <div class="alineacion-lado">
           <div class="panel">
             <h2>Once probable</h2>
-            <ol class="once">{once}</ol>
+            <ol class="once">{once_html}</ol>
           </div>
           <div class="panel panel--bajas">
-            <h2>Bajas</h2>
+            <h2>{e(bajas_titulo)}</h2>
             <ul class="bajas">{bajas}</ul>
           </div>
-          <p class="fuente-inline">Fuente: <a href="{e(ALINEACION['fuente']['url'])}" target="_blank" rel="noopener">{e(ALINEACION['fuente']['nombre'])} ↗</a></p>
+          <div class="panel panel--senales">
+            <h2>Señales en noticias</h2>
+            <p class="panel__sub">Detectado automáticamente · barrido {actualizado}</p>
+            <ul class="senales">{senales_html}</ul>
+            <h3>Titulares que pueden mover el once</h3>
+            <ul class="senales__titulares">{titulares_html}</ul>
+          </div>
+          <p class="fuente-inline">Fuente base: <a href="{e(ALINEACION['fuente']['url'])}" target="_blank" rel="noopener">{e(ALINEACION['fuente']['nombre'])} ↗</a></p>
         </div>
       </div>
     </section>
@@ -635,10 +709,10 @@ def pagina_alineacion() -> str:
       <div class="contenedor">
         <div class="seccion__cabecera"><p class="eyebrow">Los 20</p><h2 class="seccion__titulo">Convocados para Ibagué</h2></div>
         <div class="convocados">{grupos}</div>
-        <p class="nota-legal">La alineación oficial se conoce cerca del inicio del partido. Si cambia, esta página se actualiza a mano y se avisa en la fecha de edición.</p>
+        <p class="nota-legal">La alineación oficial se conoce cerca del inicio del partido. Las señales en noticias se detectan por palabras clave y pueden fallar: contrastá siempre el link original antes de tomarlas como oficial.</p>
       </div>
     </section>"""
-    return layout("alineacion", f"Alineación probable · {SITIO['nombre']}", "XI probable de Millonarios con convocatoria oficial, bajas y formación.", cuerpo)
+    return layout("alineacion", f"Alineación probable · {SITIO['nombre']}", "XI probable de Millonarios con convocatoria oficial, bajas, dudas y señales de noticias.", cuerpo)
 
 
 def poisson(lam: float, k: int) -> float:

@@ -13,7 +13,7 @@ Sitio de hinchas de **Millonarios Fútbol Club**: noticias con fuente, convocato
 | `index.html` | Portada: próximo partido, cuenta regresiva, últimas noticias, calendario y datos de forma | Automático + build |
 | `noticias.html` | Agregador con búsqueda y filtros por medio | RSS al ejecutar el actualizador |
 | `partidos.html` | Próximos partidos, calendario, marcador en vivo y últimos resultados | TheSportsDB + ESPN |
-| `alineacion.html` | Pizarra con XI probable, convocados y bajas | Editorial (JSON) |
+| `alineacion.html` | XI probable, convocados, bajas y señales detectadas en noticias | Editorial (JSON) + RSS |
 | `pronostico.html` | Modelo Poisson con supuestos a la vista y registro vacío | Automático |
 | `historia.html` | Palmarés, cronología, ídolos y rivalidades | Estático, con fuente |
 | `juegos.html` | Trivia, adivina el jugador y pick 1X2 | 100 % navegador |
@@ -23,7 +23,7 @@ Sitio de hinchas de **Millonarios Fútbol Club**: noticias con fuente, convocato
 No tiene dependencias: solo Python 3.10+ y su biblioteca estándar.
 
 ```bash
-python3 scripts/update.py     # baja noticias RSS (y partido si hay clave)
+python3 scripts/update.py     # baja noticias RSS, partido y señales de bajas/dudas
 python3 scripts/build.py      # genera dist/
 python3 -m http.server 8177 --directory dist
 ```

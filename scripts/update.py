@@ -187,6 +187,108 @@ def actualizar_noticias() -> dict:
     return payload
 
 
+SENALES_PATRONES = {
+    "Baja": (r"\bbaja", r"\blesion", r"\bsuspendid", r"\bsuspension\b",
+             r"\bno juega\b", r"\bno jugara\b", r"\bse pierde\b",
+             r"\bdescartad", r"\bfuera de\b"),
+    "Duda": (r"\bduda", r"\bincierto\b", r"\ba ultima hora\b",
+             r"\bpodria jugar\b", r"\ben duda\b", r"\brecupera",
+             r"\breporte medico\b", r"\bactualidad medica\b",
+             r"\bsobrecarga\b", r"\bmolestia"),
+    "Alta": (r"\bvuelve\b", r"\bregresa\b", r"\balta\b",
+             r"\bde vuelta\b", r"\breincorpora"),
+}
+
+TITULAR_PATRONES = (
+    r"\bconvocad", r"\balineac", r"\bonce\b", r"\breporte medico\b",
+    r"\bactualidad medica\b", r"\bbaja", r"\blesion", r"\bsuspendid",
+    r"\bvuelve\b", r"\bduda",
+)
+
+
+def actualizar_senales_alineacion(noticias: list[dict]) -> dict:
+    """Detecta señales de bajas/dudas/altas en titulares y resúmenes RSS.
+
+    Es una ayuda, no una verdad: cada señal guarda el titular y el link
+    original para que el lector pueda contrastarla.
+    """
+    destino = DATA / "alineacion_noticias.json"
+    plantilla_path = DATA / "plantilla.json"
+    try:
+        jugadores = [j.get("nombre", "") for j in json.loads(
+            plantilla_path.read_text(encoding="utf-8")).get("jugadores", [])]
+    except Exception:
+        jugadores = []
+
+    senales: dict[tuple[str, str], dict] = {}
+    titulares = []
+
+    for noticia in noticias:
+        titulo = noticia.get("titulo") or ""
+        resumen = noticia.get("resumen") or ""
+        slug = (noticia.get("url") or "").rsplit("/", 1)[-1].replace("-", " ")
+        texto = normalizar(f"{titulo} {resumen} {slug}")
+        if not texto:
+            continue
+
+        if any(re.search(p, texto) for p in TITULAR_PATRONES):
+            titulares.append({
+                "titulo": titulo,
+                "url": noticia.get("url"),
+                "fuente": noticia.get("fuente"),
+                "fecha": noticia.get("fecha"),
+            })
+
+        for nombre in jugadores:
+            nom_norm = normalizar(nombre)
+            if not nom_norm:
+                continue
+            coincide = re.search(r"\b" + re.escape(nom_norm) + r"\b", texto)
+            if not coincide:
+                tokens = sorted((t for t in re.split(r"\W+", nom_norm) if len(t) >= 4),
+                                key=len, reverse=True)
+                for token in tokens:
+                    coincide = re.search(r"\b" + re.escape(token) + r"\b", texto)
+                    if coincide:
+                        break
+            if not coincide:
+                continue
+
+            ctx = texto[max(0, coincide.start() - 140):min(len(texto), coincide.end() + 180)]
+            tipo = next((t for t, patrones in SENALES_PATRONES.items()
+                         if any(re.search(p, ctx) for p in patrones)), None)
+            if not tipo:
+                continue
+
+            clave = (nombre, tipo)
+            anterior = senales.get(clave)
+            if anterior and (anterior.get("fecha") or "") > (noticia.get("fecha") or ""):
+                continue
+            senales[clave] = {
+                "nombre": nombre,
+                "tipo": tipo,
+                "detalle": titulo,
+                "fuente": noticia.get("fuente"),
+                "url": noticia.get("url"),
+                "fecha": noticia.get("fecha"),
+            }
+
+    lista = []
+    for tipo in ("Baja", "Duda", "Alta"):
+        grupo = [s for s in senales.values() if s["tipo"] == tipo]
+        grupo.sort(key=lambda s: s.get("fecha") or "", reverse=True)
+        lista.extend(grupo)
+
+    payload = {
+        "actualizado": datetime.now(timezone.utc).isoformat(),
+        "revisadas": len(noticias),
+        "senales": lista[:8],
+        "titulares": titulares[:5],
+    }
+    destino.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return payload
+
+
 def proximo_evento() -> dict | None:
     """Último/ próximo evento de Millonarios según TheSportsDB."""
     url = f"https://www.thesportsdb.com/api/v1/json/{TSDB_KEY}/eventsnext.php?id={TSDB_TEAM}"
@@ -466,10 +568,12 @@ def actualizar_calendario(evento: dict | None = None) -> dict:
 def main() -> int:
     DATA.mkdir(parents=True, exist_ok=True)
     noticias = actualizar_noticias()
+    senales = actualizar_senales_alineacion(noticias["noticias"])
     evento = proximo_evento()
     partido = actualizar_partido(evento)
     calendario = actualizar_calendario(evento)
     print(f"Noticias: {noticias['total']} · fuentes con error: {len(noticias['errores'])}")
+    print(f"Alineación · señales en noticias: {len(senales['senales'])}")
     if partido:
         print(f"Próximo partido: {partido['local']} vs {partido['visitante']} ({partido['fecha']} {partido['hora_local']})")
     else:

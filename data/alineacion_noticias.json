@@ -1,0 +1,52 @@
+{
+  "actualizado": "2026-11-24T23:00:40.322188+00:00",
+  "revisadas": 16,
+  "senales": [
+    {
+      "nombre": "Juan Guillermo Cuadrado",
+      "tipo": "Baja",
+      "detalle": "Los convocados en Millonarios vs. Bucaramanga",
+      "fuente": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+      "fecha": "2026-11-24T19:32:49+00:00"
+    },
+    {
+      "nombre": "Daniel Ruiz",
+      "tipo": "Baja",
+      "detalle": "Los convocados en Millonarios vs. Bucaramanga",
+      "fuente": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+      "fecha": "2026-11-24T19:32:49+00:00"
+    },
+    {
+      "nombre": "David Mackalister Silva",
+      "tipo": "Baja",
+      "detalle": "Los convocados en Millonarios vs. Bucaramanga",
+      "fuente": "ESPN Colombia",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+      "fecha": "2026-11-24T19:32:49+00:00"
+    },
+    {
+      "nombre": "Juan Guillermo Cuadrado",
+      "tipo": "Duda",
+      "detalle": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
+      "fuente": "Millonarios FC",
+      "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
+      "fecha": "2026-11-23T20:04:06+00:00"
+    }
+  ],
+  "titulares": [
+    {
+      "titulo": "Los convocados en Millonarios vs. Bucaramanga",
+      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+      "fuente": "ESPN Colombia",
+      "fecha": "2026-11-24T19:32:49+00:00"
+    },
+    {
+      "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
+      "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
+      "fuente": "Millonarios FC",
+      "fecha": "2026-11-23T20:04:06+00:00"
+    }
+  ]
+}
