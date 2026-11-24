@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-23T23:53:49.095267+00:00",
-  "total": 13,
+  "actualizado": "2026-11-24T01:11:43.457034+00:00",
+  "total": 12,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,14 +102,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios, con malas noticias: diagnóstico oficial de las lesiones de Cuadrado y Mackalister, antes de enfrentar a Bucaramanga",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-con-malas-noticias-diagnostico-oficial-de-las-lesiones-de-cuadrado-y-mackalister-antes-de-enfrentar-a-bucaramanga-3603521",
-      "resumen": "El equipo azul tiene la enfermería llena en plenos cuadrangulares.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
