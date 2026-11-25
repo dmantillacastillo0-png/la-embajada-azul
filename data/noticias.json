@@ -1,32 +1,13 @@
 {
-  "actualizado": "2026-11-25T05:36:11.110113+00:00",
-  "total": 21,
-  "errores": [],
+  "actualizado": "2026-11-25T06:37:04.489039+00:00",
+  "total": 18,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Gamero calienta el clásico ante América y deja claro lo que espera de Millonarios",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17558945/gamero-calienta-duelo-america-millonarios-mensaje-cuadrangulares",
-      "resumen": "El entrenador embajador calificó el compromiso como definitivo en las aspiraciones de su equipo en los cuadrangulares.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios goleó a Bucaramanga y dio un golpe de autoridad en los cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El Embajador se impuso 4-1 en El Campín, con un doblete de Rodrigo Contreras.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Liga BetPlay 2026-II: tabla de posiciones del Grupo B de los cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-25T02:55:28+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
       "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
