@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-24T23:52:36.340653+00:00",
-  "revisadas": 13,
+  "actualizado": "2026-11-25T01:16:33.968749+00:00",
+  "revisadas": 14,
   "senales": [
     {
       "nombre": "Juan Guillermo Cuadrado",
@@ -17,6 +17,12 @@
       "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
       "fuente": "Millonarios FC",
       "fecha": "2026-11-23T20:04:06+00:00"
+    },
+    {
+      "titulo": "Santa Fe, a levantar cabeza y volver a la pelea en el grupo A de los cuadrangulares: recibe al Once caldas en El Campin",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/santa-fe-a-levantar-cabeza-y-volver-a-la-pelea-en-el-grupo-a-de-los-cuadrangulares-recibe-al-once-caldas-en-el-campin-3603985",
+      "fuente": "El Tiempo · Deportes",
+      "fecha": null
     }
   ]
 }

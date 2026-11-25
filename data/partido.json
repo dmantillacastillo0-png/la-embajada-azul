@@ -1,24 +1,24 @@
 {
-  "id": "2630138",
+  "id": "2630935",
   "local": "Millonarios",
-  "visitante": "Atlético Bucaramanga",
-  "fecha": "2026-11-24",
-  "hora_local": "18:20",
+  "visitante": "América de Cali",
+  "fecha": "2026-11-27",
+  "hora_local": "20:40",
   "zona": "America/Bogota",
-  "hora_utc": "23:20",
+  "hora_utc": "01:40",
   "estadio": "Estadio El Campín",
   "liga": "Liga BetPlay",
-  "jornada": "Fecha 2",
+  "jornada": "Fecha 3",
   "temporada": "2026-2027",
   "estado": "programado",
   "contexto": "Próximo partido de Millonarios en la Liga BetPlay. Horario y sede según TheSportsDB; pueden cambiar.",
   "fuentes": [
     {
       "nombre": "TheSportsDB",
-      "url": "https://www.thesportsdb.com/event/2630138"
+      "url": "https://www.thesportsdb.com/event/2630935"
     }
   ],
-  "espn_id": "401934688",
-  "hora_confirmada": true,
-  "actualizado": "2026-11-24T23:52:36.705599+00:00"
+  "espn_id": null,
+  "hora_confirmada": false,
+  "actualizado": "2026-11-25T01:16:34.302697+00:00"
 }

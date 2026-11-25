@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-24T23:52:36.324793+00:00",
-  "total": 13,
+  "actualizado": "2026-11-25T01:16:33.956008+00:00",
+  "total": 14,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -105,9 +105,17 @@
       "club": false
     },
     {
-      "titulo": "Millonarios vs. Bucaramanga, minuto a minuto: los azules vuelven a casa en la segunda fecha de los cuadrangulares semifinales",
+      "titulo": "Santa Fe, a levantar cabeza y volver a la pelea en el grupo A de los cuadrangulares: recibe al Once caldas en El Campin",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/santa-fe-a-levantar-cabeza-y-volver-a-la-pelea-en-el-grupo-a-de-los-cuadrangulares-recibe-al-once-caldas-en-el-campin-3603985",
+      "resumen": "Se enfrentan este miércoles en la segunda fecha de la fase de grupos.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios vs. Bucaramanga, minuto a minuto: los azules ya sacan ventaja en la segunda fecha de los cuadrangulares semifinales",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-vs-bucaramanga-minuto-a-minuto-los-azules-vuelven-a-casa-en-la-segunda-fecha-de-los-cuadrangulares-semifinales-3603959",
-      "resumen": "El equipo de Alberto Gamero no contará con sus creativos para su debut en casa en esta fase del torneo.",
+      "resumen": "El equipo de Alberto Gamero no cuenta con sus creativos para su debut en casa en esta fase del torneo.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
