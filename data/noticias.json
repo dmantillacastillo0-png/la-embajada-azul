@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-25T02:40:24.548228+00:00",
-  "total": 15,
+  "actualizado": "2026-11-25T04:08:40.239875+00:00",
+  "total": 18,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,30 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Tabla de posiciones de los cuadrangulares semifinales: América le saca provecho al 'punto invisible' y supera a Millonarios",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/tabla-de-posiciones-de-los-cuadrangulares-semifinales-america-le-saca-provecho-al-punto-invisible-y-supera-a-millonarios-3604025",
+      "resumen": "La segunda fecha del grupo A se jugará este miércoles en Bogotá y Medellín.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
+      "club": false
+    },
+    {
+      "titulo": "América se quedó con el clásico vallecaucano: le ganó al Deportivo Cali y se iluusiona en el grupo B",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/america-se-quedo-con-el-clasico-vallecaucano-le-gano-al-deportivo-cali-y-se-iluusiona-en-el-grupo-b-3604020",
+      "resumen": "Se enfrentaron en el Pascual Guerrero en la segunda fecha de los cuadrangulares. Los escarlatas, cabeza a cabeza con Millonarios.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
+      "club": false
+    },
+    {
+      "titulo": "Alberto Gamero, contento por la goleada de Millonarios, pero con temas para mejorar: 'No voy a decir que fue un partido correcto y de 10 puntos'",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/alberto-gamero-contento-por-la-goleada-de-millonarios-pero-con-temas-para-mejorar-no-voy-a-decir-que-fue-un-partido-correcto-y-de-10-puntos-3604013",
+      "resumen": "Los azules derrotaron 4-1 al Bucaramanga en la segunda fecha de los cuadrangulares semifinales de la Liga BetPlay 2026-II.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
