@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-25T01:16:33.956008+00:00",
-  "total": 14,
+  "actualizado": "2026-11-25T02:40:24.548228+00:00",
+  "total": 15,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios pisa fuerte: goleó al Bucaramanga y sigue invicto en los cuadrangulares semifinales de la Liga BetPlay",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-pisa-fuerte-goleo-al-bucaramanga-y-sigue-invicto-en-los-cuadrangulares-semifinales-de-la-liga-betplay-3603991",
+      "resumen": "Con una gran muestra de contundencia, el equipo de Alberto Gamero se impuso 4-1 en El Campín.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
