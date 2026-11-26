@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-26T12:42:36.084347+00:00",
-  "total": 14,
+  "actualizado": "2026-11-26T14:24:37.706144+00:00",
+  "total": 12,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -102,22 +102,6 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Nueva queja contra el arbitraje: Atlético Bucaramanga explota tras derrota contra Millonarios y emite fuerte comunicado",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/nueva-queja-contra-el-arbitraje-atletico-bucaramanga-explota-tras-derrota-contra-millonarios-y-emite-fuerte-comunicado-3604325",
-      "resumen": "El cuadro leopardo perdió en Bogotá en la fecha 2 de los cuadrangulares.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
-      "club": false
-    },
-    {
-      "titulo": "Santa Fe vs. Once Caldas, en vivo: siga el minuto a minuto del partido en el grupo A de los cuadrangulares",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/santa-fe-vs-once-caldas-en-vivo-siga-el-minuto-a-minuto-del-partido-en-el-grupo-a-de-los-cuadrangulares-3604321",
-      "resumen": "Se enfrentan este miércoles en el estadio El Campín.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
       "club": false
     }
   ]
