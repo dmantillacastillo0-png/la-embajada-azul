@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T20:58:30.558261+00:00",
+  "actualizado": "2026-11-26T21:58:24.477586+00:00",
   "total": 12,
   "errores": [
     {
@@ -8,6 +8,14 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "EL PRÓXIMO PASO COMIENZA EN LA CANCHA: PARTICIPA EN NUESTRAS VEEDURÍAS",
+      "url": "https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/",
+      "resumen": "Millonarios FC Fem abre las puertas a nuevos talentos con sus jornadas de veedurías, que se realizarán los días 1, 2 y 3 de diciembre, de 2:00 a 4:00 p. m., en Xcoli Cancha 10. La convocatoria está dirigida a jugadoras…",
+      "fecha": "2026-11-26T20:37:38+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "📸⚽ GOLEADA EN CASA: REVISA LAS POSTALES DE LA FECHA 2 DE LOS CUADRANGULARES",
       "url": "https://millonarios.com.co/goleada-en-casa-revisa-las-postales-de-la-fecha-2-de-los-cuadrangulares/",
@@ -77,14 +85,6 @@
       "url": "https://millonarios.com.co/mfc-sostenible-fortalece-su-compromiso-social-en-la-fundacion-cresiendo/",
       "resumen": "MFC Sostenible realizó la entrega de donaciones de Tiendas MFC y prendas del Equipo Profesional Femenino de temporadas anteriores a la Fundación CreSiendo, en una jornada especial junto a niños, niñas y adolescentes de…",
       "fecha": "2026-11-17T15:06:44+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "¡MILLONARIOS SUB-17 ES FINALISTA DEL TORNEO SUB-17!",
-      "url": "https://millonarios.com.co/millonarios-sub-17-es-finalista-del-torneo-sub-17/",
-      "resumen": "Millonarios Sub-17 consiguió su clasificación a la gran final del Torneo Nacional tras vencer 3-1 a Atlético Nacional en el partido de vuelta de las semifinales. Los Embajadores salieron a buscar el resultado desde el…",
-      "fecha": "2026-11-15T15:56:49+00:00",
       "fuente": "Millonarios FC",
       "club": true
     },
