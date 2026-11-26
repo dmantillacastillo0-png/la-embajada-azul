@@ -1,32 +1,13 @@
 {
-  "actualizado": "2026-11-26T02:58:23.757437+00:00",
-  "total": 19,
-  "errores": [],
+  "actualizado": "2026-11-26T04:04:21.982683+00:00",
+  "total": 14,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Millonarios goleó a Bucaramanga",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El Embajador se impuso 4-1 en El Campín, con un doblete de Rodrigo Contreras.",
-      "fecha": "2026-11-26T01:18:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-26T01:18:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Once Caldas por fin tiene otro rival: visitará a Santa Fe en el Grupo A",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17556020/santa-fe-vs-once-caldas-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El equipo cardenal se impuso 3-0 en El Campín.",
-      "fecha": "2026-11-25T23:09:33+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "📸⚽ GOLEADA EN CASA: REVISA LAS POSTALES DE LA FECHA 2 DE LOS CUADRANGULARES",
       "url": "https://millonarios.com.co/goleada-en-casa-revisa-las-postales-de-la-fecha-2-de-los-cuadrangulares/",
@@ -42,14 +23,6 @@
       "fecha": "2026-11-25T14:13:53+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "Gamero calienta el clásico ante América y deja claro lo que espera de Millonarios",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17558945/gamero-calienta-duelo-america-millonarios-mensaje-cuadrangulares",
-      "resumen": "El entrenador embajador calificó el compromiso como definitivo en las aspiraciones de su equipo en los cuadrangulares.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
@@ -143,14 +116,6 @@
       "titulo": "Santa Fe vs. Once Caldas, en vivo: siga el minuto a minuto del partido en el grupo A de los cuadrangulares",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/santa-fe-vs-once-caldas-en-vivo-siga-el-minuto-a-minuto-del-partido-en-el-grupo-a-de-los-cuadrangulares-3604321",
       "resumen": "Se enfrentan este miércoles en el estadio El Campín.",
-      "fecha": null,
-      "fuente": "El Tiempo · Deportes",
-      "club": false
-    },
-    {
-      "titulo": "Wuilker Faríñez confesó que extraña a Millonarios y a sus aficionados: 'Cómo no extrañar al club, me aportó mucho. El hincha es muy apasionado'",
-      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/wuilker-farinez-confeso-que-extrana-a-millonarios-y-a-sus-aficionados-como-no-extranar-al-club-me-aporto-mucho-el-hincha-es-muy-apasionado-3604212",
-      "resumen": "El guardameta venezolano volvió a referirse con cariño a su etapa en el club embajador, mientras define su futuro contractual en el fútbol colombiano.",
       "fecha": null,
       "fuente": "El Tiempo · Deportes",
       "club": false
