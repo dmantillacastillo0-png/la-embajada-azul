@@ -289,6 +289,328 @@ def actualizar_senales_alineacion(noticias: list[dict]) -> dict:
     return payload
 
 
+ESPN_EQUIPO_ID = "5484"
+ESPN_SCHEDULE = (
+    f"https://site.web.api.espn.com/apis/site/v2/sports/soccer/"
+    f"{ESPN_LIGA}/teams/{ESPN_EQUIPO_ID}/schedule"
+)
+ESPN_SUMMARY = (
+    "https://site.web.api.espn.com/apis/site/v2/sports/soccer/"
+    f"{ESPN_LIGA}/summary?event={{}}"
+)
+
+ALIAS_JUGADORES = {
+    "carlos d quintero": "Darwin Quintero",
+    "leonai": "Leonai Souza",
+    "jaine barreiro": "Stiven Barreiro",
+    "leonardo castro": "Leonardo Castro",
+}
+
+SECCIONES_CONVOCATORIA = {
+    "arqueros": "Arqueros",
+    "defensas": "Defensores",
+    "defensores": "Defensores",
+    "volantes": "Mediocampistas",
+    "mediocampistas": "Mediocampistas",
+    "delanteros": "Delanteros",
+}
+
+
+def texto_nota(url: str) -> str:
+    """Texto legible de un artículo, sin scripts ni etiquetas."""
+    crudo = descargar(url).decode("utf-8", "ignore")
+    crudo = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", crudo, flags=re.I | re.S)
+    crudo = re.sub(r"</(p|div|h\d|li|br)\s*/?>", "\n", crudo, flags=re.I)
+    return html.unescape(re.sub(r"<[^>]+>", "", crudo))
+
+
+def indice_plantilla() -> tuple[dict[str, str], dict[str, list[str]]]:
+    try:
+        jugadores = json.loads((DATA / "plantilla.json").read_text(encoding="utf-8")).get("jugadores", [])
+    except Exception:
+        jugadores = []
+    nombres = [(j.get("nombre") or "").strip() for j in jugadores]
+    # La plantilla puede ir detrás de la convocatoria; el JSON anterior también cuenta.
+    try:
+        anterior = json.loads((DATA / "alineacion.json").read_text(encoding="utf-8"))
+        nombres += [j.get("nombre", "") for j in anterior.get("xi", [])]
+        nombres += [j.get("nombre", "") for j in anterior.get("bajas", [])]
+        for grupo in (anterior.get("convocados") or {}).values():
+            nombres += list(grupo)
+    except Exception:
+        pass
+    nombres += list(ALIAS_JUGADORES.values())
+
+    por_norm, por_token = {}, {}
+    for nombre in nombres:
+        if not nombre:
+            continue
+        por_norm.setdefault(normalizar(nombre).replace(".", " ").replace("  ", " ").strip(), nombre)
+        for token in re.split(r"\W+", normalizar(nombre)):
+            if len(token) >= 4:
+                lista = por_token.setdefault(token, [])
+                if nombre not in lista:
+                    lista.append(nombre)
+    return por_norm, por_token
+
+
+def canon_jugador(nombre: str, por_norm: dict, por_token: dict) -> str | None:
+    n = normalizar(nombre).replace(".", " ").replace("  ", " ").strip()
+    if n in ALIAS_JUGADORES:
+        return ALIAS_JUGADORES[n]
+    if n in por_norm:
+        return por_norm[n]
+    for token in sorted(n.split(), key=len, reverse=True):
+        if len(token) >= 4 and len(por_token.get(token, [])) == 1:
+            return por_token[token][0]
+    return None
+
+
+def nombres_en(fragmento: str, por_norm: dict, por_token: dict) -> list[str]:
+    texto = normalizar(fragmento)
+    encontrados = []
+    for n, nombre in list(por_norm.items()) + list(ALIAS_JUGADORES.items()):
+        if re.search(r"\b" + re.escape(n) + r"\b", texto):
+            canon = canon_jugador(nombre, por_norm, por_token) or nombre
+            if canon not in encontrados:
+                encontrados.append(canon)
+    return encontrados
+
+
+def parsear_convocatoria(texto: str, por_norm: dict, por_token: dict) -> dict | None:
+    inicio = texto.lower().find("los 20 convocados")
+    if inicio < 0:
+        return None
+    bloque = texto[inicio:inicio + 6000]
+    conv = {clave: [] for clave in ("Arqueros", "Defensores", "Mediocampistas", "Delanteros")}
+    actual = None
+    for linea in bloque.splitlines():
+        lin = limpiar(linea)
+        if not lin:
+            continue
+        cabecera = normalizar(lin).strip(" :")
+        if cabecera in SECCIONES_CONVOCATORIA:
+            actual = SECCIONES_CONVOCATORIA[cabecera]
+            continue
+        partido_num = re.match(r"^(\d{1,2})\.\s*(.+)$", lin)
+        if not partido_num or not actual:
+            continue
+        nombre = canon_jugador(partido_num.group(2), por_norm, por_token)
+        if nombre and nombre not in conv[actual]:
+            conv[actual].append(nombre)
+    if sum(len(v) for v in conv.values()) < 15:
+        return None
+    return conv
+
+
+def parsear_bajas(texto: str, por_norm: dict, por_token: dict) -> list[dict]:
+    inicio = texto.lower().find("por lesión")
+    if inicio < 0:
+        return []
+    fin = texto.find(".", inicio)
+    frase = texto[inicio:(fin + 1) if fin > 0 else inicio + 400]
+    partes = re.split(r"además por decisión técnica tampoco está", frase, flags=re.I)
+    bajas = []
+    for i, parte in enumerate(partes[:2]):
+        motivo = "Lesión" if i == 0 else "Decisión técnica"
+        for nombre in nombres_en(parte, por_norm, por_token):
+            bajas.append({"nombre": nombre, "motivo": motivo})
+    return bajas
+
+
+def posicion_es(pos: str) -> str:
+    pos = pos or ""
+    if pos.startswith("G"):
+        return "POR"
+    if pos.startswith("CD"):
+        return "DFC"
+    if pos == "LB":
+        return "LI"
+    if pos == "RB":
+        return "LD"
+    if pos.startswith("CM"):
+        return "MC"
+    if pos.startswith("LM"):
+        return "MI"
+    if pos.startswith("RM"):
+        return "MD"
+    if pos.startswith(("CF", "ST")):
+        return "DC"
+    return pos
+
+
+def once_de_espn(event_id: str, por_norm: dict, por_token: dict) -> dict | None:
+    try:
+        data = descargar_json(ESPN_SUMMARY.format(event_id))
+    except Exception as exc:
+        print(f"[aviso] no se pudo leer once de ESPN {event_id}: {type(exc).__name__}", file=sys.stderr)
+        return None
+    for equipo in data.get("rosters") or []:
+        if not nombres_equivalentes("millonarios", (equipo.get("team") or {}).get("displayName", "")):
+            continue
+        titulares = [p for p in (equipo.get("roster") or []) if p.get("starter")]
+        if not titulares:
+            return None
+        filas = {0: [], 1: [], 2: [], 3: []}
+        for p in titulares:
+            nombre = canon_jugador((p.get("athlete") or {}).get("displayName", ""), por_norm, por_token)
+            if not nombre:
+                continue
+            pos = (p.get("position") or {}).get("abbreviation", "")
+            if pos.startswith("G"):
+                fila = 0
+            elif pos.startswith(("CD", "D")) or pos in ("LB", "RB"):
+                fila = 1
+            elif pos.startswith(("CM", "LM", "RM", "M")):
+                fila = 2
+            else:
+                fila = 3
+            filas[fila].append({
+                "nombre": nombre,
+                "num": p.get("jersey") or "—",
+                "pos": posicion_es(pos),
+                "_lugar": str(p.get("formationPlace") or ""),
+            })
+        orden = {"1": 0, "6": 1, "5": 2, "3": 3, "2": 4,
+                 "8": 5, "4": 6, "11": 7, "7": 8, "9": 9, "10": 10}
+        for fila in filas.values():
+            fila.sort(key=lambda x: orden.get(x["_lugar"], 99))
+        lineas = [[{k: v for k, v in p.items() if k != "_lugar"} for p in filas[i]] for i in range(4)]
+        return {"formacion": equipo.get("formation") or "4-4-2", "lineas": lineas}
+    return None
+
+
+def ultimo_once_oficial(por_norm: dict, por_token: dict, excluir: str | None = None) -> dict | None:
+    try:
+        data = descargar_json(ESPN_SCHEDULE)
+    except Exception as exc:
+        print(f"[aviso] no se pudo leer calendario de ESPN: {type(exc).__name__}", file=sys.stderr)
+        return None
+    for ev in data.get("events") or []:
+        eid = str(ev.get("id") or "")
+        if excluir and eid == str(excluir):
+            continue
+        if ((ev.get("status") or {}).get("type") or {}).get("state") == "pre":
+            continue
+        once = once_de_espn(eid, por_norm, por_token)
+        if once:
+            return once
+    return None
+
+
+def completar_once(once: dict, conv: dict, bajas: list[dict], por_norm: dict, por_token: dict) -> dict:
+    convocados = {n for grupo in conv.values() for n in grupo}
+    fuera = {b["nombre"] for b in bajas}
+    try:
+        plantilla = {j["nombre"]: j for j in json.loads(
+            (DATA / "plantilla.json").read_text(encoding="utf-8")).get("jugadores", [])}
+    except Exception:
+        plantilla = {}
+
+    grupos = [conv["Arqueros"], conv["Defensores"], conv["Mediocampistas"], conv["Delanteros"]]
+    lineas = [list(fila) for fila in once.get("lineas", [[] for _ in range(4)])]
+    while len(lineas) < 4:
+        lineas.append([])
+    for i, grupo in enumerate(grupos):
+        lineas[i] = [p for p in lineas[i] if p.get("nombre") in convocados and p.get("nombre") not in fuera]
+        objetos = len(lineas[i])
+        for nombre in grupo:
+            if nombre in fuera or any(p["nombre"] == nombre for p in lineas[i]):
+                continue
+            if objetos >= (1 if i == 0 else 4 if i in (1, 2) else 2):
+                break
+            info = plantilla.get(nombre, {})
+            lineas[i].append({
+                "nombre": nombre,
+                "num": info.get("num", "—"),
+                "pos": info.get("pos", ""),
+            })
+            objetos += 1
+
+    xi = []
+    for fila in lineas:
+        for p in fila:
+            xi.append({"num": p.get("num", "—"), "nombre": p["nombre"], "pos": p.get("pos", "")})
+    return {"formacion": once.get("formacion", "4-4-2"), "lineas": lineas, "xi": xi}
+
+
+def actualizar_alineacion(noticias: list[dict], partido: dict | None) -> dict:
+    """Reescribe alineación.json con convocatoria, bajas y once del rival actual."""
+    destino = DATA / "alineacion.json"
+    try:
+        anterior = json.loads(destino.read_text(encoding="utf-8"))
+    except Exception:
+        anterior = {}
+
+    por_norm, por_token = indice_plantilla()
+    rival = (partido or {}).get("visitante") or ""
+    nota = None
+    for n in noticias:
+        titulo = n.get("titulo") or ""
+        if not re.search(r"\bconvocad", normalizar(titulo)):
+            continue
+        if rival and normalizar(rival) not in normalizar(titulo):
+            continue
+        nota = n
+        break
+
+    if not nota or not nota.get("url"):
+        print("[aviso] sin convocatoria para el rival actual; se conserva la alineación anterior")
+        return anterior
+
+    try:
+        texto = texto_nota(nota["url"])
+    except Exception as exc:
+        print(f"[aviso] no se pudo leer la convocatoria: {type(exc).__name__}: {exc}", file=sys.stderr)
+        return anterior
+
+    conv = parsear_convocatoria(texto, por_norm, por_token)
+    if not conv:
+        print("[aviso] no se pudo parsear la convocatoria; se conserva la alineación anterior")
+        return anterior
+    bajas = parsear_bajas(texto, por_norm, por_token)
+
+    origen = "XI probable · continuidad del último once oficial"
+    confirmada = False
+    once = None
+    espn_actual = (partido or {}).get("espn_id")
+    if espn_actual:
+        once = once_de_espn(str(espn_actual), por_norm, por_token)
+        if once:
+            origen = "XI oficial · ESPN"
+            confirmada = True
+    if not once:
+        once = ultimo_once_oficial(por_norm, por_token, excluir=espn_actual)
+    if not once:
+        once = {"formacion": anterior.get("formacion", "4-4-2"),
+                "lineas": anterior.get("lineas", []), "xi": anterior.get("xi", [])}
+    once = completar_once(once, conv, bajas, por_norm, por_token)
+
+    payload = {
+        "formacion": once["formacion"],
+        "xi": once["xi"],
+        "lineas": once["lineas"],
+        "convocados": conv,
+        "bajas": bajas or anterior.get("bajas", []),
+        "nota": (
+            "Once actualizado desde la convocatoria oficial "
+            + ("y la alineación confirmada por ESPN." if confirmada else "y el último once oficial del equipo.")
+            + " La alineación puede cambiar hasta el pitazo inicial."
+        ),
+        "fuente": {
+            "nombre": f"{nota.get('fuente') or 'ESPN Colombia'} · convocatoria oficial",
+            "url": nota["url"],
+        },
+        "actualizado": datetime.now(timezone.utc).isoformat(),
+        "origen_xi": origen,
+        "confirmada": confirmada,
+        "rival": rival,
+        "partido": (partido or {}).get("fecha", ""),
+    }
+    destino.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return payload
+
+
 def proximo_evento() -> dict | None:
     """Último/ próximo evento de Millonarios según TheSportsDB."""
     url = f"https://www.thesportsdb.com/api/v1/json/{TSDB_KEY}/eventsnext.php?id={TSDB_TEAM}"
@@ -571,9 +893,15 @@ def main() -> int:
     senales = actualizar_senales_alineacion(noticias["noticias"])
     evento = proximo_evento()
     partido = actualizar_partido(evento)
+    alineacion = actualizar_alineacion(noticias["noticias"], partido)
     calendario = actualizar_calendario(evento)
     print(f"Noticias: {noticias['total']} · fuentes con error: {len(noticias['errores'])}")
     print(f"Alineación · señales en noticias: {len(senales['senales'])}")
+    print(
+        f"Alineación · {alineacion.get('origen_xi', 'sin cambios')} · "
+        f"{sum(len(v) for v in alineacion.get('convocados', {}).values())} convocados · "
+        f"{len(alineacion.get('bajas', []))} bajas"
+    )
     if partido:
         print(f"Próximo partido: {partido['local']} vs {partido['visitante']} ({partido['fecha']} {partido['hora_local']})")
     else:

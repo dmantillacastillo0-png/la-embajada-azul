@@ -1,58 +1,58 @@
 {
-  "formacion": "4-2-3-1",
+  "formacion": "4-4-2",
   "xi": [
     {
-      "num": 1,
+      "num": "1",
       "nombre": "Javier Burrai",
       "pos": "POR"
     },
     {
-      "num": 43,
-      "nombre": "Cristian Uparela",
-      "pos": "LD"
+      "num": "17",
+      "nombre": "Jorge Arias",
+      "pos": "DFC"
     },
     {
-      "num": 4,
+      "num": "4",
       "nombre": "Stiven Barreiro",
       "pos": "DFC"
     },
     {
-      "num": 6,
-      "nombre": "Sergio Mosquera",
-      "pos": "DFC"
-    },
-    {
-      "num": 20,
+      "num": "20",
       "nombre": "Danovis Banguero",
       "pos": "LI"
     },
     {
-      "num": 28,
-      "nombre": "Stiven Vega",
+      "num": "34",
+      "nombre": "Jhomier Guerrero",
+      "pos": "LD"
+    },
+    {
+      "num": "18",
+      "nombre": "Rodrigo Ureña",
       "pos": "MC"
     },
     {
-      "num": 30,
-      "nombre": "Sebastián del Castillo",
+      "num": "19",
+      "nombre": "Mateo García",
       "pos": "MC"
     },
     {
-      "num": 7,
-      "nombre": "Juan Guillermo Cuadrado",
-      "pos": "MD"
-    },
-    {
-      "num": 14,
-      "nombre": "David Mackalister Silva",
-      "pos": "MCO"
-    },
-    {
-      "num": 11,
-      "nombre": "Andrey Estupiñán",
+      "num": "13",
+      "nombre": "Francisco Chaverra",
       "pos": "MI"
     },
     {
-      "num": "—",
+      "num": "11",
+      "nombre": "Andrey Estupiñán",
+      "pos": "MD"
+    },
+    {
+      "num": "27",
+      "nombre": "Rodrigo Contreras",
+      "pos": "DC"
+    },
+    {
+      "num": "23",
       "nombre": "Leonardo Castro",
       "pos": "DC"
     }
@@ -61,55 +61,64 @@
     [
       {
         "nombre": "Javier Burrai",
-        "num": 1
+        "num": "1",
+        "pos": "POR"
       }
     ],
     [
       {
-        "nombre": "Cristian Uparela",
-        "num": 43
+        "nombre": "Jorge Arias",
+        "num": "17",
+        "pos": "DFC"
       },
       {
         "nombre": "Stiven Barreiro",
-        "num": 4
-      },
-      {
-        "nombre": "Sergio Mosquera",
-        "num": 6
+        "num": "4",
+        "pos": "DFC"
       },
       {
         "nombre": "Danovis Banguero",
-        "num": 20
+        "num": "20",
+        "pos": "LI"
+      },
+      {
+        "nombre": "Jhomier Guerrero",
+        "num": "34",
+        "pos": "LD"
       }
     ],
     [
       {
-        "nombre": "Stiven Vega",
-        "num": 28
+        "nombre": "Rodrigo Ureña",
+        "num": "18",
+        "pos": "MC"
       },
       {
-        "nombre": "Sebastián del Castillo",
-        "num": 30
-      }
-    ],
-    [
-      {
-        "nombre": "Juan Guillermo Cuadrado",
-        "num": 7
+        "nombre": "Mateo García",
+        "num": "19",
+        "pos": "MC"
       },
       {
-        "nombre": "David Mackalister Silva",
-        "num": 14
+        "nombre": "Francisco Chaverra",
+        "num": "13",
+        "pos": "MI"
       },
       {
         "nombre": "Andrey Estupiñán",
-        "num": 11
+        "num": "11",
+        "pos": "MD"
       }
     ],
     [
       {
+        "nombre": "Rodrigo Contreras",
+        "num": "27",
+        "pos": "DC"
+      },
+      {
         "nombre": "Leonardo Castro",
-        "num": "—"
+        "num": "23",
+        "pos": "DC"
       }
     ]
   ],
@@ -121,42 +130,54 @@
     "Defensores": [
       "Samuel Martín",
       "Stiven Barreiro",
-      "Sergio Mosquera",
       "Jorge Arias",
       "Danovis Banguero",
-      "Cristian Uparela"
+      "Sebastián Valencia",
+      "Jhomier Guerrero",
+      "Sergio Mosquera"
     ],
     "Mediocampistas": [
-      "Juan Guillermo Cuadrado",
-      "Daniel Ruiz",
-      "David Mackalister Silva",
+      "Rodrigo Ureña",
       "Mateo García",
-      "Carlos Darwin Quintero",
-      "Stiven Vega",
+      "Darwin Quintero",
       "Sebastián del Castillo",
       "Leonai Souza"
     ],
     "Delanteros": [
       "Andrey Estupiñán",
       "Francisco Chaverra",
-      "Leonardo Castro",
-      "Rodrigo Contreras"
+      "Julián Angulo",
+      "Rodrigo Contreras",
+      "Sebastián Mosquera",
+      "Leonardo Castro"
     ]
   },
   "bajas": [
     {
-      "nombre": "Sebastián Valencia",
-      "motivo": "Lesión muscular de primer grado en el semitendinoso de la pierna derecha"
+      "nombre": "Juan Guillermo Cuadrado",
+      "motivo": "Lesión"
     },
     {
-      "nombre": "Rodrigo Ureña",
-      "motivo": "Suspensión por acumulación de tarjetas amarillas"
+      "nombre": "Daniel Ruiz",
+      "motivo": "Lesión"
+    },
+    {
+      "nombre": "David Mackalister Silva",
+      "motivo": "Lesión"
+    },
+    {
+      "nombre": "Stiven Vega",
+      "motivo": "Decisión técnica"
     }
   ],
-  "nota": "XI probable: estimación editorial a partir de la convocatoria oficial y la continuidad del once. No es información confirmada por el cuerpo técnico. La alineación oficial se conoce cerca del pitazo inicial.",
+  "nota": "Once actualizado desde la convocatoria oficial y el último once oficial del equipo. La alineación puede cambiar hasta el pitazo inicial.",
   "fuente": {
     "nombre": "ESPN Colombia · convocatoria oficial",
-    "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17488539/millonarios-convocados-tolima-bajas-sebastian-valencia-rodrigo-urena-liga-betplay"
+    "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17567812/millonarios-anuncio-sus-20-convocados-vs-america-de-cali"
   },
-  "actualizado": "2026-11-08T19:00:00Z"
+  "actualizado": "2026-11-27T19:00:20.865381+00:00",
+  "origen_xi": "XI probable · continuidad del último once oficial",
+  "confirmada": false,
+  "rival": "América de Cali",
+  "partido": "2026-11-27"
 }

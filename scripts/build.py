@@ -617,20 +617,24 @@ def pagina_alineacion() -> str:
         filas.append(f'<div class="{clase}">{"".join(fichas)}</div>')
     pizarra = "".join(filas)
 
-    bajas_auto = [s for s in senales if s.get("tipo") == "Baja"]
-    if bajas_auto:
+    bajas_base = ALINEACION.get("bajas") or []
+    if bajas_base:
+        url_fuente = ALINEACION.get("fuente", {}).get("url", "")
+        bajas_titulo = "Bajas · convocatoria oficial"
+        bajas = "".join(
+            f'<li><strong>{e(b["nombre"])}</strong><span>{e(b["motivo"])}</span>'
+            + (f'<a href="{e(url_fuente)}" target="_blank" rel="noopener">Fuente ↗</a>' if url_fuente else "")
+            + "</li>"
+            for b in bajas_base
+        )
+    else:
+        bajas_auto = [s for s in senales if s.get("tipo") == "Baja"]
         bajas_titulo = "Bajas · señaladas en noticias"
         bajas = "".join(
             f'<li><strong>{e(s["nombre"])}</strong><span>{e(s["detalle"])}</span>'
             f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["fuente"])} ↗</a></li>'
             for s in bajas_auto
-        )
-    else:
-        bajas_titulo = "Bajas"
-        bajas = "".join(
-            f'<li><strong>{e(b["nombre"])}</strong><span>{e(b["motivo"])}</span></li>'
-            for b in ALINEACION["bajas"]
-        )
+        ) or '<li class="senales__vacio">Sin bajas confirmadas.</li>'
 
     grupos = "".join(
         f'<div class="grupo"><h3>{e(grupo)}</h3><ul>' + "".join(f"<li>{e(jugador)}</li>" for jugador in nombres) + "</ul></div>"
@@ -668,26 +672,33 @@ def pagina_alineacion() -> str:
     ) or '<li class="senales__vacio">Ningún titular recolectado todavía.</li>'
 
     actualizado = e(fecha_corta(SENALES.get("actualizado")))
+    origen_xi = e(ALINEACION.get("origen_xi", "XI probable"))
+    confirmada = ALINEACION.get("confirmada", False)
+    rival = e(ALINEACION.get("rival", "el próximo rival"))
+    actualizado_alineacion = e(fecha_corta(ALINEACION.get("actualizado")))
+    chip_once = "XI oficial" if confirmada else "XI probable"
+    chip_clase = "chip--vivo" if confirmada else "chip--club"
+    titulo_once = "Once confirmado" if confirmada else "Once probable"
 
     cuerpo = f"""
     <section class="cabecera-pagina">
       <div class="contenedor">
         <p class="eyebrow">Convocatoria oficial + noticias + criterio</p>
         <h1>Alineación probable</h1>
-        <p class="cabecera-pagina__bajada">Bajas y dudas que dejan las noticias, con link a la fuente. El once sigue siendo una estimación, no una filtración inventada.</p>
+        <p class="cabecera-pagina__bajada">Convocatoria real, bajas reales y el último once oficial como brújula. Todo con fuente. El pato opina, pero no inventa.</p>
         <div class="aviso aviso--info"><strong>Ojo:</strong> {e(ALINEACION['nota'])}</div>
       </div>
     </section>
     <section class="seccion seccion--ajustada">
       <div class="contenedor alineacion-grid">
         <div class="pizarra-card">
-          <div class="pizarra-card__cabecera"><span class="chip chip--vivo">XI probable</span><span>{e(ALINEACION['formacion'])}</span></div>
-          <div class="pitch" role="img" aria-label="Pizarra con el once probable de Millonarios en formación {e(ALINEACION['formacion'])}">{pizarra}</div>
-          <p class="pizarra-card__pie">Estimación editorial · marcada con señales de noticias cuando aplica</p>
+          <div class="pizarra-card__cabecera"><span class="chip {chip_clase}">{chip_once}</span><span>{e(ALINEACION['formacion'])}</span></div>
+          <div class="pitch" role="img" aria-label="Pizarra con el once de Millonarios en formación {e(ALINEACION['formacion'])}">{pizarra}</div>
+          <p class="pizarra-card__pie">{origen_xi} · actualizado {actualizado_alineacion}</p>
         </div>
         <div class="alineacion-lado">
           <div class="panel">
-            <h2>Once probable</h2>
+            <h2>{titulo_once}</h2>
             <ol class="once">{once_html}</ol>
           </div>
           <div class="panel panel--bajas">
@@ -707,7 +718,7 @@ def pagina_alineacion() -> str:
     </section>
     <section class="seccion">
       <div class="contenedor">
-        <div class="seccion__cabecera"><p class="eyebrow">Los 20</p><h2 class="seccion__titulo">Convocados para Ibagué</h2></div>
+        <div class="seccion__cabecera"><p class="eyebrow">Los 20</p><h2 class="seccion__titulo">Convocados para {rival}</h2></div>
         <div class="convocados">{grupos}</div>
         <p class="nota-legal">La alineación oficial se conoce cerca del inicio del partido. Las señales en noticias se detectan por palabras clave y pueden fallar: contrastá siempre el link original antes de tomarlas como oficial.</p>
       </div>
