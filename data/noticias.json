@@ -1,48 +1,13 @@
 {
-  "actualizado": "2026-11-27T12:37:12.987371+00:00",
-  "total": 19,
-  "errores": [],
+  "actualizado": "2026-11-27T13:59:07.966999+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Millonarios anunció sus 20 convocados para enfrentarse vs América de Cali",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17567812/millonarios-anuncio-sus-20-convocados-vs-america-de-cali",
-      "resumen": "Contreras y Leonardo Castro vienen de ser protagonistas en el triunfo sobre Bucaramanga.",
-      "fecha": "2026-11-27T03:59:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Liga BetPlay: América defenderá su liderato ante Millonarios en el Campín",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17565247/millonarios-vs-america-fecha-3-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Visitará a los embajadores por la tercera fecha del Grupo B de los cuadrangulares.",
-      "fecha": "2026-11-27T03:59:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Gamero calienta el clásico ante América y deja claro lo que espera de Millonarios",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17558945/gamero-calienta-duelo-america-millonarios-mensaje-cuadrangulares",
-      "resumen": "El entrenador embajador calificó el compromiso como definitivo en las aspiraciones de su equipo en los cuadrangulares.",
-      "fecha": "2026-11-27T03:59:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Santa Fe goleó a Once Caldas por el Grupo A",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17556020/santa-fe-vs-once-caldas-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El equipo cardenal se impuso 3-0 en El Campín.",
-      "fecha": "2026-11-27T00:04:05+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-27T00:04:05+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "EL PRÓXIMO PASO COMIENZA EN LA CANCHA: PARTICIPA EN NUESTRAS VEEDURÍAS",
       "url": "https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/",
@@ -66,14 +31,6 @@
       "fecha": "2026-11-25T14:13:53+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "Millonarios goleó a Bucaramanga y dio un golpe de autoridad en los cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El Embajador se impuso 4-1 en El Campín, con un doblete de Rodrigo Contreras.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
