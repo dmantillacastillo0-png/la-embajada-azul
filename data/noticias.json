@@ -1,40 +1,13 @@
 {
-  "actualizado": "2026-11-28T01:56:14.865031+00:00",
-  "total": 19,
-  "errores": [],
+  "actualizado": "2026-11-28T02:56:35.245083+00:00",
+  "total": 13,
+  "errores": [
+    {
+      "fuente": "ESPN Colombia",
+      "error": "ParseError: no element found: line 1, column 0"
+    }
+  ],
   "noticias": [
-    {
-      "titulo": "Liga BetPlay: América defenderá su liderato ante Millonarios en el Campín",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17565247/millonarios-vs-america-fecha-3-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Visitará a los embajadores por la tercera fecha del Grupo B de los cuadrangulares.",
-      "fecha": "2026-11-28T01:17:20+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Santa Fe goleó a Once Caldas por el Grupo A",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17556020/santa-fe-vs-once-caldas-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El equipo cardenal se impuso 3-0 en El Campín.",
-      "fecha": "2026-11-28T00:02:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "La tabla de posiciones del Grupo B",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17522550/tabla-posiciones-grupo-b-cuadrangulares-liga-betplay-2026-ii-torneo-finalizacion",
-      "resumen": "El detalle de cómo van América de Cali, Deportivo Cali, Atlético Bucaramanga y Millonarios en la zona.",
-      "fecha": "2026-11-28T00:02:56+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "El líder Nacional visita a Santa Fe en una plaza que domina con ventaja desde 2017",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17568866/santa-fe-vs-nacional-fecha-3-liga-betplay-cuadrangulares-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "Jugarán por la tercera fecha del Grupo A en el estadio El Campín.",
-      "fecha": "2026-11-27T21:58:58+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
     {
       "titulo": "EL PRÓXIMO PASO COMIENZA EN LA CANCHA: PARTICIPA EN NUESTRAS VEEDURÍAS",
       "url": "https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/",
@@ -58,22 +31,6 @@
       "fecha": "2026-11-25T14:13:53+00:00",
       "fuente": "Millonarios FC",
       "club": true
-    },
-    {
-      "titulo": "Gamero calienta el clásico ante América y deja claro lo que espera de Millonarios",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17558945/gamero-calienta-duelo-america-millonarios-mensaje-cuadrangulares",
-      "resumen": "El entrenador embajador calificó el compromiso como definitivo en las aspiraciones de su equipo en los cuadrangulares.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
-    },
-    {
-      "titulo": "Millonarios goleó a Bucaramanga y dio un golpe de autoridad en los cuadrangulares",
-      "url": "https://www.espn.com.co/futbol/colombia/nota/_/id/17552279/millonarios-vs-bucaramanga-fecha-2-cuadrangulares-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-      "resumen": "El Embajador se impuso 4-1 en El Campín, con un doblete de Rodrigo Contreras.",
-      "fecha": "2026-11-25T02:56:30+00:00",
-      "fuente": "ESPN Colombia",
-      "club": false
     },
     {
       "titulo": "ACTUALIDAD MÉDICA: MILLONARIOS FC",
@@ -148,7 +105,7 @@
       "club": false
     },
     {
-      "titulo": "Millonarios vs. América de Cali, en vivo: minuto a minuto del duelo clave por los cuadrangulares de Liga BetPlay",
+      "titulo": "Millonarios vs. América de Cali, en vivo: minuto a minuto 0-0, azules con diez en cuadrangulares de Liga BetPlay",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/partidazo-de-cuadrangulares-en-el-campin-millonarios-vs-america-de-cali-en-vivo-minuto-a-minuto-3605066",
       "resumen": "Azules y rojos miden fuerzas en un partido que es crítico para encaminar el cuadrangular B de Liga II.",
       "fecha": null,
