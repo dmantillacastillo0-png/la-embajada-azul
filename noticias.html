@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noticias · La Embajada Azul</title>
+<meta name="description" content="Últimas noticias de Millonarios con enlace a la fuente original.">
+<meta name="theme-color" content="#04122e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Embajada Azul">
+<meta property="og:title" content="Noticias · La Embajada Azul">
+<meta property="og:description" content="Últimas noticias de Millonarios con enlace a la fuente original.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/styles.css?v=c7be3090">
+
+</head>
+<body class="">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    
+    <a class="marca" href="index.html" aria-label="La Embajada Azul, inicio">
+      <span class="marca__escudo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M24 2 44 9v15c0 11-8.4 19.2-20 23C12.4 43.2 4 35 4 24V9Z" fill="#0743bf"/>
+          <path d="M24 7 39 12v12c0 8.6-6.4 15-15 18.4C15.4 39 9 32.6 9 24V12Z" fill="none" stroke="#fff" stroke-width="2"/>
+          <text x="24" y="31" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#fff">M</text>
+        </svg>
+      </span>
+      <span class="marca__texto"><strong>La Embajada</strong><small>Azul · Millonarios</small></span>
+    </a>
+    <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="nav" id="menu-principal" aria-label="Principal"><a class="nav__link" href="index.html">Inicio</a><a class="nav__link is-active" href="noticias.html" aria-current="page">Noticias</a><a class="nav__link" href="partidos.html">Partidos</a><a class="nav__link" href="alineacion.html">Alineación</a><a class="nav__link" href="pronostico.html">Pronóstico</a><a class="nav__link" href="historia.html">Historia</a><a class="nav__link" href="juegos.html">Juegos</a></nav>
+  </div>
+</header>
+<main id="contenido">
+  <div class="fondo-escudo" aria-hidden="true"><img src="static/escudos/actual.svg" alt="" loading="lazy"></div>
+  <div class="fondo-escudo fondo-escudo--dos" aria-hidden="true"><img src="static/escudos/1946.svg" alt="" loading="lazy"></div>
+
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <p class="eyebrow">Agregador de noticias</p>
+        <h1>Noticias del Embajador</h1>
+        <p class="cabecera-pagina__bajada">Titulares de medios y del club, con enlace al original. Sin copiar el artículo completo, sin inventar fuentes.</p>
+        <p class="cabecera-pagina__meta">Última actualización: 28 nov · 15:51 UTC · 16 noticias</p>
+      </div>
+    </section>
+    <section class="seccion seccion--ajustada">
+      <div class="contenedor">
+        <p class="aviso aviso--error">Algunas fuentes no respondieron en la última actualización: ESPN Colombia.</p>
+        <div class="controles">
+          <label class="buscador">
+            <span class="sr-only">Buscar noticias</span>
+            <input type="search" id="buscador-noticias" placeholder="Buscar: Tolima, convocatoria, Campín…" autocomplete="off">
+          </label>
+          <div class="filtros" role="group" aria-label="Filtrar por fuente">
+            <button class="filtro is-active" type="button" data-filtro="todas">Todas</button>
+            <button class="filtro" type="button" data-filtro="Club">Club</button>
+            <button class="filtro" type="button" data-filtro="Prensa">Prensa</button>
+            <button class="filtro" type="button" data-filtro="El Tiempo · Deportes">El Tiempo · Deportes</button><button class="filtro" type="button" data-filtro="Marca Colombia">Marca Colombia</button><button class="filtro" type="button" data-filtro="Millonarios FC">Millonarios FC</button>
+          </div>
+        </div>
+        <p class="resultado-conteo" id="conteo-noticias" aria-live="polite"></p>
+        <div class="noticias-lista" id="lista-noticias">
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="empate por la fecha 3 de los cuadrangulares millonarios recibió a américa de cali para cerrar la primera ronda de los cuadrangulares semifinales. a pesar de las opciones que generó el conjunto ‘embajador’ el compromiso se selló con un 0-0. revisa aquí el resumen…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-28T13:16:00+00:00">28 nov · 13:16 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/empate-por-la-fecha-3-de-los-cuadrangulares/" target="_blank" rel="noopener">EMPATE POR LA FECHA 3 DE LOS CUADRANGULARES</a></h3>
+      <p class="noticia__resumen">Millonarios recibió a América de Cali para cerrar la primera ronda de los cuadrangulares semifinales. A pesar de las opciones que generó el conjunto ‘Embajador’ el compromiso se selló con un 0-0. Revisa aquí el resumen…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/empate-por-la-fecha-3-de-los-cuadrangulares/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="comunicado oficial: millonarios fc millonarios fc rechaza categóricamente los actos de violencia que se presentaron posterior a la expulsión del jugador del américa de cali, dany rosero, durante el encuentro disputado este viernes en el estadio el…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-28T07:25:00+00:00">28 nov · 07:25 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/comunicado-oficial-millonarios-fc-2/" target="_blank" rel="noopener">COMUNICADO OFICIAL: MILLONARIOS FC</a></h3>
+      <p class="noticia__resumen">Millonarios FC rechaza categóricamente los actos de violencia que se presentaron posterior a la expulsión del jugador del América de Cali, Dany Rosero, durante el encuentro disputado este viernes en el estadio El…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/comunicado-oficial-millonarios-fc-2/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="el próximo paso comienza en la cancha: participa en nuestras veedurías millonarios fc fem abre las puertas a nuevos talentos con sus jornadas de veedurías, que se realizarán los días 1, 2 y 3 de diciembre, de 2:00 a 4:00 p. m., en xcoli cancha 10. la convocatoria está dirigida a jugadoras…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-26T20:37:38+00:00">26 nov · 20:37 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/" target="_blank" rel="noopener">EL PRÓXIMO PASO COMIENZA EN LA CANCHA: PARTICIPA EN NUESTRAS VEEDURÍAS</a></h3>
+      <p class="noticia__resumen">Millonarios FC Fem abre las puertas a nuevos talentos con sus jornadas de veedurías, que se realizarán los días 1, 2 y 3 de diciembre, de 2:00 a 4:00 p. m., en Xcoli Cancha 10. La convocatoria está dirigida a jugadoras…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="📸⚽ goleada en casa: revisa las postales de la fecha 2 de los cuadrangulares millonarios goleó 4-1 a bucaramanga en la fecha 2 de los cuadrangulares semifinales 2026-ii. mira aquí las mejores postales de este triunfo. la entrada 📸⚽ goleada en casa: revisa las postales de la fecha 2 de los…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-25T17:49:40+00:00">25 nov · 17:49 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/goleada-en-casa-revisa-las-postales-de-la-fecha-2-de-los-cuadrangulares/" target="_blank" rel="noopener">📸⚽ GOLEADA EN CASA: REVISA LAS POSTALES DE LA FECHA 2 DE LOS CUADRANGULARES</a></h3>
+      <p class="noticia__resumen">Millonarios goleó 4-1 a Bucaramanga en la fecha 2 de los cuadrangulares semifinales 2026-II. Mira aquí las mejores postales de este triunfo. La entrada 📸⚽ GOLEADA EN CASA: REVISA LAS POSTALES DE LA FECHA 2 DE LOS…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/goleada-en-casa-revisa-las-postales-de-la-fecha-2-de-los-cuadrangulares/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="¡millonarios goleó a atl. bucaramanga! los embajadores firmaron una gran presentación en el campín y se quedaron con una contundente victoria 4-1 frente a atlético bucaramanga, por la segunda jornada del grupo b de los cuadrangulares de la liga 2026-ii.…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-25T14:13:53+00:00">25 nov · 14:13 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/millonarios-goleo-a-atl-bucaramanga/" target="_blank" rel="noopener">¡MILLONARIOS GOLEÓ A ATL. BUCARAMANGA!</a></h3>
+      <p class="noticia__resumen">Los Embajadores firmaron una gran presentación en El Campín y se quedaron con una contundente victoria 4-1 frente a Atlético Bucaramanga, por la segunda jornada del Grupo B de los cuadrangulares de la Liga 2026-II.…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/millonarios-goleo-a-atl-bucaramanga/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="actualidad médica: millonarios fc millonarios fc informa sobre la actualidad médica de sus jugadores y los avances en sus respectivos procesos de recuperación. el jugador juan guillermo cuadrado presenta una sobrecarga de los isquiotibiales de su pierna…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-23T20:04:06+00:00">23 nov · 20:04 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/actualidad-medica-millonarios-fc-3/" target="_blank" rel="noopener">ACTUALIDAD MÉDICA: MILLONARIOS FC</a></h3>
+      <p class="noticia__resumen">Millonarios FC informa sobre la actualidad médica de sus jugadores y los avances en sus respectivos procesos de recuperación. El jugador Juan Guillermo Cuadrado presenta una sobrecarga de los isquiotibiales de su pierna…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/actualidad-medica-millonarios-fc-3/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="¡la sub-17 dio el primer paso en la final del torneo nacional! millonarios sub-17 comenzó con pie derecho la gran final del torneo nacional frente a cd estudiantil de medellín. en casa y ante el respaldo de la familia azul, los embajadores consiguieron una importante victoria 2-0,…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-23T03:57:00+00:00">23 nov · 03:57 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/la-sub-17-dio-el-primer-paso-en-la-final-del-torneo-nacional/" target="_blank" rel="noopener">¡LA SUB-17 DIO EL PRIMER PASO EN LA FINAL DEL TORNEO NACIONAL!</a></h3>
+      <p class="noticia__resumen">Millonarios Sub-17 comenzó con pie derecho la gran final del Torneo Nacional frente a CD Estudiantil de Medellín. En casa y ante el respaldo de la Familia Azul, los Embajadores consiguieron una importante victoria 2-0,…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/la-sub-17-dio-el-primer-paso-en-la-final-del-torneo-nacional/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="⚽📸mira aquí las postales del primer juego de cuadrangulares: vs. dep. cali la entrada ⚽📸mira aquí las postales del primer juego de cuadrangulares: vs. dep. cali se publicó primero en millonarios fc .">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-21T14:39:22+00:00">21 nov · 14:39 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/mira-aqui-las-postales-del-primer-juego-de-cuadrangulares/" target="_blank" rel="noopener">⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI</a></h3>
+      <p class="noticia__resumen">La entrada ⚽📸MIRA AQUÍ LAS POSTALES DEL PRIMER JUEGO DE CUADRANGULARES: VS. DEP. CALI se publicó primero en Millonarios FC .</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/mira-aqui-las-postales-del-primer-juego-de-cuadrangulares/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="millonarios inició los cuadrangulares visitante a cali: millonarios inició la fecha 1 visitando a deportivo cali por los cuadrangulares semifinales de la liga 2026-ii. en esta oportunidad el ‘clásico añejo’ finalizó con un igualdad 0-0, sumando entonces nuestro primer punto…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-21T11:14:00+00:00">21 nov · 11:14 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/millonarios-inicio-los-cuadrangulares-visitante-a-cali/" target="_blank" rel="noopener">MILLONARIOS INICIÓ LOS CUADRANGULARES VISITANTE A CALI:</a></h3>
+      <p class="noticia__resumen">Millonarios inició la fecha 1 visitando a Deportivo Cali por los cuadrangulares semifinales de la Liga 2026-II. En esta oportunidad el ‘Clásico Añejo’ finalizó con un igualdad 0-0, sumando entonces nuestro primer punto…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/millonarios-inicio-los-cuadrangulares-visitante-a-cali/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Club" data-medio="Millonarios FC" data-texto="mfc sostenible y el gaula se unen por la seguridad de nuestro equipo profesional masculino mfc sostenible en articulación con el gaula del ejército y el gaula de la policía, brindó un espacio de capacitación a nuestro equipo profesional masculino para fortalecer la prevención de la extorsión y el secuestro.…">
+      <div class="noticia__meta">
+        <span class="chip chip--club">Club</span>
+        <span class="noticia__fuente">Millonarios FC</span>
+        <time datetime="2026-11-17T22:27:57+00:00">17 nov · 22:27 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/" target="_blank" rel="noopener">MFC SOSTENIBLE Y EL GAULA SE UNEN POR LA SEGURIDAD DE NUESTRO EQUIPO PROFESIONAL MASCULINO</a></h3>
+      <p class="noticia__resumen">MFC Sostenible en articulación con el GAULA del Ejército y el GAULA de la Policía, brindó un espacio de capacitación a nuestro Equipo Profesional Masculino para fortalecer la prevención de la extorsión y el secuestro.…</p>
+      <a class="noticia__enlace" href="https://millonarios.com.co/mfc-sostenible-y-el-gaula-se-unen-por-la-seguridad-de-nuestro-equipo-profesional-masculino/" target="_blank" rel="noopener">Leer en Millonarios FC <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="Marca Colombia" data-texto="¡curioso homenaje! estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo andrey estupiñán fue homenajeado como máximo goleador de la liga betplay dimayor tras firmar 13 tantos la pasada temporada. el delantero recibió el trofeo antes del partido entre millonarios y deportivo pasto, posando…">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">Marca Colombia</span>
+        <time datetime="2026-08-06T06:49:28+00:00">6 ago · 06:49 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html" target="_blank" rel="noopener">¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo</a></h3>
+      <p class="noticia__resumen">Andrey Estupiñán fue homenajeado como máximo goleador de la Liga BetPlay Dimayor tras firmar 13 tantos la pasada temporada. El delantero recibió el trofeo antes del partido entre Millonarios y Deportivo Pasto, posando…</p>
+      <a class="noticia__enlace" href="https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html" target="_blank" rel="noopener">Leer en Marca Colombia <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="Marca Colombia" data-texto="colombia (cuartos-ida): resumen y goles del bucaramanga 2-2 millonarios un penalti anotado por del valle para los visitantes deja la elimatoria abierta.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">Marca Colombia</span>
+        <time datetime="2017-06-01T10:48:00+00:00">1 jun · 10:48 UTC</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.marca.com/futbol/colombia/2017/06/01/colombia-cuartos-ida-resumen-y-goles-del-bucaramanga-2-2-millonarios-video.html" target="_blank" rel="noopener">Colombia (cuartos-ida): Resumen y goles del Bucaramanga 2-2 Millonarios</a></h3>
+      <p class="noticia__resumen">Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.</p>
+      <a class="noticia__enlace" href="https://www.marca.com/futbol/colombia/2017/06/01/colombia-cuartos-ida-resumen-y-goles-del-bucaramanga-2-2-millonarios-video.html" target="_blank" rel="noopener">Leer en Marca Colombia <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="El Tiempo · Deportes" data-texto="david gonzález mostró su molestia tras el empate de américa frente a millonarios en bogotá el entrenador escarlata defendió a jean fernandes y reconoció que las expulsiones le impidieron terminar satisfecho.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">El Tiempo · Deportes</span>
+        <time datetime="">sin fecha</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.eltiempo.com/deportes/futbol-colombiano/david-gonzalez-mostro-su-molestia-tras-el-empate-de-america-frente-a-millonarios-en-bogota-3605157" target="_blank" rel="noopener">David González mostró su molestia tras el empate de América frente a Millonarios en Bogotá</a></h3>
+      <p class="noticia__resumen">El entrenador escarlata defendió a Jean Fernandes y reconoció que las expulsiones le impidieron terminar satisfecho.</p>
+      <a class="noticia__enlace" href="https://www.eltiempo.com/deportes/futbol-colombiano/david-gonzalez-mostro-su-molestia-tras-el-empate-de-america-frente-a-millonarios-en-bogota-3605157" target="_blank" rel="noopener">Leer en El Tiempo · Deportes <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="El Tiempo · Deportes" data-texto="américa denuncia acto racista contra dany rosero: hincha de millonarios hizo mímica e intentó escupirlo este viernes en el campín el zaguero del equipo visitante fue uno de los tres expulsados en el encuentro que terminó empatado sin goles.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">El Tiempo · Deportes</span>
+        <time datetime="">sin fecha</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.eltiempo.com/deportes/futbol-colombiano/america-denuncia-acto-racista-contra-dany-rosero-por-parte-de-un-fanatico-de-millonarios-en-el-juego-de-este-viernes-en-el-campin-3605111" target="_blank" rel="noopener">América denuncia acto racista contra Dany Rosero: hincha de Millonarios hizo mímica e intentó escupirlo este viernes en El Campín</a></h3>
+      <p class="noticia__resumen">El zaguero del equipo visitante fue uno de los tres expulsados en el encuentro que terminó empatado sin goles.</p>
+      <a class="noticia__enlace" href="https://www.eltiempo.com/deportes/futbol-colombiano/america-denuncia-acto-racista-contra-dany-rosero-por-parte-de-un-fanatico-de-millonarios-en-el-juego-de-este-viernes-en-el-campin-3605111" target="_blank" rel="noopener">Leer en El Tiempo · Deportes <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="El Tiempo · Deportes" data-texto="millonarios y américa empataron en una lluvia de tarjetas, con más roces que emociones y con tres expulsados rodrigo contreras, dany rosero y yani quintero vieron la roja este viernes en el campín.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">El Tiempo · Deportes</span>
+        <time datetime="">sin fecha</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-y-america-empataron-en-una-lluvia-de-tarjetas-con-mas-roces-que-emociones-y-con-tres-expulsados-3605109" target="_blank" rel="noopener">Millonarios y América empataron en una lluvia de tarjetas, con más roces que emociones y con tres expulsados</a></h3>
+      <p class="noticia__resumen">Rodrigo Contreras, Dany Rosero y Yani Quintero vieron la roja este viernes en El Campín.</p>
+      <a class="noticia__enlace" href="https://www.eltiempo.com/deportes/futbol-colombiano/millonarios-y-america-empataron-en-una-lluvia-de-tarjetas-con-mas-roces-que-emociones-y-con-tres-expulsados-3605109" target="_blank" rel="noopener">Leer en El Tiempo · Deportes <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="noticia" data-fuente="Prensa" data-medio="El Tiempo · Deportes" data-texto="la polémica del partido millonarios vs. américa en los cuadrangulares semifinales: ¿estuvo bien expulsado rodrigo contreras? video los azules se quedaron con diez jugadores antes de terminar la primera etapa.">
+      <div class="noticia__meta">
+        <span class="chip chip--prensa">Prensa</span>
+        <span class="noticia__fuente">El Tiempo · Deportes</span>
+        <time datetime="">sin fecha</time>
+      </div>
+      <h3 class="noticia__titulo"><a href="https://www.eltiempo.com/deportes/futbol-colombiano/la-polemica-del-partido-millonarios-vs-america-en-los-cuadrangulares-semifinales-estuvo-bien-expulsado-rodrigo-contreras-video-3605097" target="_blank" rel="noopener">La polémica del partido Millonarios vs. América en los cuadrangulares semifinales: ¿estuvo bien expulsado Rodrigo Contreras? Video</a></h3>
+      <p class="noticia__resumen">Los azules se quedaron con diez jugadores antes de terminar la primera etapa.</p>
+      <a class="noticia__enlace" href="https://www.eltiempo.com/deportes/futbol-colombiano/la-polemica-del-partido-millonarios-vs-america-en-los-cuadrangulares-semifinales-estuvo-bien-expulsado-rodrigo-contreras-video-3605097" target="_blank" rel="noopener">Leer en El Tiempo · Deportes <span aria-hidden="true">↗</span></a>
+    </article></div>
+        <p class="sin-resultados" id="sin-resultados" hidden>No hay noticias que coincidan. Probá con otra palabra. 🤷</p>
+        <p class="nota-legal">Los resúmenes provienen del feed RSS de cada medio y se muestran solo como adelanto. El contenido completo pertenece a sus autores: hacé clic y leelo en la fuente.</p>
+      </div>
+    </section>
+</main>
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div>
+      <p class="pie__marca">La Embajada Azul</p>
+      <p class="pie__aviso">Sitio no oficial, hecho por hinchas. No tiene relación con Millonarios Fútbol Club ni con la Dimayor.</p>
+    </div>
+    <div>
+      <p class="pie__titulo">Fuentes</p>
+      <ul class="pie__lista"><li><a href="https://millonarios.com.co/" target="_blank" rel="noopener">Millonarios FC (sitio oficial)</a></li><li><a href="https://www.espn.com.co/futbol/colombia/" target="_blank" rel="noopener">ESPN Colombia</a></li><li><a href="https://www.marca.com/co/" target="_blank" rel="noopener">Marca Colombia</a></li><li><a href="https://www.eltiempo.com/deportes" target="_blank" rel="noopener">El Tiempo · Deportes</a></li><li><a href="https://es.wikipedia.org/wiki/Millonarios_F%C3%BAtbol_Club" target="_blank" rel="noopener">Wikipedia · Millonarios FC</a></li><li><a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a></li></ul>
+    </div>
+    <div>
+      <p class="pie__titulo">Transparencia</p>
+      <p class="pie__texto">Noticias: agregadas por RSS y enlazadas al medio original. Alineación: estimación editorial, no información oficial. Pronóstico: modelo estadístico, no certeza ni consejo de apuestas.</p>
+      <p class="pie__texto">© 2026 · Hecho por hinchas, para hinchas.</p>
+    </div>
+  </div>
+  <div class="contenedor pie__franja">
+    <div class="pie__escudos" aria-label="Escudos homenaje del club"><span class="pie__escudo"><img src="static/escudos/1946.svg" alt="" loading="lazy"><b>1946</b></span><span class="pie__escudo"><img src="static/escudos/ballet.svg" alt="" loading="lazy"><b>1950s</b></span><span class="pie__escudo"><img src="static/escudos/embajador.svg" alt="" loading="lazy"><b>1970s–2000s</b></span><span class="pie__escudo"><img src="static/escudos/actual.svg" alt="" loading="lazy"><b>Hoy</b></span></div>
+    <p class="pie__nota-escudos">Escudos homenaje ilustrados para este sitio · no son emblemas oficiales.</p>
+  </div>
+</footer>
+<script src="static/app.js?v=8f730b6c" defer></script>
+<script src="static/envivo.js?v=9899f751" defer></script>
+</body>
+</html>
