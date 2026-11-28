@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-28T14:53:39.395914+00:00",
-  "revisadas": 15,
+  "actualizado": "2026-11-28T15:51:14.042883+00:00",
+  "revisadas": 16,
   "senales": [
     {
       "nombre": "Juan Guillermo Cuadrado",
@@ -9,6 +9,14 @@
       "fuente": "Millonarios FC",
       "url": "https://millonarios.com.co/actualidad-medica-millonarios-fc-3/",
       "fecha": "2026-11-23T20:04:06+00:00"
+    },
+    {
+      "nombre": "David Mackalister Silva",
+      "tipo": "Duda",
+      "detalle": "David González mostró su molestia tras el empate de América frente a Millonarios en Bogotá",
+      "fuente": "El Tiempo · Deportes",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/david-gonzalez-mostro-su-molestia-tras-el-empate-de-america-frente-a-millonarios-en-bogota-3605157",
+      "fecha": null
     }
   ],
   "titulares": [

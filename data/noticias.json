@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-28T14:53:39.385758+00:00",
-  "total": 15,
+  "actualizado": "2026-11-28T15:51:14.028251+00:00",
+  "total": 16,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -8,6 +8,22 @@
     }
   ],
   "noticias": [
+    {
+      "titulo": "EMPATE POR LA FECHA 3 DE LOS CUADRANGULARES",
+      "url": "https://millonarios.com.co/empate-por-la-fecha-3-de-los-cuadrangulares/",
+      "resumen": "Millonarios recibió a América de Cali para cerrar la primera ronda de los cuadrangulares semifinales. A pesar de las opciones que generó el conjunto ‘Embajador’ el compromiso se selló con un 0-0. Revisa aquí el resumen…",
+      "fecha": "2026-11-28T13:16:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
+    {
+      "titulo": "COMUNICADO OFICIAL: MILLONARIOS FC",
+      "url": "https://millonarios.com.co/comunicado-oficial-millonarios-fc-2/",
+      "resumen": "Millonarios FC rechaza categóricamente los actos de violencia que se presentaron posterior a la expulsión del jugador del América de Cali, Dany Rosero, durante el encuentro disputado este viernes en el estadio El…",
+      "fecha": "2026-11-28T07:25:00+00:00",
+      "fuente": "Millonarios FC",
+      "club": true
+    },
     {
       "titulo": "EL PRÓXIMO PASO COMIENZA EN LA CANCHA: PARTICIPA EN NUESTRAS VEEDURÍAS",
       "url": "https://millonarios.com.co/el-proximo-paso-comienza-en-la-cancha-participa-en-nuestras-veedurias/",
@@ -73,22 +89,6 @@
       "club": true
     },
     {
-      "titulo": "RECONOCIMIENTO POR LA MEDICIÓN DE LA HUELLA DE CARBONO 2025",
-      "url": "https://millonarios.com.co/reconocimiento-por-la-medicion-de-la-huella-de-carbono-2025/",
-      "resumen": "En Millonarios FC seguimos avanzando en la medición y gestión de nuestra huella de carbono. Durante 2025, con el acompañamiento de la Fundación Cataruben y a través de la plataforma PL4N3T, realizamos la cuantificación…",
-      "fecha": "2026-11-17T15:57:32+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
-      "titulo": "MFC SOSTENIBLE FORTALECE SU COMPROMISO SOCIAL EN LA FUNDACIÓN CRESIENDO",
-      "url": "https://millonarios.com.co/mfc-sostenible-fortalece-su-compromiso-social-en-la-fundacion-cresiendo/",
-      "resumen": "MFC Sostenible realizó la entrega de donaciones de Tiendas MFC y prendas del Equipo Profesional Femenino de temporadas anteriores a la Fundación CreSiendo, en una jornada especial junto a niños, niñas y adolescentes de…",
-      "fecha": "2026-11-17T15:06:44+00:00",
-      "fuente": "Millonarios FC",
-      "club": true
-    },
-    {
       "titulo": "¡Curioso homenaje! Estupiñán recibe el trofeo de goleador... con la camiseta de su exequipo",
       "url": "https://www.marca.com/futbol/colombia/2026/08/06/curioso-homenaje-estupinan-recibe-trofeo-goleador-camiseta-exequip-video.html",
       "resumen": "Andrey Estupiñán fue homenajeado como máximo goleador de la Liga BetPlay Dimayor tras firmar 13 tantos la pasada temporada. El delantero recibió el trofeo antes del partido entre Millonarios y Deportivo Pasto, posando…",
@@ -102,6 +102,14 @@
       "resumen": "Un penalti anotado por Del Valle para los visitantes deja la elimatoria abierta.",
       "fecha": "2017-06-01T10:48:00+00:00",
       "fuente": "Marca Colombia",
+      "club": false
+    },
+    {
+      "titulo": "David González mostró su molestia tras el empate de América frente a Millonarios en Bogotá",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/david-gonzalez-mostro-su-molestia-tras-el-empate-de-america-frente-a-millonarios-en-bogota-3605157",
+      "resumen": "El entrenador escarlata defendió a Jean Fernandes y reconoció que las expulsiones le impidieron terminar satisfecho.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
       "club": false
     },
     {
