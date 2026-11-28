@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-28T02:56:35.245083+00:00",
-  "total": 13,
+  "actualizado": "2026-11-28T03:59:06.164452+00:00",
+  "total": 14,
   "errores": [
     {
       "fuente": "ESPN Colombia",
@@ -105,7 +105,15 @@
       "club": false
     },
     {
-      "titulo": "Millonarios vs. América de Cali, en vivo: minuto a minuto 0-0, azules con diez en cuadrangulares de Liga BetPlay",
+      "titulo": "La polémica del partido Millonarios vs. América en los cuadrangulares semifinales: ¿estuvo bien expulsado Rodrigo Contreras? Video",
+      "url": "https://www.eltiempo.com/deportes/futbol-colombiano/la-polemica-del-partido-millonarios-vs-america-en-los-cuadrangulares-semifinales-estuvo-bien-expulsado-rodrigo-contreras-video-3605097",
+      "resumen": "Los azules se quedaron con diez jugadores antes de terminar la primera etapa.",
+      "fecha": null,
+      "fuente": "El Tiempo · Deportes",
+      "club": false
+    },
+    {
+      "titulo": "Millonarios vs. América de Cali, en vivo: minuto a minuto 0-0, ambos con diez en cuadrangulares de Liga BetPlay",
       "url": "https://www.eltiempo.com/deportes/futbol-colombiano/partidazo-de-cuadrangulares-en-el-campin-millonarios-vs-america-de-cali-en-vivo-minuto-a-minuto-3605066",
       "resumen": "Azules y rojos miden fuerzas en un partido que es crítico para encaminar el cuadrangular B de Liga II.",
       "fecha": null,
